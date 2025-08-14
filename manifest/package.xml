@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Messaging_Session_after_update</members>
+		<members>Sending_an_email_when_creating_a_case</members>
+		<name>Flow</name>
+	</types>
+	<version>64.0</version>
+</Package>
