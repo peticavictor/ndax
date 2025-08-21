@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkSkillRouting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <masterLabel>Case</masterLabel>
+    <relatedEntity>Case</relatedEntity>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Account_Management</skill>
+        <skillLevel>0</skillLevel>
+        <value>Account Management</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Deposits</skill>
+        <skillLevel>0</skillLevel>
+        <value>Deposits</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Withdrawals_Internal_Transfers</skill>
+        <skillLevel>0</skillLevel>
+        <value>Withdrawals &amp; Internal Transfers</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Trading</skill>
+        <skillLevel>0</skillLevel>
+        <value>Trading</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Staking</skill>
+        <skillLevel>0</skillLevel>
+        <value>Staking</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Referral_Program</skill>
+        <skillLevel>0</skillLevel>
+        <value>Referral Program</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Compliance_Regulation_Other</skill>
+        <skillLevel>0</skillLevel>
+        <value>Compliance &amp; Regulation - Other</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Compliance_Regulation_Business_Application</skill>
+        <skillLevel>0</skillLevel>
+        <value>Compliance &amp; Regulation - Business Application</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Compliance_Regulation_Manual_Verification</skill>
+        <skillLevel>0</skillLevel>
+        <value>Compliance &amp; Regulation - Manual Verification</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Compliance_Regulation_Law_Enforcement_Requests</skill>
+        <skillLevel>0</skillLevel>
+        <value>Compliance &amp; Regulation - Law Enforcement Requests</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Compliance_Regulation_Investment_Limits</skill>
+        <skillLevel>0</skillLevel>
+        <value>Compliance &amp; Regulation - Investment Limits</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Other</skill>
+        <skillLevel>0</skillLevel>
+        <value>Other</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Support_Language__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>English</skill>
+        <skillLevel>0</skillLevel>
+        <value>English</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Support_Language__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>French</skill>
+        <skillLevel>0</skillLevel>
+        <value>French</value>
+    </workSkillRoutingAttributes>
+</WorkSkillRouting>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>amazonconnect__Contact_Lens</fullName>
+    <columns>NAME</columns>
+    <columns>amazonconnect__ContactLensCustomerSentiment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>amazonconnect__DataSource__c</field>
+        <operation>equals</operation>
+        <value>Contact_Lens</value>
+    </filters>
+    <label>Contact Lens</label>
+</ListView>

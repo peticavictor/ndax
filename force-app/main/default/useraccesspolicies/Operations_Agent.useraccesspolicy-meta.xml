@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1</booleanFilter>
+    <masterLabel>Operations Agent</masterLabel>
+    <order>0</order>
+    <status>Active</status>
+    <triggerType>CreateAndUpdate</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>Operations_Agent</target>
+        <type>PermissionSetGroup</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>equals</operation>
+        <sortOrder>1</sortOrder>
+        <target>Operations_Agent</target>
+        <type>UserRole</type>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

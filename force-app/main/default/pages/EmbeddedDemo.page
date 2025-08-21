@@ -1,0 +1,24 @@
+<apex:page showHeader="false" sidebar="false">
+
+ <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00DDH000000B6gy',
+                'NDAX_Chat_Demo',
+                'https://ndax--dev01.sandbox.my.site.com/ESWNDAXChatDemo1747396526582',
+                {
+                    scrt2URL: 'https://ndax--dev01.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://ndax--dev01.sandbox.my.site.com/ESWNDAXChatDemo1747396526582/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+</apex:page>

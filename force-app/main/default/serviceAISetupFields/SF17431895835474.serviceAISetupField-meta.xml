@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceAISetupField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <entity>Knowledge__kav</entity>
+    <field>Question__c</field>
+    <fieldMappingType>ARTICLE_CONTENT</fieldMappingType>
+    <fieldPosition>1</fieldPosition>
+    <name>SF17431895835474</name>
+    <setupDefinition>SA1743189583303</setupDefinition>
+</ServiceAISetupField>

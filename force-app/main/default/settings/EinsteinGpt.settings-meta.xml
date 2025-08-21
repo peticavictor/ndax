@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EinsteinGptSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <disableAIProviderRegionFallback>false</disableAIProviderRegionFallback>
+    <enableAIProviderAWSBedrock>true</enableAIProviderAWSBedrock>
+    <enableAIProviderAzureOpenAI>true</enableAIProviderAzureOpenAI>
+    <enableAIProviderGoogleVertex>true</enableAIProviderGoogleVertex>
+    <enableAIProviderOpenAI>true</enableAIProviderOpenAI>
+    <enableEinsteinGPTDeployPromptTemplatesAsActive>true</enableEinsteinGPTDeployPromptTemplatesAsActive>
+    <enableEinsteinGptGlobalLangSupport>true</enableEinsteinGptGlobalLangSupport>
+    <enableEinsteinGptPlatform>true</enableEinsteinGptPlatform>
+</EinsteinGptSettings>

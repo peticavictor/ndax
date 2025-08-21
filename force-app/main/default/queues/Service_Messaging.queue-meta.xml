@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Service Messaging</name>
+    <queueMembers>
+        <users>
+            <user>activeo@ndax.io</user>
+            <user>project.ndax+agent1@integrate2cloud.com</user>
+            <user>bassam.hammoud@ndax.io</user>
+            <user>ekbal.merhi@ndax.io</user>
+            <user>emilio.cardona@ndax.io</user>
+            <user>inas.elmays@ndax.io</user>
+            <user>lorenzo.matei@ndax.io</user>
+            <user>jay.bhadarka@ndax.io</user>
+            <user>shah.hossain@ndax.io</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Messaging_Routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

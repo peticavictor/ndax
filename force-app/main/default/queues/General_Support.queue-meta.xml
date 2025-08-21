@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>harlequininnocent@e-record.com</email>
+    <name>General Support</name>
+    <queueMembers>
+        <users>
+            <user>ekbal.merhi@ndax.io</user>
+            <user>emilio.cardona@ndax.io</user>
+            <user>ephraim.fowler@ndax.io.temp</user>
+            <user>inas.elmays@ndax.io</user>
+            <user>shah.hossain@ndax.io.temp</user>
+            <user>lorenzo.matei@ndax.io</user>
+            <user>maneet.dhir@ndax.io</user>
+            <user>jay.bhadarka@ndax.io</user>
+            <user>shah.hossain@ndax.io</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Case_Routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ChangeRequest</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ContactRequest</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveAgentSession</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Macro</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>QuickText</sobjectType>
+    </queueSobject>
+</Queue>

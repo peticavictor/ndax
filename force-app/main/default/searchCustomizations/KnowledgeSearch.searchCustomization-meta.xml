@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchCustomization xmlns="http://soap.sforce.com/2006/04/metadata">
+    <channel>KnowledgeComponentSearch</channel>
+    <masterLabel>KnowledgeSearch</masterLabel>
+    <objectOverride>
+        <explicitFilter>
+            <fieldPath>Language</fieldPath>
+            <type>field</type>
+        </explicitFilter>
+        <explicitFilter>
+            <fieldPath>PublishStatus</fieldPath>
+            <type>field</type>
+        </explicitFilter>
+        <explicitFilter>
+            <fieldPath>ValidationStatus</fieldPath>
+            <type>field</type>
+        </explicitFilter>
+        <explicitFilter>
+            <fieldPath>RecordType.Name</fieldPath>
+            <type>field</type>
+        </explicitFilter>
+        <explicitFilter>
+            <fieldPath>Summary</fieldPath>
+            <type>field</type>
+        </explicitFilter>
+        <objectApiName>Knowledge__kav</objectApiName>
+    </objectOverride>
+</SearchCustomization>

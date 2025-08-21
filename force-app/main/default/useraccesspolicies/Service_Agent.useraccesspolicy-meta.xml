@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1</booleanFilter>
+    <description>Assign Service agent permission set if user has service agent role</description>
+    <masterLabel>Service Agent</masterLabel>
+    <order>1</order>
+    <status>Active</status>
+    <triggerType>CreateAndUpdate</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>Service_Agent</target>
+        <type>PermissionSetGroup</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>equals</operation>
+        <sortOrder>1</sortOrder>
+        <target>General_Support_Agent</target>
+        <type>UserRole</type>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

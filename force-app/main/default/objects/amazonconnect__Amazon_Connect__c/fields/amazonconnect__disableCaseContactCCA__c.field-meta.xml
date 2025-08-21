@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>amazonconnect__disableCaseContactCCA__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Choose to enable or disable the AC_AssociateCaseContactCCA trigger, which associates Cases and Contacts with a Contact Channel Analytics Record.</description>
+    <inlineHelpText>Choose to enable or disable the AC_AssociateCaseContactCCA trigger, which associates Cases and Contacts with a Contact Channel Analytics Record.</inlineHelpText>
+    <label>Disable the Case Contact CCA Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

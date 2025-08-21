@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The basic permission set for all types service agents</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Service Agent</label>
+    <permissionSets>Knowledge_LSF_Permission_Set</permissionSets>
+    <permissionSets>Messaging_for_In_App_and_Web_Agent</permissionSets>
+    <permissionSets>Support_Agent</permissionSets>
+    <permissionSets>amazonconnect__AC_Agent</permissionSets>
+    <permissionSets>force__EinsteinARForConversations</permissionSets>
+    <permissionSets>force__EinsteinAgent</permissionSets>
+    <permissionSets>force__EinsteinGPTServiceReplies</permissionSets>
+    <permissionSets>force__EinsteinGPTWorkSummaries</permissionSets>
+    <permissionSets>force__ServiceUserPsl</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

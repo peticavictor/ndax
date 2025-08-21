@@ -1,0 +1,48 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ndax messaging test</h1>
+    
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DDH000000B6gy',
+				'NDAX_Messaging',
+				'https://ndax--dev01.sandbox.my.site.com/ESWNDAXMessaging1747320918074',
+				{
+					scrt2URL: 'https://ndax--dev01.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://ndax--dev01.sandbox.my.site.com/ESWNDAXMessaging1747320918074/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type="text/javascript">
+        window.addEventListener("onEmbeddedMessagingReady", () => {
+  		 	console.log("Received the onEmbeddedMessagingReady event.");
+         	embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"userId" : "838994364"});
+    /*embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
+                identityTokenType: "JWT",
+                identityToken: "eyJraWQiOiIxMjM0NSIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJ0ZXN0SXNzdWVyIiwic3ViIjoidXNlcjIiLCJleHAiOjE3NDc3NjU0NDUsImlhdCI6MTc0Nzc1OTQ0NX0.o7trXfZr9cJQeHXkz4dYjzUHabpfLnbkhyu6bLodIgCBiSyU8P7PflM4murv5i0Fs4ab8EN7d1vMD7s2k4gprJbnQVm0sXwNQuGl6LSDmS4r5UUdsWmjnjJDPl4zX7xo0hHh9hHeLLPpupNdJKeVazRgVtXHCZrYQT0MX0a3klPWwuwnwWOX1kb9zxEWQASvbXw39slLUWV2lkvWYCUcITRRf_zHP0O-bD-DBOlBAJCSX-uK45CIst_Uxym-qXOlaKOk4o__tjTzAsYeOWiMLcvBCJLSOEGxkunAIqa9F_UF_QN8T-G5w_BYPbJ5ZYmXsVfWz5JypPk6RpB8meR0UA"
+            });*/
+		});
+    
+    	window.addEventListener("onEmbeddedMessagingIdentityTokenExpired", () => {
+            console.log("Received the onEmbeddedMessagingIdentityTokenExpired event.");
+            //embeddedservice_bootstrap.userVerificationAPI.clearSession(true);
+        });
+    </script>
+</body>
+</html>
+</apex:page>

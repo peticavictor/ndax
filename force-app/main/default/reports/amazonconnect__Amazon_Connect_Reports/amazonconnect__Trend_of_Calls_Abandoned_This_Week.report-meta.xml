@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>amazonconnect__ACSFCCP_HistoricalReportData__c.amazonconnect__AC_Object_Name__c</field>
+    </columns>
+    <columns>
+        <field>amazonconnect__ACSFCCP_HistoricalReportData__c.amazonconnect__Contacts_abandoned__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>amazonconnect__ACSFCCP_HistoricalReportData__c.amazonconnect__Contacts_abandoned__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>amazonconnect__ACSFCCP_HistoricalReportData__c.amazonconnect__Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>amazonconnect__ACSFCCP_HistoricalReportData__c.amazonconnect__Created_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Trend of Calls Abandoned This Week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$amazonconnect__ACSFCCP_HistoricalReportData__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

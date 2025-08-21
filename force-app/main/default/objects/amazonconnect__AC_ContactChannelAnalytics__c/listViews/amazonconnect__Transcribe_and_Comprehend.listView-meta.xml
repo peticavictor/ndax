@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>amazonconnect__Transcribe_and_Comprehend</fullName>
+    <columns>NAME</columns>
+    <columns>amazonconnect__Sentiment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>amazonconnect__DataSource__c</field>
+        <operation>equals</operation>
+        <value>Transcribe_and_Comprehend</value>
+    </filters>
+    <label>Transcribe and Comprehend</label>
+</ListView>

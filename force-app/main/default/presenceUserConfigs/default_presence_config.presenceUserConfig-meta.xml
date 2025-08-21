@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PresenceUserConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <capacity>25</capacity>
+    <declineReasons>Other</declineReasons>
+    <declineReasons>Skills_Mismatch</declineReasons>
+    <declineReasons>Unavailable</declineReasons>
+    <enableAutoAccept>false</enableAutoAccept>
+    <enableDecline>true</enableDecline>
+    <enableDeclineReason>true</enableDeclineReason>
+    <enableDisconnectSound>true</enableDisconnectSound>
+    <enableRequestSound>true</enableRequestSound>
+    <interruptibleCapacity>25</interruptibleCapacity>
+    <label>Default Presence Configuration</label>
+    <userDisplayName>{!User_Alias}</userDisplayName>
+</PresenceUserConfig>
