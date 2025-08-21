@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Provide a short response for digital engagement channels like Chat, Messaging, Social, and Bots. --></help>
+    <label><!-- Digital Engagement Response --></label>
+    <name>DigitalEngagementResponse__c</name>
+</CustomFieldTranslation>

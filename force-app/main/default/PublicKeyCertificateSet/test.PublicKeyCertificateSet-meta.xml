@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicKeyCertificateSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <jwtIssuer>testIssuer</jwtIssuer>
+    <masterLabel>test</masterLabel>
+    <publicKeyCertificateSetKeys>
+        <publicKeyCertificate>test</publicKeyCertificate>
+    </publicKeyCertificateSetKeys>
+    <type>JWKS</type>
+</PublicKeyCertificateSet>

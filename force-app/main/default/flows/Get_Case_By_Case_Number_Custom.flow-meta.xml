@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Determines whether the customer has an associated Contact record.</description>
+        <name>Check_for_Contact</name>
+        <label>Contact Exists?</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>No (Default)</defaultConnectorLabel>
+        <rules>
+            <name>ContactExists</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>contactRecord</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetCaseByContactAndCaseNumber</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Get Case By Case Number (Custom) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Get Case By Case Number (Custom)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the case record related to the given contact and case number. Stores the results in the caseRecord variable.</description>
+        <name>GetCaseByContactAndCaseNumber</name>
+        <label>Get Case by Contact and Case Number</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>contactRecord.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>CaseNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>caseNumber</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>caseRecord</outputReference>
+        <queriedFields>Subject</queriedFields>
+        <queriedFields>Description</queriedFields>
+        <queriedFields>Status</queriedFields>
+        <queriedFields>CreatedDate</queriedFields>
+        <queriedFields>LastModifiedDate</queriedFields>
+        <queriedFields>ClosedDate</queriedFields>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_for_Contact</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the case number provided by the customer.</description>
+        <name>caseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the case record based on the contact record and case number.</description>
+        <name>caseRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <description>Stores the contact record of the customer to be used with the case number to look up a case.</description>
+        <name>contactRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+</Flow>

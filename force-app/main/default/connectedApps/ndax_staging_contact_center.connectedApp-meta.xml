@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>alexey.chvarkov@ndax.io</contactEmail>
+    <label>ndax_staging_contact_center</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com</callbackUrl>
+        <certificate>MIIDTTCCAjWgAwIBAgIUNrbr885BamhJo9Y76oTWaydhZK0wDQYJKoZIhvcNAQELBQAwNjELMAkGA1UEBhMCQ0ExEDAOBgNVBAgMB0FsYmVydGExFTATBgNVBAoMDE5EQVggc3RhZ2luZzAeFw0yNTA2MTExMjQxMTRaFw0zNTA2MDkxMjQxMTRaMDYxCzAJBgNVBAYTAkNBMRAwDgYDVQQIDAdBbGJlcnRhMRUwEwYDVQQKDAxOREFYIHN0YWdpbmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCh4dtQnXHUyctRLvba41QsW6w9kH8qGMAaQKpOa7Dcw0RE2qOki0feOtL0HOW3lCNNnnwbNbWbvXLbet46ZdfKP1TX7vBEi0QRUNbzQ9G7w2sK2mpq/etYSrC62T6y9vfE3G9xo4SdUjxSKAxrrU5dijkKUBobGU/MGs4pbHiBAoPeGPgEBG0y4fx7/YGzrPfiOW2RvHDJIU3qrNwKMlBuEu6oVoBRMVpN0pgMFONHbe230JeUiMcWTnxpptQ7+uHCEeDsuMBU/F4H/koy3TO09ICjSoKIIlah7TrGLbzSZQv2UviWhzINb/cXDYvUrf95vmNDRkHdOZQbzIOfVW2RAgMBAAGjUzBRMB0GA1UdDgQWBBSbfVfNS4ys32+eQHTKUecmWo3NAjAfBgNVHSMEGDAWgBSbfVfNS4ys32+eQHTKUecmWo3NAjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCA0B3GtRvObe3DVUs49Y8u6EsdRT3xas4ccREWAPqRP+OzHHlB0KRpz6hCQzkAHTgVVSTu9vXNpWDo5H1wJaXsQQCgTLko/z+wwJfPEDsQvRmUYQSsCFpeUdHrsd8yozPi7LXUn97yRHY0OFvVakAml4/lOxNpNWOHzqPNb5R0+iDxs+VEU7/iDAqHANUm3mzMz9+eVjsbLxZ8WqpPTuB/DlnZXzJyNyEijDy7Y9R0H1vKrKDlpu+akfEXZPQecfA0gCQe1g7cBLclzyJ+sXm34hmC1jZCQZQQMO63H75+HhNFCTPWf3F5C0+59koDLNFePO+MXMTXVfDgRV9kDkHq</certificate>
+        <consumerKey>3MVG9bmlmX4LX1ZvB3SE4PVn7Dwl1WSLjeE7HvSX1_FM_bX_PzCM4vrXxxhStdlVC4MgvQBwmduiyiYAGFmSY</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>true</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

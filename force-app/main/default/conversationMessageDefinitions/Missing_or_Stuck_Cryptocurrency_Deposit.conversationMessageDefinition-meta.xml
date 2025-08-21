@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Missing or Stuck Cryptocurrency Deposit</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Missing or Stuck Cryptocurrency Deposit</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To begin the recovery process for a missing cryptocurrency deposit, please provide the following details:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Amount&lt;/strong&gt; of the deposit&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Currency&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TXID/Hash&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Blockchain network&lt;/strong&gt; used&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ticket ID&lt;/strong&gt; (a 7-digit number found under “Deposit” in your Transaction History)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you cannot locate your Ticket ID, please fill out the Missing Deposit Form with your &lt;strong&gt;TXID&lt;/strong&gt; and the exact crypto amount (do not enter its dollar value). You can access the form here:  
+&lt;a href=&quot;https://kst.mr/S1EHH1uwo&quot; target=&quot;_blank&quot;&gt;https://kst.mr/S1EHH1uwo&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Our Deposit Recovery Form BETA&lt;/strong&gt; is intended for cryptocurrency deposits that require manual recovery. Please follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Login to &lt;a href=&quot;https://ndax.io&quot; target=&quot;_blank&quot;&gt;NDAX&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Click the &lt;strong&gt;NDAX symbol&lt;/strong&gt; in the top-left corner.&lt;/li&gt;
+  &lt;li&gt;Select &lt;strong&gt;WALLET&lt;/strong&gt; from the dropdown menu.&lt;/li&gt;
+  &lt;li&gt;Choose the &lt;strong&gt;cryptocurrency&lt;/strong&gt; you wish to recover.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;MISSING DEPOSIT&lt;/strong&gt; at the bottom of the screen.&lt;/li&gt;
+  &lt;li&gt;Enter the &lt;strong&gt;AMOUNT&lt;/strong&gt; and &lt;strong&gt;TRANSACTION ID (TXID)&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Upload an &lt;strong&gt;IMAGE or VIDEO&lt;/strong&gt; of your transaction record from your external wallet to validate authenticity.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;SUBMIT&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you deposited an unsupported asset, our team will review your request and notify you whether recovery is possible (if eligible). Once you submit the form, please inform our support team so we can expedite your request.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

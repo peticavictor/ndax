@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Case_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Category__c</columns>
+    <columns>Support_Language__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>General Support</label>
+    <queue>General_Support</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AC Replica Instance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AC Replica Instances</value>
+    </caseValues>
+    <layouts>
+        <layout>AC Replica Instance Layout</layout>
+        <sections>
+            <label><!-- AC Replica Instance --></label>
+            <section>AC Replica Instance</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- The standard record type for AC Replica Instances --></description>
+        <label><!-- Standard Record Type --></label>
+        <name>amazonconnect__Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -6338,5 +6338,7 @@ https://ndax.io/en/support/account_funding_and_deposit_methods</message>
     </nlpProviders>
     <responseDelayMilliseconds>200</responseDelayMilliseconds>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
     <surfacesEnabled>false</surfacesEnabled>
 </BotVersion>

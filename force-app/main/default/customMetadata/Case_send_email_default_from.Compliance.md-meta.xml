@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Compliance</label>
+    <protected>false</protected>
+    <values>
+        <field>Default_email__c</field>
+        <value xsi:type="xsd:string">project.ndax+compliance@integrate2cloud.com</value>
+    </values>
+    <values>
+        <field>Team_Email__c</field>
+        <value xsi:type="xsd:string">alexandru.rusnac@integrate2cloud.com</value>
+    </values>
+    <values>
+        <field>Team_name__c</field>
+        <value xsi:type="xsd:string">Compliance</value>
+    </values>
+</CustomMetadata>

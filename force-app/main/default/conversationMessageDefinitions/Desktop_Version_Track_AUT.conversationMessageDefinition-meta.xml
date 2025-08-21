@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Desktop Version Track AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Desktop Version Track AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To track or cancel an internal transfer using the Ndax website on your desktop, follow these steps: &lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click Transaction History in the left-hand sidebar.&lt;/li&gt;
+  &lt;li&gt;Select the Transfers tab in the center of the screen.&lt;/li&gt;
+  &lt;li&gt;Click on the transfer you want to view to open the details.&lt;/li&gt;
+  &lt;li&gt;If the transfer is still pending, click Cancel Withdrawal in the bottom right-hand corner of the transfer ticket.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;✅ Once cancelled, the funds will be immediately available in your Ndax account for trading or withdrawing.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

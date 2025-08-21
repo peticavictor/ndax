@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disconnect Reason --></label>
+    <name>amazonconnect__DisconnectReason__c</name>
+    <picklistValues>
+        <masterLabel>AGENT_DISCONNECT</masterLabel>
+        <translation><!-- AGENT_DISCONNECT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>API</masterLabel>
+        <translation><!-- API --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTACT_FLOW_DISCONNECT</masterLabel>
+        <translation><!-- CONTACT_FLOW_DISCONNECT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUSTOMER_DISCONNECT</masterLabel>
+        <translation><!-- CUSTOMER_DISCONNECT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPIRED</masterLabel>
+        <translation><!-- EXPIRED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELECOM_PROBLEM</masterLabel>
+        <translation><!-- TELECOM_PROBLEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THIRD_PARTY_DISCONNECT</masterLabel>
+        <translation><!-- THIRD_PARTY_DISCONNECT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

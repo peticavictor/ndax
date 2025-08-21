@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_if_is_PSR</name>
+        <label>Check if is PSR</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_PSR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_PSRs</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Delete_PSR</targetReference>
+            </connector>
+            <label>Has PSR</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Case - before delete: assign owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - before delete: assign owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_PSR</name>
+        <label>Delete PSR</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Get_PSRs</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_PSRs</name>
+        <label>Get PSRs</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_is_PSR</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>WorkItemId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PendingServiceRouting</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Assign_owner_Id</name>
+        <label>Assign owner Id</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_PSRs</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_owner_Id</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

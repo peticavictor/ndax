@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AC CTI 轉接器</value>
+    </caseValues>
+    <layouts>
+        <layout>AC CTI Adapter Layout - August 2020</layout>
+        <sections>
+            <label><!-- Single SignOn (SSO) --></label>
+            <section>Single SignOn (SSO)</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>CTI 轉接器</nameFieldLabel>
+</CustomObjectTranslation>

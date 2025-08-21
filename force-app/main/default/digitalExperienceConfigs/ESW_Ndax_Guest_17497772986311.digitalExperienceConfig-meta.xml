@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ESW_Ndax_Guest_1749777298631</label>
+    <site>
+        <urlPathPrefix>ESWNdaxGuest1749777298631</urlPathPrefix>
+    </site>
+    <space>site/ESW_Ndax_Guest_17497772986311</space>
+</DigitalExperienceConfig>

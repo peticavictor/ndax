@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Case_Status</name>
+        <label>Check Case Status</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_is_Closed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Incoming</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Reopen_Case</targetReference>
+            </connector>
+            <label>Case is Closed</label>
+        </rules>
+        <rules>
+            <name>Case_waiting_for_customer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waiting for Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Incoming</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_response_recieved</targetReference>
+            </connector>
+            <label>Case waiting for customer</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Case Reopen {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Reopen</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Case_response_recieved</name>
+        <label>Case response recieved</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Parent.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Response Received</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Reopen_Case</name>
+        <label>Reopen Case</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Parent.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Case_Status</targetReference>
+        </connector>
+        <object>EmailMessage</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

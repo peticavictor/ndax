@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Didn&apos;t get the email</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Didn&apos;t get the email</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;We kindly request a brief proof-of-identity check before proceeding with your request. This ensures that the request comes from the verified account holder and keeps your account secure.&lt;/p&gt;
+&lt;p&gt;To complete the process, please follow these simple steps:&lt;/p&gt;
+&lt;p&gt;From the email address associated with your Ndax account OR your new email address, send us an email to support@ndax.io with a selfie of yourself holding a handwritten note with today&apos;s date and the words &quot;Email Change&quot; and &quot;Ndax&quot;. Please ensure to include your old email address in the note. This will help us verify that the request is legitimate and coming from you.&lt;/p&gt;
+&lt;p&gt;Include the new email address that you want to use for Ndax going forward in the email.&lt;/p&gt;
+&lt;p&gt;Please ensure that your arms and shoulders are clearly visible in the photo and that you are holding the note in your hand.&lt;/p&gt;
+&lt;p&gt;Once our team receives the necessary documents, they will complete your email change request as soon as possible.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

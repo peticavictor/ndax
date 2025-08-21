@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <inlineHelpText>Used to classify specific issues. It may also be used to determine the
+        additional agent skills to solve this case in the future.</inlineHelpText>
+    <label>Sub-Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2FA</fullName>
+                <default>false</default>
+                <label>2FA</label>
+            </value>
+            <value>
+                <fullName>Advanced trading</fullName>
+                <default>false</default>
+                <label>Advanced trading</label>
+            </value>
+            <value>
+                <fullName>Appropriateness questionnaire</fullName>
+                <default>false</default>
+                <label>Appropriateness questionnaire</label>
+            </value>
+            <value>
+                <fullName>Bonding</fullName>
+                <default>false</default>
+                <label>Bonding</label>
+            </value>
+            <value>
+                <fullName>Business account</fullName>
+                <default>false</default>
+                <label>Business account</label>
+            </value>
+            <value>
+                <fullName>Business application</fullName>
+                <default>false</default>
+                <label>Business application</label>
+            </value>
+            <value>
+                <fullName>Change (Legal name, email, phone number, DOB)</fullName>
+                <default>false</default>
+                <label>Change (Legal name, email, phone number, DOB)</label>
+            </value>
+            <value>
+                <fullName>Close account</fullName>
+                <default>false</default>
+                <label>Close account</label>
+            </value>
+            <value>
+                <fullName>Crypto</fullName>
+                <default>false</default>
+                <label>Crypto</label>
+            </value>
+            <value>
+                <fullName>Duplicate accounts</fullName>
+                <default>false</default>
+                <label>Duplicate accounts</label>
+            </value>
+            <value>
+                <fullName>EFT</fullName>
+                <default>false</default>
+                <label>EFT</label>
+            </value>
+            <value>
+                <fullName>E-transfers</fullName>
+                <default>false</default>
+                <label>E-transfers</label>
+            </value>
+            <value>
+                <fullName>Forgot username/password</fullName>
+                <default>false</default>
+                <label>Forgot username/password</label>
+            </value>
+            <value>
+                <fullName>General feedback</fullName>
+                <default>false</default>
+                <label>General feedback</label>
+            </value>
+            <value>
+                <fullName>General trading question (fees, order type)</fullName>
+                <default>false</default>
+                <label>General trading question (fees, order type)</label>
+            </value>
+            <value>
+                <fullName>Hacked/compromised account</fullName>
+                <default>false</default>
+                <label>Hacked/compromised account</label>
+            </value>
+            <value>
+                <fullName>Internal transfers</fullName>
+                <default>false</default>
+                <label>Internal transfers</label>
+            </value>
+            <value>
+                <fullName>Investment limits</fullName>
+                <default>false</default>
+                <label>Investment limits</label>
+            </value>
+            <value>
+                <fullName>Law enforcement requests</fullName>
+                <default>false</default>
+                <label>Law enforcement requests</label>
+            </value>
+            <value>
+                <fullName>Locked account</fullName>
+                <default>false</default>
+                <label>Locked account</label>
+            </value>
+            <value>
+                <fullName>Manual verification</fullName>
+                <default>false</default>
+                <label>Manual verification</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Newsletters</fullName>
+                <default>false</default>
+                <label>Newsletters</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Payouts</fullName>
+                <default>false</default>
+                <label>Payouts</label>
+            </value>
+            <value>
+                <fullName>Portfolio</fullName>
+                <default>false</default>
+                <label>Portfolio</label>
+            </value>
+            <value>
+                <fullName>Recurring purchases</fullName>
+                <default>false</default>
+                <label>Recurring purchases</label>
+            </value>
+            <value>
+                <fullName>Redemption (unbonding)</fullName>
+                <default>false</default>
+                <label>Redemption (unbonding)</label>
+            </value>
+            <value>
+                <fullName>Regulatory status</fullName>
+                <default>false</default>
+                <label>Regulatory status</label>
+            </value>
+            <value>
+                <fullName>Scam/fraud detected</fullName>
+                <default>false</default>
+                <label>Scam/fraud detected</label>
+            </value>
+            <value>
+                <fullName>Service complaints</fullName>
+                <default>false</default>
+                <label>Service complaints</label>
+            </value>
+            <value>
+                <fullName>Social - no support required</fullName>
+                <default>false</default>
+                <label>Social - no support required</label>
+            </value>
+            <value>
+                <fullName>Staking questionnaire</fullName>
+                <default>false</default>
+                <label>Staking questionnaire</label>
+            </value>
+            <value>
+                <fullName>Trusted contact person</fullName>
+                <default>false</default>
+                <label>Trusted contact person</label>
+            </value>
+            <value>
+                <fullName>Wire</fullName>
+                <default>false</default>
+                <label>Wire</label>
+            </value>
+            <value>
+                <fullName>Withdrawal unavailable</fullName>
+                <default>false</default>
+                <label>Withdrawal unavailable</label>
+            </value>
+            <value>
+                <fullName>Canadian Dollar (CAD) Withdrawal</fullName>
+                <default>false</default>
+                <label>Canadian Dollar (CAD) Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Cryptocurrency Withdrawals</fullName>
+                <default>false</default>
+                <label>Cryptocurrency Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Internal Transfer</fullName>
+                <default>false</default>
+                <label>Internal Transfer</label>
+            </value>
+            <value>
+                <fullName>CAD Withdrawals</fullName>
+                <default>false</default>
+                <label>CAD Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Crypto Withdrawals</fullName>
+                <default>false</default>
+                <label>Crypto Withdrawals</label>
+            </value>
+            <value>
+                <fullName>CAD Deposit</fullName>
+                <default>false</default>
+                <label>CAD Deposit</label>
+            </value>
+            <value>
+                <fullName>Crypto Deposit</fullName>
+                <default>false</default>
+                <label>Crypto Deposit</label>
+            </value>
+            <value>
+                <fullName>How do I create an NDAX account?</fullName>
+                <default>false</default>
+                <label>How do I create an NDAX account?</label>
+            </value>
+            <value>
+                <fullName>How do I download the mobile app?</fullName>
+                <default>false</default>
+                <label>How do I download the mobile app?</label>
+            </value>
+            <value>
+                <fullName>Who is eligible to open an NDAX account?</fullName>
+                <default>false</default>
+                <label>Who is eligible to open an NDAX account?</label>
+            </value>
+            <value>
+                <fullName>Verification question</fullName>
+                <default>false</default>
+                <label>Verification question</label>
+            </value>
+            <value>
+                <fullName>Canadian Dollar (CAD) Deposit</fullName>
+                <default>false</default>
+                <label>Canadian Dollar (CAD) Deposit</label>
+            </value>
+            <value>
+                <fullName>Cryptocurrency Deposit</fullName>
+                <default>false</default>
+                <label>Cryptocurrency Deposit</label>
+            </value>
+            <value>
+                <fullName>Is NDAX safe?</fullName>
+                <default>false</default>
+                <label>Is NDAX safe?</label>
+            </value>
+            <value>
+                <fullName>My account was compromised</fullName>
+                <default>false</default>
+                <label>My account was compromised</label>
+            </value>
+            <value>
+                <fullName>I would like to report fraud or a scam</fullName>
+                <default>false</default>
+                <label>I would like to report fraud or a scam</label>
+            </value>
+            <value>
+                <fullName>Law enforcement/regulatory request</fullName>
+                <default>false</default>
+                <label>Law enforcement/regulatory request</label>
+            </value>
+            <value>
+                <fullName>How do I buy cryptocurrency?</fullName>
+                <default>false</default>
+                <label>How do I buy cryptocurrency?</label>
+            </value>
+            <value>
+                <fullName>How do I sell cryptocurrency?</fullName>
+                <default>false</default>
+                <label>How do I sell cryptocurrency?</label>
+            </value>
+            <value>
+                <fullName>How do I cancel an open order?</fullName>
+                <default>false</default>
+                <label>How do I cancel an open order?</label>
+            </value>
+            <value>
+                <fullName>Trading fees and limits</fullName>
+                <default>false</default>
+                <label>Trading fees and limits</label>
+            </value>
+            <value>
+                <fullName>Advanced orders</fullName>
+                <default>false</default>
+                <label>Advanced orders</label>
+            </value>
+            <value>
+                <fullName>How do I track my portfolio performance?</fullName>
+                <default>false</default>
+                <label>How do I track my portfolio performance?</label>
+            </value>
+            <value>
+                <fullName>I forgot my username/password</fullName>
+                <default>false</default>
+                <label>I forgot my username/password</label>
+            </value>
+            <value>
+                <fullName>How do I close my account?</fullName>
+                <default>false</default>
+                <label>How do I close my account?</label>
+            </value>
+            <value>
+                <fullName>How do I update my account information?</fullName>
+                <default>false</default>
+                <label>How do I update my account information?</label>
+            </value>
+            <value>
+                <fullName>Why is my account locked/disabled?</fullName>
+                <default>false</default>
+                <label>Why is my account locked/disabled?</label>
+            </value>
+            <value>
+                <fullName>I am not receiving emails from NDAX</fullName>
+                <default>false</default>
+                <label>I am not receiving emails from NDAX</label>
+            </value>
+            <value>
+                <fullName>Why am I being asked to update my account information?</fullName>
+                <default>false</default>
+                <label>Why am I being asked to update my account information?</label>
+            </value>
+            <value>
+                <fullName>Activating 2FA</fullName>
+                <default>false</default>
+                <label>Activating 2FA</label>
+            </value>
+            <value>
+                <fullName>Resetting my 2FA</fullName>
+                <default>false</default>
+                <label>Resetting my 2FA</label>
+            </value>
+            <value>
+                <fullName>2FA reset timeframe</fullName>
+                <default>false</default>
+                <label>2FA reset timeframe</label>
+            </value>
+            <value>
+                <fullName>I can not find my 2FA code</fullName>
+                <default>false</default>
+                <label>I can not find my 2FA code</label>
+            </value>
+            <value>
+                <fullName>How do I cancel my staking subscription?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>How do I cancel my staking subscription?</label>
+            </value>
+            <value>
+                <fullName>How do I stake on Ndax?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>How do I stake on Ndax?</label>
+            </value>
+            <value>
+                <fullName>How much does NDAX pay in staking rewards?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>How much does NDAX pay in staking rewards?</label>
+            </value>
+            <value>
+                <fullName>My 2FA code is not working</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>My 2FA code is not working</label>
+            </value>
+            <value>
+                <fullName>When will I earn my staking rewards?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>When will I earn my staking rewards?</label>
+            </value>
+            <value>
+                <fullName>Which crypto assets are available for staking?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Which crypto assets are available for staking?</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Trading</controllingFieldValue>
+            <valueName>Advanced trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trading</controllingFieldValue>
+            <valueName>General trading question (fees, order type)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trading</controllingFieldValue>
+            <valueName>Portfolio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trading</controllingFieldValue>
+            <valueName>Recurring purchases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deposits</controllingFieldValue>
+            <controllingFieldValue>Withdrawals &amp; Internal Transfers</controllingFieldValue>
+            <valueName>Crypto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deposits</controllingFieldValue>
+            <controllingFieldValue>Withdrawals &amp; Internal Transfers</controllingFieldValue>
+            <valueName>E-transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deposits</controllingFieldValue>
+            <controllingFieldValue>Withdrawals &amp; Internal Transfers</controllingFieldValue>
+            <valueName>Internal transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deposits</controllingFieldValue>
+            <valueName>Wire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Withdrawals &amp; Internal Transfers</controllingFieldValue>
+            <valueName>EFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Withdrawals &amp; Internal Transfers</controllingFieldValue>
+            <valueName>Withdrawal unavailable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Staking</controllingFieldValue>
+            <valueName>Bonding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Staking</controllingFieldValue>
+            <controllingFieldValue>Referral Program</controllingFieldValue>
+            <valueName>Payouts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Staking</controllingFieldValue>
+            <valueName>Redemption (unbonding)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>General feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Newsletters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Service complaints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Social - no support required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Appropriateness questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Duplicate accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Hacked/compromised account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Regulatory status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Scam/fraud detected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Staking questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance &amp; Regulation - Other</controllingFieldValue>
+            <valueName>Trusted contact person</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>2FA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Business account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Change (Legal name, email, phone number, DOB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Close account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Forgot username/password</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Locked account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Management</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppGlobalOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <callbackUrl>https://login.salesforce.com</callbackUrl>
+    <certificate>MIIDWzCCAkOgAwIBAgIUHIXKnbiTq2/9XCd+YQcWJo8GrRgwDQYJKoZIhvcNAQEL
+BQAwPTELMAkGA1UEBhMCQ0ExCzAJBgNVBAgMAkFCMSEwHwYDVQQKDBhJbnRlcm5l
+dCBXaWRnaXRzIFB0eSBMdGQwHhcNMjUwNjE2MTgzODM2WhcNMzUwNjE0MTgzODM2
+WjA9MQswCQYDVQQGEwJDQTELMAkGA1UECAwCQUIxITAfBgNVBAoMGEludGVybmV0
+IFdpZGdpdHMgUHR5IEx0ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+ALTp2ARmIPkIWrf2jK7RmYRUIkN9ggi8zTbD2padiic1Z68ZpOe9zYILKDdeNnam
+++WHKKOfsNv4gIrV1joHTGy6vDS7Tw8nBMj8sQabGiZUYw+CmLB/nWyl/UcnTavZ
+JeMUuYFMZ0j3NhnNbTDR/W4ROmdArmWwqQ0aVzI6IRAJHCxy2zApEnDer9m7ymIg
+lSeE4rj0VSDvzH8OqwzTewMuJJalD++o8Zf/HHTF2KTcAEY08wN/NCxvHliQOOen
+Y42zTdPXcsvw7DnSwRCtPjXfGPWBjMg1lhe4lPsNVlkxq8X08+KKiP9l1uU4hwAA
+UGROws9fa3wXrRK7NP12PcsCAwEAAaNTMFEwHQYDVR0OBBYEFAxT7sLBz6cfDjtX
+cQqUL3KUevlzMB8GA1UdIwQYMBaAFAxT7sLBz6cfDjtXcQqUL3KUevlzMA8GA1Ud
+EwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAGjyu66d13RPsQ0b2z4tzYYo
+Khmj17xqvoYyRpYOaB6j/kLVXshvVhE/DEiSL3F07Zt9WR5+fP4z684gDtpsF/J0
+Kt2La+x/lc+k/M1SlFYTefPwmPPXZY0oC82QaACCciRso5JV4SzLoXQQ4cZIMClO
+0/UBbpa9uYZZvuTce0VXQY51UPS9xQ04SAjUndxQAVot/9q3v5nXNyRTY7vm0ZAs
+4kznASQOgHqj+gZbk/MQq/uT0Xl3B5HMGfRuuqp0A02EdtZrSxyCP0JjFB6/PNgA
+C2+3tO0KmHAxi3tTT9lY8V/zgsEm9d6+Na+d6PrhkENeqU+7nIx9yL3IAt/XWHw=</certificate>
+    <consumerKey>3MVG9bmlmX4LX1ZvB3SE4PVn7D.n0UXwN0WK77psorSX2Xf1eCGhYJ806AoUhzFWeMHQsvwtcwOQR7yWuHRlh</consumerKey>
+    <externalClientApplication>ndax_staging_contact_center3</externalClientApplication>
+    <isClientCredentialsFlowEnabled>false</isClientCredentialsFlowEnabled>
+    <isCodeCredFlowEnabled>false</isCodeCredFlowEnabled>
+    <isCodeCredPostOnly>false</isCodeCredPostOnly>
+    <isConsumerSecretOptional>false</isConsumerSecretOptional>
+    <isDeviceFlowEnabled>false</isDeviceFlowEnabled>
+    <isIntrospectAllTokens>false</isIntrospectAllTokens>
+    <isNamedUserJwtEnabled>true</isNamedUserJwtEnabled>
+    <isPkceRequired>true</isPkceRequired>
+    <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+    <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+    <isSecretRequiredForTokenExchange>true</isSecretRequiredForTokenExchange>
+    <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+    <label>ndax_staging_contact_center3_glbloauth</label>
+    <shouldRotateConsumerKey>false</shouldRotateConsumerKey>
+    <shouldRotateConsumerSecret>false</shouldRotateConsumerSecret>
+</ExtlClntAppGlobalOauthSettings>

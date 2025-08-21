@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>How do I cancel my staking on mobile web?</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>How do I cancel my staking on mobile web?</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>1.	Log in to your Ndax account.
+2.	Tap the Ndax logo at the top left
+3.	Tap on Staking
+4.	Scroll through the list of assets you have staked and tap on the 3 dots button next to your &apos;Active Subscriptions&apos;
+5. Tap &apos;Unstake&apos;
+5.	Select either &apos;Full amount&apos; or &apos;Partial&apos;
+	If you selected &apos;Partial&apos;, choose the amount or percentage you would like un-staked.
+6.	Select &apos;Standard&apos; or &apos;Instant&apos; redemption (depending on your plan, instant redemption might not be available)
+7.	If you selected &apos;Partial&apos;, choose the amount or percentage you would like un-staked
+8.	Tap the green &apos;Confirm&apos; button 
+
+Please note that there is an un-bonding period between 1-28 days, depending on the staking plan you have. Once the un-bonding period is complete, your crypto will return to your Ndax wallet.</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

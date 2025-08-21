@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Withdrawal timeframs, fees and limits Crypto</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Withdrawal timeframs, fees and limits Crypto</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Fees:&lt;/strong&gt; Withdrawal fees for Cryptocurrency vary depending on the coin and blockchain. All cryptocurrency withdrawal fees are a flat fee. Visit our fee page for our up-to-date fees. Ndax Fees: Trading, Deposit &amp; Withdrawal Fees.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Timeframe:&lt;/strong&gt; Cryptocurrency withdrawals will be processed 5 minutes after email confirmation. The 5-minute grace period will appear as a delayed status which gives our clients the option to cancel their withdrawal if any errors are made. Once processed, your withdrawal will be sent to the blockchain. Blockchain time frames vary on the coin, blockchain congestion and the number of confirmations your destination wallet requires.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Limits:&lt;/strong&gt; There are no withdrawal limits for crypto.&lt;/li&gt;
+&lt;/ul&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

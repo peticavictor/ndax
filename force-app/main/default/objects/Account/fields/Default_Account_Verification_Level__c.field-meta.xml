@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Account_Verification_Level__c</fullName>
+    <label>Default Account Verification Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Verified (0)</fullName>
+                <default>false</default>
+                <label>Not Verified (0)</label>
+            </value>
+            <value>
+                <fullName>Verified with restrictions (1)</fullName>
+                <default>false</default>
+                <label>Verified with restrictions (1)</label>
+            </value>
+            <value>
+                <fullName>Verified (2)</fullName>
+                <default>false</default>
+                <label>Verified (2)</label>
+            </value>
+            <value>
+                <fullName>Liquidation Only (4)</fullName>
+                <default>false</default>
+                <label>Liquidation Only (4)</label>
+            </value>
+            <value>
+                <fullName>Professional (5)</fullName>
+                <default>false</default>
+                <label>Professional (5)</label>
+            </value>
+            <value>
+                <fullName>Politically Exposed Person (6)</fullName>
+                <default>false</default>
+                <label>Politically Exposed Person (6)</label>
+            </value>
+            <value>
+                <fullName>Market Makers (7)</fullName>
+                <default>false</default>
+                <label>Market Makers (7)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

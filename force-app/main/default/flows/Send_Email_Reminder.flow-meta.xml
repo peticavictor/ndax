@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Reminder</name>
+        <label>Send Email Reminder</label>
+        <locationX>182</locationX>
+        <locationY>468</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Wait_for_3_Days</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>ReminderSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>ReminderEmailText</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.ContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>addThreadingTokenToBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>addThreadingTokenToSubject</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Status_is_still_Waiting_on_Customer_1</name>
+        <label>Status is still Waiting on Customer?</label>
+        <locationX>380</locationX>
+        <locationY>360</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waiting for Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Reminder</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_is_still_Waiting_on_Customer_2</name>
+        <label>Status is still Waiting on Customer?</label>
+        <locationX>182</locationX>
+        <locationY>684</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waiting for Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Close_Case</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>TwoDaysAgo</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() - 2</expression>
+    </formulas>
+    <interviewLabel>Send Email Reminder {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Email Reminder</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Close_Case</name>
+        <label>Close Case</label>
+        <locationX>50</locationX>
+        <locationY>792</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Wait_for_2_Days</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Waiting for Customer</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2025-06-01</startDate>
+            <startTime>08:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>ReminderEmailText</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello {!$Record.Contact.FirstName},
+
+Please provide the information needed to resolve Case #{!$Record.CaseNumber}.
+If we do not hear back from you within 72 hours, your case will be closed.
+However, you can easily reopen this case by replying to this email.
+
+Thanks,
+Ndax Support Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ReminderSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Reminder:  Please provide the information needed to resolve Case #{!$Record.CaseNumber}</text>
+    </textTemplates>
+    <waits>
+        <name>Wait_for_2_Days</name>
+        <elementSubtype>WaitDuration</elementSubtype>
+        <label>Wait for 2 Days</label>
+        <locationX>380</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>Status_is_still_Waiting_on_Customer_1</targetReference>
+            </connector>
+            <label>el_0</label>
+            <offset>2</offset>
+            <offsetUnit>Days</offsetUnit>
+        </waitEvents>
+    </waits>
+    <waits>
+        <name>Wait_for_3_Days</name>
+        <elementSubtype>WaitDuration</elementSubtype>
+        <label>Wait for 3 Days</label>
+        <locationX>182</locationX>
+        <locationY>576</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>Status_is_still_Waiting_on_Customer_2</targetReference>
+            </connector>
+            <label>el_1</label>
+            <offset>3</offset>
+            <offsetUnit>Days</offsetUnit>
+        </waitEvents>
+    </waits>
+</Flow>

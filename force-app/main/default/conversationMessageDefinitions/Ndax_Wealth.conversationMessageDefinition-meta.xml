@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Ndax Wealth</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Ndax Wealth</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;What is Ndax Wealth – OTC Desk?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ndax Wealth is a leading Over-The-Counter (OTC) trading desk, specifically designed to meet the needs of high-net-worth individuals and institutional investors seeking to trade digital assets of $25,000 or more.&lt;/p&gt;
+
+&lt;p&gt;We offer exclusive access to deep liquidity pools and a diverse range of digital assets, ensuring the efficient execution of high-volume trades with minimal slippage. Our clients benefit from a tailored, white-glove service, real-time market pricing, and a seamless trading experience.&lt;/p&gt;
+
+&lt;p&gt;For further details or to arrange a consultation, please schedule a meeting with one of our licensed Institutional Sales Associates at 
+&lt;a href=&quot;https://ndax.io/en/wealth-crypto-otc-exchange&quot; target=&quot;_blank&quot;&gt;ndax.io/en/wealth-crypto-otc-exchange&lt;/a&gt;, or reach out to us directly at 
+&lt;a href=&quot;mailto:otc@ndax.io&quot;&gt;otc@ndax.io&lt;/a&gt;.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

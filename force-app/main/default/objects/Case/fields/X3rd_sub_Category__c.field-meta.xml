@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_sub_Category__c</fullName>
+    <label>3rd sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>X2nd_sub_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I have not received my wire transfer</fullName>
+                <default>false</default>
+                <label>I have not received my wire transfer</label>
+            </value>
+            <value>
+                <fullName>How do I deposit via wire transfer?</fullName>
+                <default>false</default>
+                <label>How do I deposit via wire transfer?</label>
+            </value>
+            <value>
+                <fullName>Timeframe, fees and limits</fullName>
+                <default>false</default>
+                <label>Timeframe, fees and limits</label>
+            </value>
+            <value>
+                <fullName>How do I upload a wire receipt?</fullName>
+                <default>false</default>
+                <label>How do I upload a wire receipt?</label>
+            </value>
+            <value>
+                <fullName>I have not received my Interac e-Transfer</fullName>
+                <default>false</default>
+                <label>I have not received my Interac e-Transfer</label>
+            </value>
+            <value>
+                <fullName>How do I deposit via Interac e-Transfer?</fullName>
+                <default>false</default>
+                <label>How do I deposit via Interac e-Transfer?</label>
+            </value>
+            <value>
+                <fullName>How do I locate my reference number?</fullName>
+                <default>false</default>
+                <label>How do I locate my reference number?</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Wire deposit</controllingFieldValue>
+            <valueName>I have not received my wire transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wire deposit</controllingFieldValue>
+            <valueName>How do I deposit via wire transfer?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wire deposit</controllingFieldValue>
+            <controllingFieldValue>Interac e-Transfer</controllingFieldValue>
+            <valueName>Timeframe, fees and limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wire deposit</controllingFieldValue>
+            <valueName>How do I upload a wire receipt?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wire deposit</controllingFieldValue>
+            <controllingFieldValue>Interac e-Transfer</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interac e-Transfer</controllingFieldValue>
+            <valueName>I have not received my Interac e-Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interac e-Transfer</controllingFieldValue>
+            <valueName>How do I deposit via Interac e-Transfer?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interac e-Transfer</controllingFieldValue>
+            <valueName>How do I locate my reference number?</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

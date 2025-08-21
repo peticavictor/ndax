@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ESW_Einstein_Bot_NDAX_Embe_1744117397901</label>
+    <site>
+        <urlPathPrefix>ESWEinsteinBotNDAXEmbe1744117397901</urlPathPrefix>
+    </site>
+    <space>site/ESW_Einstein_Bot_NDAX_Embe_17441173979011</space>
+</DigitalExperienceConfig>

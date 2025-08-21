@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cryptocurrency_pair_s_of_interest__c</fullName>
+    <label>Cryptocurrency pair(s) of interest:</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SOL /CAD</fullName>
+                <default>false</default>
+                <label>SOL /CAD</label>
+            </value>
+            <value>
+                <fullName>XRP/CAD</fullName>
+                <default>false</default>
+                <label>XRP/CAD</label>
+            </value>
+            <value>
+                <fullName>BTC/CAD</fullName>
+                <default>false</default>
+                <label>BTC/CAD</label>
+            </value>
+            <value>
+                <fullName>USDC/CAD</fullName>
+                <default>false</default>
+                <label>USDC/CAD</label>
+            </value>
+            <value>
+                <fullName>ETH/CAD</fullName>
+                <default>false</default>
+                <label>ETH/CAD</label>
+            </value>
+            <value>
+                <fullName>SUI/CAD</fullName>
+                <default>false</default>
+                <label>SUI/CAD</label>
+            </value>
+            <value>
+                <fullName>ADA/CAD</fullName>
+                <default>false</default>
+                <label>ADA/CAD</label>
+            </value>
+            <value>
+                <fullName>LINK/CAD</fullName>
+                <default>false</default>
+                <label>LINK/CAD</label>
+            </value>
+            <value>
+                <fullName>DOGE/CAD</fullName>
+                <default>false</default>
+                <label>DOGE/CAD</label>
+            </value>
+            <value>
+                <fullName>XLM/CAD</fullName>
+                <default>false</default>
+                <label>XLM/CAD</label>
+            </value>
+            <value>
+                <fullName>ONDO/CAD</fullName>
+                <default>false</default>
+                <label>ONDO/CAD</label>
+            </value>
+            <value>
+                <fullName>AVAX/CAD</fullName>
+                <default>false</default>
+                <label>AVAX/CAD</label>
+            </value>
+            <value>
+                <fullName>JASMY/CAD</fullName>
+                <default>false</default>
+                <label>JASMY/CAD</label>
+            </value>
+            <value>
+                <fullName>HBAR/CAD</fullName>
+                <default>false</default>
+                <label>HBAR/CAD</label>
+            </value>
+            <value>
+                <fullName>NEAR/CAD</fullName>
+                <default>false</default>
+                <label>NEAR/CAD</label>
+            </value>
+            <value>
+                <fullName>PEPE/CAD</fullName>
+                <default>false</default>
+                <label>PEPE/CAD</label>
+            </value>
+            <value>
+                <fullName>BERA/CAD</fullName>
+                <default>false</default>
+                <label>BERA/CAD</label>
+            </value>
+            <value>
+                <fullName>DOT/CAD</fullName>
+                <default>false</default>
+                <label>DOT/CAD</label>
+            </value>
+            <value>
+                <fullName>POL/CAD</fullName>
+                <default>false</default>
+                <label>POL/CAD</label>
+            </value>
+            <value>
+                <fullName>RENDER/CAD</fullName>
+                <default>false</default>
+                <label>RENDER/CAD</label>
+            </value>
+            <value>
+                <fullName>SHIB/CAD</fullName>
+                <default>false</default>
+                <label>SHIB/CAD</label>
+            </value>
+            <value>
+                <fullName>FET/CAD</fullName>
+                <default>false</default>
+                <label>FET/CAD</label>
+            </value>
+            <value>
+                <fullName>GRT/CAD</fullName>
+                <default>false</default>
+                <label>GRT/CAD</label>
+            </value>
+            <value>
+                <fullName>LTC/CAD</fullName>
+                <default>false</default>
+                <label>LTC/CAD</label>
+            </value>
+            <value>
+                <fullName>TIA/CAD</fullName>
+                <default>false</default>
+                <label>TIA/CAD</label>
+            </value>
+            <value>
+                <fullName>GALA/CAD</fullName>
+                <default>false</default>
+                <label>GALA/CAD</label>
+            </value>
+            <value>
+                <fullName>S/CAD</fullName>
+                <default>false</default>
+                <label>S/CAD</label>
+            </value>
+            <value>
+                <fullName>ALGO/CAD</fullName>
+                <default>false</default>
+                <label>ALGO/CAD</label>
+            </value>
+            <value>
+                <fullName>VET/CAD</fullName>
+                <default>false</default>
+                <label>VET/CAD</label>
+            </value>
+            <value>
+                <fullName>QNT/CAD</fullName>
+                <default>false</default>
+                <label>QNT/CAD</label>
+            </value>
+            <value>
+                <fullName>PYTH/CAD</fullName>
+                <default>false</default>
+                <label>PYTH/CAD</label>
+            </value>
+            <value>
+                <fullName>MANA/CAD</fullName>
+                <default>false</default>
+                <label>MANA/CAD</label>
+            </value>
+            <value>
+                <fullName>AAVE/CAD</fullName>
+                <default>false</default>
+                <label>AAVE/CAD</label>
+            </value>
+            <value>
+                <fullName>EOS/CAD</fullName>
+                <default>false</default>
+                <label>EOS/CAD</label>
+            </value>
+            <value>
+                <fullName>ARB/CAD</fullName>
+                <default>false</default>
+                <label>ARB/CAD</label>
+            </value>
+            <value>
+                <fullName>SEI/CAD</fullName>
+                <default>false</default>
+                <label>SEI/CAD</label>
+            </value>
+            <value>
+                <fullName>TLM/CAD</fullName>
+                <default>false</default>
+                <label>TLM/CAD</label>
+            </value>
+            <value>
+                <fullName>TAO/CAD</fullName>
+                <default>false</default>
+                <label>TAO/CAD</label>
+            </value>
+            <value>
+                <fullName>INJ/CAD</fullName>
+                <default>false</default>
+                <label>INJ/CAD</label>
+            </value>
+            <value>
+                <fullName>UNI/CAD</fullName>
+                <default>false</default>
+                <label>UNI/CAD</label>
+            </value>
+            <value>
+                <fullName>COMP/CAD</fullName>
+                <default>false</default>
+                <label>COMP/CAD</label>
+            </value>
+            <value>
+                <fullName>SAND/CAD</fullName>
+                <default>false</default>
+                <label>SAND/CAD</label>
+            </value>
+            <value>
+                <fullName>CELO/CAD</fullName>
+                <default>false</default>
+                <label>CELO/CAD</label>
+            </value>
+            <value>
+                <fullName>ATOM/CAD</fullName>
+                <default>false</default>
+                <label>ATOM/CAD</label>
+            </value>
+            <value>
+                <fullName>APT/CAD</fullName>
+                <default>false</default>
+                <label>APT/CAD</label>
+            </value>
+            <value>
+                <fullName>OP/CAD</fullName>
+                <default>false</default>
+                <label>OP/CAD</label>
+            </value>
+            <value>
+                <fullName>AXS/CAD</fullName>
+                <default>false</default>
+                <label>AXS/CAD</label>
+            </value>
+            <value>
+                <fullName>BONK/CAD</fullName>
+                <default>false</default>
+                <label>BONK/CAD</label>
+            </value>
+            <value>
+                <fullName>CRV/CAD</fullName>
+                <default>false</default>
+                <label>CRV/CAD</label>
+            </value>
+            <value>
+                <fullName>BCH/CAD</fullName>
+                <default>false</default>
+                <label>BCH/CAD</label>
+            </value>
+            <value>
+                <fullName>WIF/CAD</fullName>
+                <default>false</default>
+                <label>WIF/CAD</label>
+            </value>
+            <value>
+                <fullName>FIL/CAD</fullName>
+                <default>false</default>
+                <label>FIL/CAD</label>
+            </value>
+            <value>
+                <fullName>A/CAD</fullName>
+                <default>false</default>
+                <label>A/CAD</label>
+            </value>
+            <value>
+                <fullName>ICP/CAD</fullName>
+                <default>false</default>
+                <label>ICP/CAD</label>
+            </value>
+            <value>
+                <fullName>VIRTUAL /CAD</fullName>
+                <default>false</default>
+                <label>VIRTUAL /CAD</label>
+            </value>
+            <value>
+                <fullName>PNUT/CAD</fullName>
+                <default>false</default>
+                <label>PNUT/CAD</label>
+            </value>
+            <value>
+                <fullName>IO/CAD</fullName>
+                <default>false</default>
+                <label>IO/CAD</label>
+            </value>
+            <value>
+                <fullName>TON/CAD</fullName>
+                <default>false</default>
+                <label>TON/CAD</label>
+            </value>
+            <value>
+                <fullName>ENA/CAD</fullName>
+                <default>false</default>
+                <label>ENA/CAD</label>
+            </value>
+            <value>
+                <fullName>MOODENG/CAD</fullName>
+                <default>false</default>
+                <label>MOODENG/CAD</label>
+            </value>
+            <value>
+                <fullName>FARTCOIN/CAD</fullName>
+                <default>false</default>
+                <label>FARTCOIN/CAD</label>
+            </value>
+            <value>
+                <fullName>USDT/CAD</fullName>
+                <default>false</default>
+                <label>USDT/CAD</label>
+            </value>
+            <value>
+                <fullName>FTM/CAD</fullName>
+                <default>false</default>
+                <label>FTM/CAD</label>
+            </value>
+            <value>
+                <fullName>LUNC/CAD</fullName>
+                <default>false</default>
+                <label>LUNC/CAD</label>
+            </value>
+            <value>
+                <fullName>RUNE/CAD</fullName>
+                <default>false</default>
+                <label>RUNE/CAD</label>
+            </value>
+            <value>
+                <fullName>USD/CAD</fullName>
+                <default>false</default>
+                <label>USD/CAD</label>
+            </value>
+            <value>
+                <fullName>KAVA/CAD</fullName>
+                <default>false</default>
+                <label>KAVA/CAD</label>
+            </value>
+            <value>
+                <fullName>STX/CAD</fullName>
+                <default>false</default>
+                <label>STX/CAD</label>
+            </value>
+            <value>
+                <fullName>DUSK/CAD</fullName>
+                <default>false</default>
+                <label>DUSK/CAD</label>
+            </value>
+            <value>
+                <fullName>ADA / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ADA / CAD</label>
+            </value>
+            <value>
+                <fullName>ALGO / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALGO / CAD</label>
+            </value>
+            <value>
+                <fullName>APT / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>APT / CAD</label>
+            </value>
+            <value>
+                <fullName>ARB / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ARB / CAD</label>
+            </value>
+            <value>
+                <fullName>ATOM / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ATOM / CAD</label>
+            </value>
+            <value>
+                <fullName>AVAX / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AVAX / CAD</label>
+            </value>
+            <value>
+                <fullName>AXS / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AXS / CAD</label>
+            </value>
+            <value>
+                <fullName>BERA / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BERA / CAD</label>
+            </value>
+            <value>
+                <fullName>BTC / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BTC / CAD</label>
+            </value>
+            <value>
+                <fullName>CELO / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CELO / CAD</label>
+            </value>
+            <value>
+                <fullName>COMP / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>COMP / CAD</label>
+            </value>
+            <value>
+                <fullName>DOGE / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DOGE / CAD</label>
+            </value>
+            <value>
+                <fullName>DOT / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DOT / CAD</label>
+            </value>
+            <value>
+                <fullName>EOS / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EOS / CAD</label>
+            </value>
+            <value>
+                <fullName>ETH / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ETH / CAD</label>
+            </value>
+            <value>
+                <fullName>FET / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FET / CAD</label>
+            </value>
+            <value>
+                <fullName>GALA / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GALA / CAD</label>
+            </value>
+            <value>
+                <fullName>GRT / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRT / CAD</label>
+            </value>
+            <value>
+                <fullName>HBAR / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HBAR / CAD</label>
+            </value>
+            <value>
+                <fullName>INJ / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>INJ / CAD</label>
+            </value>
+            <value>
+                <fullName>JASMY / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>JASMY / CAD</label>
+            </value>
+            <value>
+                <fullName>LINK / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LINK / CAD</label>
+            </value>
+            <value>
+                <fullName>LTC / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LTC / CAD</label>
+            </value>
+            <value>
+                <fullName>MANA / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MANA / CAD</label>
+            </value>
+            <value>
+                <fullName>NEAR / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NEAR / CAD</label>
+            </value>
+            <value>
+                <fullName>ONDO / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ONDO / CAD</label>
+            </value>
+            <value>
+                <fullName>OP / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OP / CAD</label>
+            </value>
+            <value>
+                <fullName>PEPE / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PEPE / CAD</label>
+            </value>
+            <value>
+                <fullName>POL / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>POL / CAD</label>
+            </value>
+            <value>
+                <fullName>PYTH / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PYTH / CAD</label>
+            </value>
+            <value>
+                <fullName>QNT / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>QNT / CAD</label>
+            </value>
+            <value>
+                <fullName>RENDER / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RENDER / CAD</label>
+            </value>
+            <value>
+                <fullName>S / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S / CAD</label>
+            </value>
+            <value>
+                <fullName>SAND / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SAND / CAD</label>
+            </value>
+            <value>
+                <fullName>SEI / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SEI / CAD</label>
+            </value>
+            <value>
+                <fullName>SHIB / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SHIB / CAD</label>
+            </value>
+            <value>
+                <fullName>SOL  / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SOL  / CAD</label>
+            </value>
+            <value>
+                <fullName>SUI / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUI / CAD</label>
+            </value>
+            <value>
+                <fullName>TAO / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TAO / CAD</label>
+            </value>
+            <value>
+                <fullName>TIA / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TIA / CAD</label>
+            </value>
+            <value>
+                <fullName>TLM / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TLM / CAD</label>
+            </value>
+            <value>
+                <fullName>UNI / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UNI / CAD</label>
+            </value>
+            <value>
+                <fullName>USDC / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>USDC / CAD</label>
+            </value>
+            <value>
+                <fullName>VET / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VET / CAD</label>
+            </value>
+            <value>
+                <fullName>XLM / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XLM / CAD</label>
+            </value>
+            <value>
+                <fullName>XRP / CAD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XRP / CAD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

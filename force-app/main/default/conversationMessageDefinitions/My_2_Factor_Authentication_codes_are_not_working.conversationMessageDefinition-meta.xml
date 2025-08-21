@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>My 2-Factor-Authentication codes are not working</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>My 2-Factor-Authentication codes are not working</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;We find that most 2FA-related issues are due to the time on your phone being out of sync.&lt;/p&gt;
+&lt;p&gt;Try these steps to ensure your phone&apos;s date &amp; time are set to automatic.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For Android:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Open Settings.&lt;/li&gt;
+    &lt;li&gt;Scroll down and tap on System.&lt;/li&gt;
+    &lt;li&gt;Tap on Date &amp; time.&lt;/li&gt;
+    &lt;li&gt;Toggle on the switch for Automatic date &amp; time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;For iPhone:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Open Settings.&lt;/li&gt;
+    &lt;li&gt;Scroll down and tap on General.&lt;/li&gt;
+    &lt;li&gt;Tap on Date &amp; Time.&lt;/li&gt;
+    &lt;li&gt;Toggle on the switch for Set Automatically.&lt;/li&gt;
+&lt;/ol&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

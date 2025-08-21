@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Guest_Or_Not</name>
+        <label>Guest Or Not</label>
+        <locationX>336</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Guest</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>userId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Account</targetReference>
+            </connector>
+            <label>Not Guest</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Exist_Account</name>
+        <label>If Exist Account</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exist_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Contacts</targetReference>
+            </connector>
+            <label>Exist Account</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>userId</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  AND(
+    CONTAINS({!$Record.MessagingPlatformKey}, &quot;uid:&quot;),
+    NOT(CONTAINS({!$Record.MessagingPlatformKey}, &quot;UNAUTH&quot;))
+  ),
+  MID(
+    {!$Record.MessagingPlatformKey},
+    FIND(&quot;uid:&quot;, {!$Record.MessagingPlatformKey}) + 4,
+    IF(
+      CONTAINS(
+        MID(
+          {!$Record.MessagingPlatformKey},
+          FIND(&quot;uid:&quot;, {!$Record.MessagingPlatformKey}) + 4,
+          LEN({!$Record.MessagingPlatformKey})
+        ),
+        &quot;/&quot;
+      ),
+      FIND(
+        &quot;/&quot;,
+        MID(
+          {!$Record.MessagingPlatformKey},
+          FIND(&quot;uid:&quot;, {!$Record.MessagingPlatformKey}) + 4,
+          LEN({!$Record.MessagingPlatformKey})
+        )
+      ) - 1,
+      LEN({!$Record.MessagingPlatformKey})
+    )
+  ),
+  &quot;&quot;
+)</expression>
+    </formulas>
+    <interviewLabel>Link Messaging User to Person Account by UID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Link Messaging User to Person Account by UID</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Exist_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>User_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>userId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Contacts</name>
+        <label>Get Contacts</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Account_and_Contact_and_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account_and_Contact_and_Name</name>
+        <label>Update Account and Contact and Name</label>
+        <locationX>50</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>Get_Contacts.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Get_Contacts.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Guest_Or_Not</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MessagingPlatformKey</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>MessagingEndUser</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

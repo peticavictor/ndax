@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Initiation Method --></label>
+    <name>amazonconnect__InitiationMethod__c</name>
+    <picklistValues>
+        <masterLabel>Callback</masterLabel>
+        <translation><!-- Callback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chat</masterLabel>
+        <translation><!-- Chat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inbound</masterLabel>
+        <translation><!-- Inbound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbound</masterLabel>
+        <translation><!-- Outbound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer</masterLabel>
+        <translation><!-- Transfer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

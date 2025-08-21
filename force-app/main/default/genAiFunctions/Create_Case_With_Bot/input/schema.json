@@ -1,0 +1,35 @@
+{
+  "required" : [ "messagingSessionId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseCategory" : {
+      "title" : "caseCategory",
+      "description" : "The category of the customer inquiry.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "caseDescription" : {
+      "title" : "caseDescription",
+      "description" : "Stores the details of the customer inquiry to be used for the case.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "customerEmail" : {
+      "title" : "customerEmail",
+      "description" : "The customer's email address.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "messagingSessionId" : {
+      "title" : "messagingSessionId",
+      "description" : "Stores session id from the chat conversation",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

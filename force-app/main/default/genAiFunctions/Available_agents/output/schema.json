@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "noOfOnlineAgents" : {
+      "title" : "noOfOnlineAgents",
+      "description" : "The number of online agents for the specified routing parameters. For example, if you route the work to a queue, it lists the number of online agents in the queue.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "nonBusinessHours" : {
+      "title" : "nonBusinessHours",
+      "description" : "Boolean value to check if business hours",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

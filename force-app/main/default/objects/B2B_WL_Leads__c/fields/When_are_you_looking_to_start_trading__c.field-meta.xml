@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_are_you_looking_to_start_trading__c</fullName>
+    <label>When are you looking to start trading?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>trade_execution_needs__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Right away</fullName>
+                <default>true</default>
+                <label>Right away</label>
+            </value>
+            <value>
+                <fullName>In the next month</fullName>
+                <default>false</default>
+                <label>In the next month</label>
+            </value>
+            <value>
+                <fullName>In the next 3 months</fullName>
+                <default>false</default>
+                <label>In the next 3 months</label>
+            </value>
+            <value>
+                <fullName>In the next 6 months</fullName>
+                <default>false</default>
+                <label>In the next 6 months</label>
+            </value>
+            <value>
+                <fullName>In the next year</fullName>
+                <default>false</default>
+                <label>In the next year</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Personal Trades</controllingFieldValue>
+            <controllingFieldValue>Business Trades</controllingFieldValue>
+            <controllingFieldValue>Third Party Trades</controllingFieldValue>
+            <valueName>Right away</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Trades</controllingFieldValue>
+            <controllingFieldValue>Business Trades</controllingFieldValue>
+            <controllingFieldValue>Third Party Trades</controllingFieldValue>
+            <valueName>In the next month</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Trades</controllingFieldValue>
+            <controllingFieldValue>Business Trades</controllingFieldValue>
+            <controllingFieldValue>Third Party Trades</controllingFieldValue>
+            <valueName>In the next 3 months</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Trades</controllingFieldValue>
+            <controllingFieldValue>Business Trades</controllingFieldValue>
+            <controllingFieldValue>Third Party Trades</controllingFieldValue>
+            <valueName>In the next 6 months</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Trades</controllingFieldValue>
+            <controllingFieldValue>Business Trades</controllingFieldValue>
+            <controllingFieldValue>Third Party Trades</controllingFieldValue>
+            <valueName>In the next year</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

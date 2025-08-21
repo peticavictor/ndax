@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>check_existing_case</name>
+        <label>check existing case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>delete</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_case</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Delete_Records_1</targetReference>
+            </connector>
+            <label>delete</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_is_case_and_is_closed</name>
+        <label>Check if is case and is closed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Check_if_is_case_and_is_closed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.WorkItemId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>500</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_case</targetReference>
+            </connector>
+            <label>Outcome 1 of Check if is case and is closed</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Remove from queue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Remove from queue</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_Records_1</name>
+        <label>Delete Records 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_case</name>
+        <label>Get case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>check_existing_case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WorkItemId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_is_case_and_is_closed</targetReference>
+        </connector>
+        <object>PendingServiceRouting</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "a85bd201-a062-4851-aecf-116e2eb62d22",
+  "headMarkup" : "<script type='text/javascript'>\n\tfunction initEmbeddedMessaging() {\n\t\ttry {\n\t\t\tembeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'\n\n\t\t\tembeddedservice_bootstrap.init(\n\t\t\t\t'00DDH000000B6gy',\n\t\t\t\t'Service_Messaging_with_Bot',\n\t\t\t\t'https://ndax--dev01.sandbox.my.site.com/ESWServiceMessagingwith1744310392505',\n\t\t\t\t{\n\t\t\t\t\tscrt2URL: 'https://ndax--dev01.sandbox.my.salesforce-scrt.com'\n\t\t\t\t}\n\t\t\t);\n\t\t} catch (err) {\n\t\t\tconsole.error('Error loading Embedded Messaging: ', err);\n\t\t}\n\t};\n</script>\n<script type='text/javascript' src='https://ndax--dev01.sandbox.my.site.com/ESWServiceMessagingwith1744310392505/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>\n\n<style>\n    :root {\n        --sds-c-input-text-color: black;\n        --sds-c-textarea-text-color: black;\n        --sds-c-textarea-text-color-focus: black;\n    }\n    ..slds-dropdown {\n        color: black !important;\n    }\n    .siteforceThemeLayoutStarter ::selection, .listContent, .article-list, .article-item, .selfServiceArticleListItem {\n        background: rgb(28, 24, 42) !important;\n    }\n</style>",
+  "id" : "a3736554-1e6a-4e8b-a65c-def44555fd8f",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Help Center Template",
+  "type" : "appPage"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botMlDomain>
+        <label>Ndax Unverified</label>
+        <mlIntents>
+            <developerName>Main_Menu</developerName>
+            <label>Main Menu</label>
+        </mlIntents>
+        <mlIntents>
+            <developerName>What_documents_are_accepted_for_identity_verification</developerName>
+            <label>What documents are accepted for identity verification?</label>
+        </mlIntents>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Customer_Description</developerName>
+            <extractionType>Value</extractionType>
+            <label>Customer Description</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Customer_Subject</developerName>
+            <extractionType>Value</extractionType>
+            <label>Customer Subject</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Member_ID</developerName>
+            <extractionType>Value</extractionType>
+            <label>User ID</label>
+        </mlSlotClasses>
+        <mlSlotClasses>
+            <dataType>Text</dataType>
+            <developerName>Support_Language</developerName>
+            <extractionType>Value</extractionType>
+            <label>Support Language</label>
+        </mlSlotClasses>
+        <name>Ndax_Unverified</name>
+    </botMlDomain>
+    <botSource>None</botSource>
+    <botUser>project.ndax@integrate2cloud.com.dev01</botUser>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>MessagingEndUser</SObjectType>
+            <fieldName>MessagingEndUser.ContactId</fieldName>
+            <messageType>EmbeddedMessaging</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>ContactId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>Contact Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>MessagingSession</SObjectType>
+            <fieldName>MessagingSession.MessagingEndUserId</fieldName>
+            <messageType>EmbeddedMessaging</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>EndUserId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>End User Id</label>
+    </contextVariables>
+    <contextVariables>
+        <contextVariableMappings>
+            <SObjectType>MessagingSession</SObjectType>
+            <fieldName>MessagingSession.Id</fieldName>
+            <messageType>EmbeddedMessaging</messageType>
+        </contextVariableMappings>
+        <contextVariableMappings>
+            <SObjectType>MessagingSession</SObjectType>
+            <fieldName>MessagingSession.Id</fieldName>
+            <messageType>Text</messageType>
+        </contextVariableMappings>
+        <dataType>Id</dataType>
+        <developerName>RoutableId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>Routable Id</label>
+    </contextVariables>
+    <defaultOutboundFlow>Messaging_Routing</defaultOutboundFlow>
+    <description>A bot from scratch.</description>
+    <label>Ndax Unverified (Invalid)</label>
+    <logPrivateConversationData>true</logPrivateConversationData>
+    <richContentEnabled>true</richContentEnabled>
+    <sessionTimeout>0</sessionTimeout>
+    <type>Bot</type>
+</Bot>

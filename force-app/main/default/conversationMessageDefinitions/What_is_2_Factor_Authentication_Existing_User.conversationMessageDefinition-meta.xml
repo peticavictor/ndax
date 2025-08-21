@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>What is 2-Factor Authentication - Existing User</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>What is 2-Factor Authentication - Existing User</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>Two-factor authentication (2FA) is an added security feature that protects your account over and above just using your username and password. Even if a hacker gets access to your username and password, 2FA will prevent access to your account. Basically, it is a method of confirming a user’s digital identity on their online accounts using two different authentication factors as a combination.
+
+The process is simple after you log in to an account with your username and password, you will be asked to a enter a 6-digit code from your two-factor authentication app. This codes refreshes every 30 seconds.
+
+ The 2FA  prevents unauthorized access to your account even if your password has been compromised.</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Have you uploaded your wire receipt? Ndax Wire AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Have you uploaded your wire receipt? Ndax Wire AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Tap on the wallet icon on the bottom toolbar&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Select the FIAT tab&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tap on CAD or USD&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tap DEPOSIT, then enter the amount you are looking to deposit&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Select WIRE TRANSFER&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Copy the information provided and initiate a wire transfer from your online banking platform’s website or in the branch with the information provided&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Once you send the wire transfer from your financial institution, scroll to the bottom of where you left off in the Ndax app, and click on UPLOAD RECEIPT&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Upload a copy of your wire receipt&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Click on DEPOSIT once finished&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Typically, it takes 0-1 business day for a wire transfer to land from your bank and into your NDAX CAD wallet.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

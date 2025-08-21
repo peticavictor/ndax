@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cryptocurrency pair(s) of interest: --></label>
+    <name>Cryptocurrency_pair_s_of_interest__c</name>
+    <picklistValues>
+        <masterLabel>A/CAD</masterLabel>
+        <translation><!-- A/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AAVE/CAD</masterLabel>
+        <translation><!-- AAVE/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADA/CAD</masterLabel>
+        <translation><!-- ADA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALGO/CAD</masterLabel>
+        <translation><!-- ALGO/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APT/CAD</masterLabel>
+        <translation><!-- APT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARB/CAD</masterLabel>
+        <translation><!-- ARB/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATOM/CAD</masterLabel>
+        <translation><!-- ATOM/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AVAX/CAD</masterLabel>
+        <translation><!-- AVAX/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AXS/CAD</masterLabel>
+        <translation><!-- AXS/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BCH/CAD</masterLabel>
+        <translation><!-- BCH/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BERA/CAD</masterLabel>
+        <translation><!-- BERA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BONK/CAD</masterLabel>
+        <translation><!-- BONK/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BTC/CAD</masterLabel>
+        <translation><!-- BTC/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CELO/CAD</masterLabel>
+        <translation><!-- CELO/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMP/CAD</masterLabel>
+        <translation><!-- COMP/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRV/CAD</masterLabel>
+        <translation><!-- CRV/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOGE/CAD</masterLabel>
+        <translation><!-- DOGE/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOT/CAD</masterLabel>
+        <translation><!-- DOT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUSK/CAD</masterLabel>
+        <translation><!-- DUSK/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENA/CAD</masterLabel>
+        <translation><!-- ENA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EOS/CAD</masterLabel>
+        <translation><!-- EOS/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ETH/CAD</masterLabel>
+        <translation><!-- ETH/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FARTCOIN/CAD</masterLabel>
+        <translation><!-- FARTCOIN/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FET/CAD</masterLabel>
+        <translation><!-- FET/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIL/CAD</masterLabel>
+        <translation><!-- FIL/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTM/CAD</masterLabel>
+        <translation><!-- FTM/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GALA/CAD</masterLabel>
+        <translation><!-- GALA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRT/CAD</masterLabel>
+        <translation><!-- GRT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HBAR/CAD</masterLabel>
+        <translation><!-- HBAR/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICP/CAD</masterLabel>
+        <translation><!-- ICP/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INJ/CAD</masterLabel>
+        <translation><!-- INJ/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IO/CAD</masterLabel>
+        <translation><!-- IO/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JASMY/CAD</masterLabel>
+        <translation><!-- JASMY/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAVA/CAD</masterLabel>
+        <translation><!-- KAVA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LINK/CAD</masterLabel>
+        <translation><!-- LINK/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTC/CAD</masterLabel>
+        <translation><!-- LTC/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LUNC/CAD</masterLabel>
+        <translation><!-- LUNC/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANA/CAD</masterLabel>
+        <translation><!-- MANA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOODENG/CAD</masterLabel>
+        <translation><!-- MOODENG/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEAR/CAD</masterLabel>
+        <translation><!-- NEAR/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONDO/CAD</masterLabel>
+        <translation><!-- ONDO/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OP/CAD</masterLabel>
+        <translation><!-- OP/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEPE/CAD</masterLabel>
+        <translation><!-- PEPE/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNUT/CAD</masterLabel>
+        <translation><!-- PNUT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POL/CAD</masterLabel>
+        <translation><!-- POL/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PYTH/CAD</masterLabel>
+        <translation><!-- PYTH/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QNT/CAD</masterLabel>
+        <translation><!-- QNT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RENDER/CAD</masterLabel>
+        <translation><!-- RENDER/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUNE/CAD</masterLabel>
+        <translation><!-- RUNE/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S/CAD</masterLabel>
+        <translation><!-- S/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAND/CAD</masterLabel>
+        <translation><!-- SAND/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEI/CAD</masterLabel>
+        <translation><!-- SEI/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SHIB/CAD</masterLabel>
+        <translation><!-- SHIB/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOL /CAD</masterLabel>
+        <translation><!-- SOL /CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STX/CAD</masterLabel>
+        <translation><!-- STX/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUI/CAD</masterLabel>
+        <translation><!-- SUI/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAO/CAD</masterLabel>
+        <translation><!-- TAO/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIA/CAD</masterLabel>
+        <translation><!-- TIA/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TLM/CAD</masterLabel>
+        <translation><!-- TLM/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TON/CAD</masterLabel>
+        <translation><!-- TON/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNI/CAD</masterLabel>
+        <translation><!-- UNI/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USD/CAD</masterLabel>
+        <translation><!-- USD/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USDC/CAD</masterLabel>
+        <translation><!-- USDC/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USDT/CAD</masterLabel>
+        <translation><!-- USDT/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VET/CAD</masterLabel>
+        <translation><!-- VET/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIRTUAL /CAD</masterLabel>
+        <translation><!-- VIRTUAL /CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIF/CAD</masterLabel>
+        <translation><!-- WIF/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XLM/CAD</masterLabel>
+        <translation><!-- XLM/CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XRP/CAD</masterLabel>
+        <translation><!-- XRP/CAD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

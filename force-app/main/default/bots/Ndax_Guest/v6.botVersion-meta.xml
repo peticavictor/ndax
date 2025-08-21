@@ -9409,6 +9409,8 @@ https://ndax.io/en/support/trading_and_investing/schedule-recurring-purchases</m
     </nlpProviders>
     <responseDelayMilliseconds>200</responseDelayMilliseconds>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
     <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

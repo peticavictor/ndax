@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi! I&apos;m Einstein, an AI assistant. I can do things like search for information, summarize records, and draft and revise emails. What can I help you with?</message>
+                <messageIdentifier>d758a5e9-66ec-46c5-9b4f-303aa2aa663c</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>add26f99-4570-40b5-bfdc-1cce9f85555b</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>141bca53-064a-4727-a68c-4399423cedc4</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Welcome</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Something went wrong. Try again.</message>
+                <messageIdentifier>741157c6-a7e7-4bc5-9de7-bfcc4a9ce680</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>b3d217a5-396f-4765-a53e-4a73a269549e</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>4885ed6e-6e02-443f-8279-7fdfd3a3c5e9</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Rich_Content_Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Error Handler</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>EmployeeCopilotPlanner</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationSystemDialogs>
+        <dialog>Rich_Content_Error_Handling</dialog>
+        <type>ErrorHandling</type>
+    </conversationSystemDialogs>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>Salesforce Application Name.</description>
+        <developerName>currentAppName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current App Name</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The API name of the Salesforce object (such as Account or Opportunity) associated with the record the user wants to interact with. Do not use this if the user is already talking about another object in the conversation.</description>
+        <developerName>currentObjectApiName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current Object Api Name</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>Type of Salesforce Page.</description>
+        <developerName>currentPageType</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current Page Type</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The ID of the record on the user&apos;s screen. It may not relate to the user&apos;s input. Only use this if the user input mentions &apos;this&apos;, &apos;current&apos;, &apos;the record&apos;, etc. If in doubt, don&apos;t use it.</description>
+        <developerName>currentRecordId</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Current Record Id</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
+    <surfacesEnabled>false</surfacesEnabled>
+</BotVersion>

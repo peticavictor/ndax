@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>가장 오래된 연락처 연령</label>
+    <name>amazonconnect__Oldest_Contact_Age__c</name>
+</CustomFieldTranslation>

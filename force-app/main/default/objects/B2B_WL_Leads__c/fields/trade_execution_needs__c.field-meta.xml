@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>trade_execution_needs__c</fullName>
+    <description>Which of the following best describes your trade execution needs:</description>
+    <label>Trade execution needs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Preferred_contact_method__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Personal Trades</fullName>
+                <default>false</default>
+                <label>Personal Trades</label>
+            </value>
+            <value>
+                <fullName>Business Trades</fullName>
+                <default>false</default>
+                <label>Business Trades</label>
+            </value>
+            <value>
+                <fullName>Third Party Trades</fullName>
+                <default>false</default>
+                <label>Third Party Trades</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>SMS</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Personal Trades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>SMS</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Business Trades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>SMS</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Third Party Trades</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

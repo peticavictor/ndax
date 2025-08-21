@@ -2100,6 +2100,24 @@ If you have received instructions on how to report your issue then please follow
                     <invocationActionName>Create_Case_With_Bot</invocationActionName>
                     <invocationActionType>flow</invocationActionType>
                     <invocationMappings>
+                        <parameterName>messagingSessionId</parameterName>
+                        <type>Input</type>
+                        <variableName>RoutableId</variableName>
+                        <variableType>ContextVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>customerEmail</parameterName>
+                        <type>Input</type>
+                        <variableName>Customer_Email</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>fullName</parameterName>
+                        <type>Input</type>
+                        <variableName>Guest_full_name</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
                         <parameterName>caseCategory</parameterName>
                         <type>Input</type>
                         <variableName>Category_Value</variableName>
@@ -2112,18 +2130,6 @@ If you have received instructions on how to report your issue then please follow
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
-                        <parameterName>customerEmail</parameterName>
-                        <type>Input</type>
-                        <variableName>Customer_Email</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>messagingSessionId</parameterName>
-                        <type>Input</type>
-                        <variableName>RoutableId</variableName>
-                        <variableType>ContextVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
                         <parameterName>caseRecord</parameterName>
                         <type>Output</type>
                         <variableName>caseRecord</variableName>
@@ -2131,7 +2137,7 @@ If you have received instructions on how to report your issue then please follow
                     </invocationMappings>
                 </botInvocation>
                 <type>Set</type>
-                <variableOperationIdentifier>28cf2bac-416d-40d1-bf42-eb9b71fb04ee</variableOperationIdentifier>
+                <variableOperationIdentifier>74879682-1c28-491e-8185-38146ee8bd2a</variableOperationIdentifier>
             </botVariableOperation>
             <stepIdentifier>2f491e2e-5a74-4ed5-9b74-94e6825372f4</stepIdentifier>
             <type>VariableOperation</type>
@@ -2182,9 +2188,9 @@ Case Number : {!caseRecord.CaseNumber}</message>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <type>Set</type>
-                    <variableOperationIdentifier>04947184-1132-4b2b-a1e7-18516b5b93e9</variableOperationIdentifier>
+                    <variableOperationIdentifier>b1306c84-ae06-47be-8616-9f79ace900e2</variableOperationIdentifier>
                 </botVariableOperation>
-                <stepIdentifier>d4db09b8-8b39-40a0-8149-fe4311222ceb</stepIdentifier>
+                <stepIdentifier>45557c43-7d7f-4d55-bc43-873a4f1e6ee7</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <conditionLogicType>And</conditionLogicType>
@@ -2194,25 +2200,13 @@ Case Number : {!caseRecord.CaseNumber}</message>
         <botSteps>
             <botVariableOperation>
                 <botInvocation>
-                    <invocationActionName>Create_Case_With_Bot</invocationActionName>
+                    <invocationActionName>Create_Case_with_Bot_with_no_Owner</invocationActionName>
                     <invocationActionType>flow</invocationActionType>
                     <invocationMappings>
                         <parameterName>messagingSessionId</parameterName>
                         <type>Input</type>
                         <variableName>RoutableId</variableName>
                         <variableType>ContextVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>caseCategory</parameterName>
-                        <type>Input</type>
-                        <variableName>Category_Value</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>customerEmail</parameterName>
-                        <type>Input</type>
-                        <variableName>Guest_email</variableName>
-                        <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
                         <parameterName>caseDescription</parameterName>
@@ -2227,6 +2221,24 @@ Case Number : {!caseRecord.CaseNumber}</message>
                         <variableType>ConversationVariable</variableType>
                     </invocationMappings>
                     <invocationMappings>
+                        <parameterName>customerEmail</parameterName>
+                        <type>Input</type>
+                        <variableName>Guest_email</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>caseCategory</parameterName>
+                        <type>Input</type>
+                        <variableName>Category_Value</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
+                        <parameterName>fullName</parameterName>
+                        <type>Input</type>
+                        <variableName>Guest_full_name</variableName>
+                        <variableType>ConversationVariable</variableType>
+                    </invocationMappings>
+                    <invocationMappings>
                         <parameterName>caseRecord</parameterName>
                         <type>Output</type>
                         <variableName>caseRecord</variableName>
@@ -2234,7 +2246,7 @@ Case Number : {!caseRecord.CaseNumber}</message>
                     </invocationMappings>
                 </botInvocation>
                 <type>Set</type>
-                <variableOperationIdentifier>a2f83cfd-437b-4f15-89f2-44de60adb2cc</variableOperationIdentifier>
+                <variableOperationIdentifier>9bade782-1950-4934-81cd-b405fcf1d065</variableOperationIdentifier>
             </botVariableOperation>
             <stepIdentifier>a7415223-e31d-4160-b7d0-db16a20bdc98</stepIdentifier>
             <type>VariableOperation</type>
@@ -8261,14 +8273,14 @@ Which best matches your inquiry?</message>
                 <botVariableOperation>
                     <botVariableOperands>
                         <sourceType>Value</sourceType>
-                        <sourceValue>Category_value</sourceValue>
+                        <sourceValue>Account Management</sourceValue>
                         <targetName>Category_Value</targetName>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <type>Set</type>
-                    <variableOperationIdentifier>dc4e1349-df45-44ff-9e62-849cade5c739</variableOperationIdentifier>
+                    <variableOperationIdentifier>58110c40-13e2-4f58-8400-7db9c46adc24</variableOperationIdentifier>
                 </botVariableOperation>
-                <stepIdentifier>64ea23da-4728-4c7b-99ba-0780b3599abb</stepIdentifier>
+                <stepIdentifier>a2519d7b-df27-486a-a70e-01f8fbbce680</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <botSteps>
@@ -8280,9 +8292,9 @@ Which best matches your inquiry?</message>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <type>Set</type>
-                    <variableOperationIdentifier>7e680472-17fa-4219-8bf4-88167479e187</variableOperationIdentifier>
+                    <variableOperationIdentifier>1bac8ea1-929b-4da8-ab48-c0b1ca5b1e3c</variableOperationIdentifier>
                 </botVariableOperation>
-                <stepIdentifier>f239dbea-f82f-4418-ade9-8ee24818eda9</stepIdentifier>
+                <stepIdentifier>4bc975ae-8712-4da1-adfd-387be99c3ec3</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <conditionLogicType>And</conditionLogicType>
@@ -9991,6 +10003,8 @@ https://ndax.io/en/support/trading_and_investing/schedule-recurring-purchases</m
     </nlpProviders>
     <responseDelayMilliseconds>200</responseDelayMilliseconds>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
     <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

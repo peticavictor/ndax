@@ -818,6 +818,31 @@ Try a different browser or use an incognito tab.</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
+        <botDialogGroup>Trading_Staking</botDialogGroup>
+        <botSteps>
+            <messageDefinition>
+                <messageDefinitionName>How_do_I_buy_cryptocurrency_mobile_web</messageDefinitionName>
+            </messageDefinition>
+            <stepIdentifier>c2f1b4af-c09c-4aa9-9ba2-a16a64b5334d</stepIdentifier>
+            <type>RichMessage</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <description>how to buy cryptocurrency</description>
+        <developerName>Buy_Cryptocurrency_Mobile_Web_Instructions</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Mobile Web Instructions</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
         <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
             <botMessages>
@@ -858,56 +883,6 @@ Try a different browser or use an incognito tab.</message>
         <developerName>update_legal_name_instructions</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Legal Name</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Trading_Staking</botDialogGroup>
-        <botSteps>
-            <messageDefinition>
-                <messageDefinitionName>How_do_I_buy_cryptocurrency_mobile_web</messageDefinitionName>
-            </messageDefinition>
-            <stepIdentifier>c2f1b4af-c09c-4aa9-9ba2-a16a64b5334d</stepIdentifier>
-            <type>RichMessage</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <description>how to buy cryptocurrency</description>
-        <developerName>Buy_Cryptocurrency_Mobile_Web_Instructions</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Mobile Web Instructions</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Trading_Staking</botDialogGroup>
-        <botSteps>
-            <messageDefinition>
-                <messageDefinitionName>How_do_I_buy_cryptocurrency_mobile_app</messageDefinitionName>
-            </messageDefinition>
-            <stepIdentifier>459a88e3-31d7-4e7c-af82-0cf1f338ce2c</stepIdentifier>
-            <type>RichMessage</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <description>how to buy cryptocurrency</description>
-        <developerName>Buy_Cryptocurrency_Mobile_App_Instructions</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Mobile App Instructions</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -979,6 +954,31 @@ Please ensure that your arms and shoulders are clearly visible in the photo and 
     <botDialogs>
         <botDialogGroup>Trading_Staking</botDialogGroup>
         <botSteps>
+            <messageDefinition>
+                <messageDefinitionName>How_do_I_buy_cryptocurrency_mobile_app</messageDefinitionName>
+            </messageDefinition>
+            <stepIdentifier>459a88e3-31d7-4e7c-af82-0cf1f338ce2c</stepIdentifier>
+            <type>RichMessage</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <description>how to buy cryptocurrency</description>
+        <developerName>Buy_Cryptocurrency_Mobile_App_Instructions</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Mobile App Instructions</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Trading_Staking</botDialogGroup>
+        <botSteps>
             <botNavigation>
                 <botNavigationLinks>
                     <targetBotDialog>Sell_Cryptocurrency_Desktop_Instructions</targetBotDialog>
@@ -1042,6 +1042,31 @@ Please ensure that your arms and shoulders are clearly visible in the photo and 
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
+        <botDialogGroup>Trading_Staking</botDialogGroup>
+        <botSteps>
+            <messageDefinition>
+                <messageDefinitionName>How_to_sell_cryptocurrency_desktop</messageDefinitionName>
+            </messageDefinition>
+            <stepIdentifier>70b8bee7-3392-4dab-9e8d-2cbfbbe6650f</stepIdentifier>
+            <type>RichMessage</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <description>how to sell cryptocurrency on desktop</description>
+        <developerName>Sell_Cryptocurrency_Desktop_Instructions</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Desktop Instructions</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
         <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
             <botVariableOperation>
@@ -1078,31 +1103,6 @@ Please ensure that your arms and shoulders are clearly visible in the photo and 
         <developerName>Update_information_Other</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Other</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Trading_Staking</botDialogGroup>
-        <botSteps>
-            <messageDefinition>
-                <messageDefinitionName>How_to_sell_cryptocurrency_desktop</messageDefinitionName>
-            </messageDefinition>
-            <stepIdentifier>70b8bee7-3392-4dab-9e8d-2cbfbbe6650f</stepIdentifier>
-            <type>RichMessage</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>ba2d8b30-5c3f-4b64-adde-4882ed15dd32</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <description>how to sell cryptocurrency on desktop</description>
-        <developerName>Sell_Cryptocurrency_Desktop_Instructions</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Desktop Instructions</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1157,6 +1157,84 @@ Please note that passwords are case-sensitive.</message>
         <developerName>Why_is_my_account_locked_disabled</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Why is my account locked/disabled</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
+        <botSteps>
+            <botVariableOperation>
+                <askCollectIfSet>false</askCollectIfSet>
+                <botMessages>
+                    <message>Do you have access to the email address associated with your Ndax account?</message>
+                    <messageIdentifier>462244b3-ce32-7e7a-8e99-1248a78a9a04</messageIdentifier>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>Yes</literalValue>
+                    <quickReplyOptionIdentifier>2ed3da24-e69a-2673-72ba-58699a46b6cb</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>No</literalValue>
+                    <quickReplyOptionIdentifier>86fa8acb-87bc-499e-2b9c-76c196b9805c</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>_Text</sourceName>
+                    <sourceType>StandardMlSlotClass</sourceType>
+                    <targetName>Access_To_Email</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <ignoreIntentRecognition>false</ignoreIntentRecognition>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+                <variableOperationIdentifier>75e19c49-fc0b-3bdf-a491-658a72052f6c</variableOperationIdentifier>
+            </botVariableOperation>
+            <stepIdentifier>8a97b0ac-eb40-4cb9-9dd5-47d313177c67</stepIdentifier>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botStepConditions>
+                <leftOperandName>Access_To_Email</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>Equals</operatorType>
+                <rightOperandValue>No</rightOperandValue>
+            </botStepConditions>
+            <botSteps>
+                <botMessages>
+                    <message>If you don&apos;t have access to the email address associated with your Ndax account, you will need to submit a request to have your email address updated.</message>
+                    <messageIdentifier>36156f58-81b1-ed80-4fe1-7a1f35fb9860</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>a149452d-45e5-8499-f166-1a85bada47b3</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Update_email_instructions</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>d21d0aae-f050-4f3c-8ce5-7611f1d660ee</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>23250435-bbf4-4590-9538-63d2786069a1</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>ed400c92-11b1-49e1-a4d7-14fd253d8c47</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>I_am_not_receiving_emails_from_NDAX</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>I am not receiving emails from Ndax</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1269,84 +1347,6 @@ carefully select the menu option that best suits your inquiry.</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
-        <botSteps>
-            <botVariableOperation>
-                <askCollectIfSet>false</askCollectIfSet>
-                <botMessages>
-                    <message>Do you have access to the email address associated with your Ndax account?</message>
-                    <messageIdentifier>462244b3-ce32-7e7a-8e99-1248a78a9a04</messageIdentifier>
-                </botMessages>
-                <botQuickReplyOptions>
-                    <literalValue>Yes</literalValue>
-                    <quickReplyOptionIdentifier>2ed3da24-e69a-2673-72ba-58699a46b6cb</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botQuickReplyOptions>
-                    <literalValue>No</literalValue>
-                    <quickReplyOptionIdentifier>86fa8acb-87bc-499e-2b9c-76c196b9805c</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botVariableOperands>
-                    <disableAutoFill>true</disableAutoFill>
-                    <sourceName>_Text</sourceName>
-                    <sourceType>StandardMlSlotClass</sourceType>
-                    <targetName>Access_To_Email</targetName>
-                    <targetType>ConversationVariable</targetType>
-                </botVariableOperands>
-                <ignoreIntentRecognition>false</ignoreIntentRecognition>
-                <optionalCollect>false</optionalCollect>
-                <quickReplyType>Static</quickReplyType>
-                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                <type>Collect</type>
-                <variableOperationIdentifier>75e19c49-fc0b-3bdf-a491-658a72052f6c</variableOperationIdentifier>
-            </botVariableOperation>
-            <stepIdentifier>8a97b0ac-eb40-4cb9-9dd5-47d313177c67</stepIdentifier>
-            <type>VariableOperation</type>
-        </botSteps>
-        <botSteps>
-            <botStepConditions>
-                <leftOperandName>Access_To_Email</leftOperandName>
-                <leftOperandType>ConversationVariable</leftOperandType>
-                <operatorType>Equals</operatorType>
-                <rightOperandValue>No</rightOperandValue>
-            </botStepConditions>
-            <botSteps>
-                <botMessages>
-                    <message>If you don&apos;t have access to the email address associated with your Ndax account, you will need to submit a request to have your email address updated.</message>
-                    <messageIdentifier>36156f58-81b1-ed80-4fe1-7a1f35fb9860</messageIdentifier>
-                </botMessages>
-                <stepIdentifier>a149452d-45e5-8499-f166-1a85bada47b3</stepIdentifier>
-                <type>Message</type>
-            </botSteps>
-            <botSteps>
-                <botNavigation>
-                    <botNavigationLinks>
-                        <targetBotDialog>Update_email_instructions</targetBotDialog>
-                    </botNavigationLinks>
-                    <type>Redirect</type>
-                </botNavigation>
-                <stepIdentifier>d21d0aae-f050-4f3c-8ce5-7611f1d660ee</stepIdentifier>
-                <type>Navigation</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>23250435-bbf4-4590-9538-63d2786069a1</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>ed400c92-11b1-49e1-a4d7-14fd253d8c47</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>I_am_not_receiving_emails_from_NDAX</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>I am not receiving emails from Ndax</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
         <botDialogGroup>Trading_Staking</botDialogGroup>
         <botSteps>
             <messageDefinition>
@@ -1369,6 +1369,32 @@ carefully select the menu option that best suits your inquiry.</message>
         <developerName>Sell_Cryptocurrency_Mobile_App_Instructions</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Mobile App Instructions</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>To ensure that we have your up-to-date information on file and to meet the
+regulatory requirements, we require users to update their information annually.</message>
+                <messageIdentifier>e10a2b17-c7d9-47f4-a8e5-2e9083a4195d</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>279563ec-5259-4224-97ae-fcb17e29590b</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>1f45698c-7d7b-410e-a323-2e13e203f324</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Why_am_I_being_asked_to_update_my_account_information</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Why am I being asked to update my account information?</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1418,32 +1444,6 @@ carefully select the menu option that best suits your inquiry.</message>
     <botDialogs>
         <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
-            <botMessages>
-                <message>To ensure that we have your up-to-date information on file and to meet the
-regulatory requirements, we require users to update their information annually.</message>
-                <messageIdentifier>e10a2b17-c7d9-47f4-a8e5-2e9083a4195d</messageIdentifier>
-            </botMessages>
-            <stepIdentifier>279563ec-5259-4224-97ae-fcb17e29590b</stepIdentifier>
-            <type>Message</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>1f45698c-7d7b-410e-a323-2e13e203f324</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Why_am_I_being_asked_to_update_my_account_information</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Why am I being asked to update my account information?</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
-        <botSteps>
             <botNavigation>
                 <botNavigationLinks>
                     <targetBotDialog>Business_hours_verification</targetBotDialog>
@@ -1456,6 +1456,38 @@ regulatory requirements, we require users to update their information annually.<
         <developerName>Other_Account_Managment</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Other</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>I am glad I could address your inquiry! Let me know if I can give you a hand with anything else.
+
+Have a great day! 😃</message>
+                <messageIdentifier>65560bdb-7144-4c3c-abe5-753815f14204</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>ac955d8d-3a75-4c0c-a568-efb529b337d8</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>EndChat</type>
+                </conversationSystemMessage>
+                <stepIdentifier>62a743ff-5505-4c97-aad2-5385e849e192</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>ad7bde35-1931-4fd2-92c4-94113625bca7</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>a75fa27b-3bd7-43a3-a4c5-2727a9a040e1</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Rich_Content_End_Chat</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>End Chat</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1550,56 +1582,6 @@ regulatory requirements, we require users to update their information annually.<
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botSteps>
-            <botMessages>
-                <message>I am glad I could address your inquiry! Let me know if I can give you a hand with anything else.
-
-Have a great day! 😃</message>
-                <messageIdentifier>65560bdb-7144-4c3c-abe5-753815f14204</messageIdentifier>
-            </botMessages>
-            <stepIdentifier>ac955d8d-3a75-4c0c-a568-efb529b337d8</stepIdentifier>
-            <type>Message</type>
-        </botSteps>
-        <botSteps>
-            <botSteps>
-                <conversationSystemMessage>
-                    <type>EndChat</type>
-                </conversationSystemMessage>
-                <stepIdentifier>62a743ff-5505-4c97-aad2-5385e849e192</stepIdentifier>
-                <type>SystemMessage</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>ad7bde35-1931-4fd2-92c4-94113625bca7</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
-        <botSteps>
-            <stepIdentifier>a75fa27b-3bd7-43a3-a4c5-2727a9a040e1</stepIdentifier>
-            <type>Wait</type>
-        </botSteps>
-        <developerName>Rich_Content_End_Chat</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>End Chat</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botSteps>
-            <botMessages>
-                <message>Sorry, I didn&apos;t understand that.</message>
-                <messageIdentifier>cc635714-d5e9-4fdd-a76e-bc0c03ff92ea</messageIdentifier>
-            </botMessages>
-            <stepIdentifier>87a6bc58-c60b-49f2-9ae8-f5f5c420133a</stepIdentifier>
-            <type>Message</type>
-        </botSteps>
-        <botSteps>
-            <stepIdentifier>30082f63-4349-48fe-b16d-ab744e77d7ab</stepIdentifier>
-            <type>Wait</type>
-        </botSteps>
-        <developerName>Confused</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Confused</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
         <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
             <messageDefinition>
@@ -1677,80 +1659,21 @@ Have a great day! 😃</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
-            <messageDefinition>
-                <messageDefinitionName>Password</messageDefinitionName>
-            </messageDefinition>
-            <stepIdentifier>aecde025-ad32-428d-a970-f0832081e388</stepIdentifier>
-            <type>RichMessage</type>
+            <botMessages>
+                <message>Sorry, I didn&apos;t understand that.</message>
+                <messageIdentifier>cc635714-d5e9-4fdd-a76e-bc0c03ff92ea</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>87a6bc58-c60b-49f2-9ae8-f5f5c420133a</stepIdentifier>
+            <type>Message</type>
         </botSteps>
         <botSteps>
-            <botVariableOperation>
-                <askCollectIfSet>false</askCollectIfSet>
-                <botMessages>
-                    <message>Did you get the email?</message>
-                    <messageIdentifier>12699dcc-781f-e151-9bed-638b935d3ade</messageIdentifier>
-                </botMessages>
-                <botQuickReplyOptions>
-                    <literalValue>Yes</literalValue>
-                    <quickReplyOptionIdentifier>ce3c1e08-22d0-4d0f-768c-086c382d439c</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botQuickReplyOptions>
-                    <literalValue>No, I didn&apos;t receive the email</literalValue>
-                    <quickReplyOptionIdentifier>b2250ce6-323d-777c-825a-afa213129add</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botVariableOperands>
-                    <disableAutoFill>true</disableAutoFill>
-                    <sourceName>_Text</sourceName>
-                    <sourceType>StandardMlSlotClass</sourceType>
-                    <targetName>Button_Data</targetName>
-                    <targetType>ConversationVariable</targetType>
-                </botVariableOperands>
-                <ignoreIntentRecognition>false</ignoreIntentRecognition>
-                <optionalCollect>false</optionalCollect>
-                <quickReplyType>Static</quickReplyType>
-                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                <type>Collect</type>
-                <variableOperationIdentifier>21858d7b-a9ca-134d-3c73-0dbd9f9e8f58</variableOperationIdentifier>
-            </botVariableOperation>
-            <stepIdentifier>1c25a125-5d09-441f-a1fc-0873dda1d778</stepIdentifier>
-            <type>VariableOperation</type>
+            <stepIdentifier>30082f63-4349-48fe-b16d-ab744e77d7ab</stepIdentifier>
+            <type>Wait</type>
         </botSteps>
-        <botSteps>
-            <botStepConditions>
-                <leftOperandName>Button_Data</leftOperandName>
-                <leftOperandType>ConversationVariable</leftOperandType>
-                <operatorType>Equals</operatorType>
-                <rightOperandValue>No, I didn&apos;t receive the email</rightOperandValue>
-            </botStepConditions>
-            <botSteps>
-                <botNavigation>
-                    <botNavigationLinks>
-                        <targetBotDialog>Didn_t_get_the_email</targetBotDialog>
-                    </botNavigationLinks>
-                    <type>Redirect</type>
-                </botNavigation>
-                <stepIdentifier>38ccf25f-a99e-4589-bc29-801ec90e983a</stepIdentifier>
-                <type>Navigation</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>f49f4f2b-c9e9-4598-ae75-9ede13b10d43</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_not</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>4f58fb86-90bb-4419-b025-ca7d29ff11d7</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Password</developerName>
+        <developerName>Confused</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Password</label>
+        <label>Confused</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -1863,6 +1786,83 @@ Have a great day! 😃</message>
         <developerName>Helpful_or_not</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Helpful or not</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
+        <botSteps>
+            <messageDefinition>
+                <messageDefinitionName>Password</messageDefinitionName>
+            </messageDefinition>
+            <stepIdentifier>aecde025-ad32-428d-a970-f0832081e388</stepIdentifier>
+            <type>RichMessage</type>
+        </botSteps>
+        <botSteps>
+            <botVariableOperation>
+                <askCollectIfSet>false</askCollectIfSet>
+                <botMessages>
+                    <message>Did you get the email?</message>
+                    <messageIdentifier>12699dcc-781f-e151-9bed-638b935d3ade</messageIdentifier>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>Yes</literalValue>
+                    <quickReplyOptionIdentifier>ce3c1e08-22d0-4d0f-768c-086c382d439c</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>No, I didn&apos;t receive the email</literalValue>
+                    <quickReplyOptionIdentifier>b2250ce6-323d-777c-825a-afa213129add</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>_Text</sourceName>
+                    <sourceType>StandardMlSlotClass</sourceType>
+                    <targetName>Button_Data</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <ignoreIntentRecognition>false</ignoreIntentRecognition>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+                <variableOperationIdentifier>21858d7b-a9ca-134d-3c73-0dbd9f9e8f58</variableOperationIdentifier>
+            </botVariableOperation>
+            <stepIdentifier>1c25a125-5d09-441f-a1fc-0873dda1d778</stepIdentifier>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botStepConditions>
+                <leftOperandName>Button_Data</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>Equals</operatorType>
+                <rightOperandValue>No, I didn&apos;t receive the email</rightOperandValue>
+            </botStepConditions>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Didn_t_get_the_email</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>38ccf25f-a99e-4589-bc29-801ec90e983a</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>f49f4f2b-c9e9-4598-ae75-9ede13b10d43</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_not</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>4f58fb86-90bb-4419-b025-ca7d29ff11d7</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Password</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Password</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -5035,23 +5035,6 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botDialogGroup>Cryptocurrency</botDialogGroup>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Elaborate_on_Issue</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>6a5351d3-31e6-4c06-b7ee-fdc2c83a2857</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Other_Crypto</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Other</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
         <botDialogGroup>Deposits_Withdrawals_Gift_Transfers</botDialogGroup>
         <botSteps>
             <messageDefinition>
@@ -5076,42 +5059,20 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botDialogGroup>Withdrawal</botDialogGroup>
-        <botSteps>
-            <botSteps>
-                <botVariableOperation>
-                    <botVariableOperands>
-                        <sourceType>Value</sourceType>
-                        <sourceValue>Withdrawals &amp; Internal Transfers</sourceValue>
-                        <targetName>Category_Value</targetName>
-                        <targetType>ConversationVariable</targetType>
-                    </botVariableOperands>
-                    <type>Set</type>
-                    <variableOperationIdentifier>4d608a97-060d-4f8b-866a-84f8dcbd438b</variableOperationIdentifier>
-                </botVariableOperation>
-                <stepIdentifier>1cf0af8c-0938-4a4c-a005-9b1635b8a404</stepIdentifier>
-                <type>VariableOperation</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>bbcb3392-3fc1-4336-b258-ac2e52745212</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
+        <botDialogGroup>Cryptocurrency</botDialogGroup>
         <botSteps>
             <botNavigation>
                 <botNavigationLinks>
-                    <targetBotDialog>Canadian_Dollar_CAD_Withdrawal</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Cryptocurrency_Withdrawal</targetBotDialog>
+                    <targetBotDialog>Elaborate_on_Issue</targetBotDialog>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>d5efbc9f-6836-476a-bd95-a115e6740d59</stepIdentifier>
+            <stepIdentifier>6a5351d3-31e6-4c06-b7ee-fdc2c83a2857</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
-        <developerName>Withdrawal</developerName>
+        <developerName>Other_Crypto</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Withdrawals</label>
+        <label>Other</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -5344,6 +5305,45 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
+        <botDialogGroup>Withdrawal</botDialogGroup>
+        <botSteps>
+            <botSteps>
+                <botVariableOperation>
+                    <botVariableOperands>
+                        <sourceType>Value</sourceType>
+                        <sourceValue>Withdrawals &amp; Internal Transfers</sourceValue>
+                        <targetName>Category_Value</targetName>
+                        <targetType>ConversationVariable</targetType>
+                    </botVariableOperands>
+                    <type>Set</type>
+                    <variableOperationIdentifier>4d608a97-060d-4f8b-866a-84f8dcbd438b</variableOperationIdentifier>
+                </botVariableOperation>
+                <stepIdentifier>1cf0af8c-0938-4a4c-a005-9b1635b8a404</stepIdentifier>
+                <type>VariableOperation</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>bbcb3392-3fc1-4336-b258-ac2e52745212</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Canadian_Dollar_CAD_Withdrawal</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Cryptocurrency_Withdrawal</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>d5efbc9f-6836-476a-bd95-a115e6740d59</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Withdrawal</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Withdrawals</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
         <botDialogGroup>Deposits_Withdrawals_Gift_Transfers</botDialogGroup>
         <botSteps>
             <messageDefinition>
@@ -5557,43 +5557,6 @@ Which best matches your inquiry?</message>
         <developerName>Mobile_Web_Version_Wired</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Mobile Web Version</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Withdrawal</botDialogGroup>
-        <botSteps>
-            <botMessages>
-                <message>What best matches your inquiry?</message>
-                <messageIdentifier>27edeffc-eb15-43b3-a729-9b06c5241a64</messageIdentifier>
-            </botMessages>
-            <stepIdentifier>a07e6ba4-9642-4602-b28f-fcff47dc4fe4</stepIdentifier>
-            <type>Message</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>How_do_I_withdraw_CAD_to_my_bank_account</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Withdrawal_timeframs_fees_and_limits</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>I_have_not_received_my_Canadian_dollar_withdrawal</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>How_do_I_cancel_a_withdrawal_request</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>Other_Withdrawal</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>294d7b14-4288-427b-aa6d-93904441a4d5</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Canadian_Dollar_CAD_Withdrawal</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Canadian Dollar (CAD) Withdrawal</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -5813,6 +5776,43 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
+        <botDialogGroup>Withdrawal</botDialogGroup>
+        <botSteps>
+            <botMessages>
+                <message>What best matches your inquiry?</message>
+                <messageIdentifier>27edeffc-eb15-43b3-a729-9b06c5241a64</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>a07e6ba4-9642-4602-b28f-fcff47dc4fe4</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>How_do_I_withdraw_CAD_to_my_bank_account</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Withdrawal_timeframs_fees_and_limits</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>I_have_not_received_my_Canadian_dollar_withdrawal</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>How_do_I_cancel_a_withdrawal_request</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>Other_Withdrawal</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>294d7b14-4288-427b-aa6d-93904441a4d5</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Canadian_Dollar_CAD_Withdrawal</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Canadian Dollar (CAD) Withdrawal</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
         <botDialogGroup>Deposits_Withdrawals_Gift_Transfers</botDialogGroup>
         <botSteps>
             <botVariableOperation>
@@ -5921,6 +5921,30 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
+        <botDialogGroup>Withdrawal</botDialogGroup>
+        <botSteps>
+            <messageDefinition>
+                <messageDefinitionName>Desktop_Version_Withdrawal</messageDefinitionName>
+            </messageDefinition>
+            <stepIdentifier>465b7e24-3fc0-49a4-8cb6-ff8b2eed74e2</stepIdentifier>
+            <type>RichMessage</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Helpful_or_Not_Withdrawal</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>a14a95f7-5a8b-4700-978c-6c831cd963e2</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Desktop_Version_Withdrawal</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Desktop Version</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
         <botDialogGroup>Deposits_Withdrawals_Gift_Transfers</botDialogGroup>
         <botSteps>
             <botVariableOperation>
@@ -6001,9 +6025,9 @@ Which best matches your inquiry?</message>
         <botDialogGroup>Withdrawal</botDialogGroup>
         <botSteps>
             <messageDefinition>
-                <messageDefinitionName>Desktop_Version_Withdrawal</messageDefinitionName>
+                <messageDefinitionName>Mobile_Web_Version_Withdrawal</messageDefinitionName>
             </messageDefinition>
-            <stepIdentifier>465b7e24-3fc0-49a4-8cb6-ff8b2eed74e2</stepIdentifier>
+            <stepIdentifier>5d59ac7b-0c04-4c37-836e-65cb73a81186</stepIdentifier>
             <type>RichMessage</type>
         </botSteps>
         <botSteps>
@@ -6013,12 +6037,12 @@ Which best matches your inquiry?</message>
                 </botNavigationLinks>
                 <type>Redirect</type>
             </botNavigation>
-            <stepIdentifier>a14a95f7-5a8b-4700-978c-6c831cd963e2</stepIdentifier>
+            <stepIdentifier>c79354ee-6cb0-46a1-ac1f-1d6392db10c2</stepIdentifier>
             <type>Navigation</type>
         </botSteps>
-        <developerName>Desktop_Version_Withdrawal</developerName>
+        <developerName>Mobile_Web_Version_Withdrawal</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Desktop Version</label>
+        <label>Mobile Web Version</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -6285,30 +6309,6 @@ Which best matches your inquiry?</message>
         <botDialogGroup>Withdrawal</botDialogGroup>
         <botSteps>
             <messageDefinition>
-                <messageDefinitionName>Mobile_Web_Version_Withdrawal</messageDefinitionName>
-            </messageDefinition>
-            <stepIdentifier>5d59ac7b-0c04-4c37-836e-65cb73a81186</stepIdentifier>
-            <type>RichMessage</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Helpful_or_Not_Withdrawal</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>c79354ee-6cb0-46a1-ac1f-1d6392db10c2</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Mobile_Web_Version_Withdrawal</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Mobile Web Version</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Withdrawal</botDialogGroup>
-        <botSteps>
-            <messageDefinition>
                 <messageDefinitionName>Mobile_App_Version_Withdrawal</messageDefinitionName>
             </messageDefinition>
             <stepIdentifier>586e5faa-b531-4af1-a220-875f395bc3ca</stepIdentifier>
@@ -6327,26 +6327,6 @@ Which best matches your inquiry?</message>
         <developerName>Mobile_App_Version_Withdrawal</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Mobile App Version</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
-        <botDialogGroup>Withdrawal</botDialogGroup>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>EFT</targetBotDialog>
-                </botNavigationLinks>
-                <botNavigationLinks>
-                    <targetBotDialog>e_Transfer</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>f9f0b3da-313a-4b35-a75f-5840f04aa11a</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Withdrawal_timeframs_fees_and_limits</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Withdrawal timeframs, fees and limits</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -6426,6 +6406,26 @@ https://ndax.io/en/support/account_funding_and_deposit_methods</message>
         <developerName>Have_you_uploaded_your_wire_receipt_Timeframe_Wire</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Have you uploaded your wire receipt? Timeframe Wire</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>Withdrawal</botDialogGroup>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>EFT</targetBotDialog>
+                </botNavigationLinks>
+                <botNavigationLinks>
+                    <targetBotDialog>e_Transfer</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>f9f0b3da-313a-4b35-a75f-5840f04aa11a</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Withdrawal_timeframs_fees_and_limits</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Withdrawal timeframs, fees and limits</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -7590,89 +7590,6 @@ To find the ticket ID, on the side menu, select “Transaction History” &gt;&g
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botDialogGroup>NEW_User_Status</botDialogGroup>
-        <botSteps>
-            <botVariableOperation>
-                <askCollectIfSet>false</askCollectIfSet>
-                <botMessages>
-                    <message>Are you able to login?</message>
-                    <messageIdentifier>685b3a16-dba3-5187-f8d1-b63b6d5e8d08</messageIdentifier>
-                </botMessages>
-                <botQuickReplyOptions>
-                    <literalValue>Yes</literalValue>
-                    <quickReplyOptionIdentifier>6e266f85-459f-a2ab-d4a8-8574cea6c8de</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botQuickReplyOptions>
-                    <literalValue>No</literalValue>
-                    <quickReplyOptionIdentifier>52c5d2e4-5898-d466-9735-c50accd3a648</quickReplyOptionIdentifier>
-                </botQuickReplyOptions>
-                <botVariableOperands>
-                    <disableAutoFill>true</disableAutoFill>
-                    <sourceName>_Text</sourceName>
-                    <sourceType>StandardMlSlotClass</sourceType>
-                    <targetName>Able_To_Login</targetName>
-                    <targetType>ConversationVariable</targetType>
-                </botVariableOperands>
-                <ignoreIntentRecognition>false</ignoreIntentRecognition>
-                <optionalCollect>false</optionalCollect>
-                <quickReplyType>Static</quickReplyType>
-                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                <type>Collect</type>
-                <variableOperationIdentifier>7f036cd3-2187-d8f5-6d0b-e42baa34a39a</variableOperationIdentifier>
-            </botVariableOperation>
-            <stepIdentifier>e5238ba2-e6ad-4197-952f-9506a3486bf7</stepIdentifier>
-            <type>VariableOperation</type>
-        </botSteps>
-        <botSteps>
-            <botStepConditions>
-                <leftOperandName>Able_To_Login</leftOperandName>
-                <leftOperandType>ConversationVariable</leftOperandType>
-                <operatorType>Equals</operatorType>
-                <rightOperandValue>Yes</rightOperandValue>
-            </botStepConditions>
-            <botSteps>
-                <botMessages>
-                    <message>Please log in to your Ndax account to receive personalized service and continue the conversation securely. Use this link to login : https://portal.ndax.io/auth/login</message>
-                    <messageIdentifier>85fe68a1-af4f-4afb-87bb-a923c2568c5a</messageIdentifier>
-                </botMessages>
-                <stepIdentifier>3f890f49-44d9-00c1-199c-da3619d5f6b0</stepIdentifier>
-                <type>Message</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>7fb0a92d-b03d-424b-ace7-1dabaa7eca5d</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
-        <botSteps>
-            <botStepConditions>
-                <leftOperandName>Able_To_Login</leftOperandName>
-                <leftOperandType>ConversationVariable</leftOperandType>
-                <operatorType>Equals</operatorType>
-                <rightOperandValue>No</rightOperandValue>
-            </botStepConditions>
-            <botSteps>
-                <botNavigation>
-                    <botNavigationLinks>
-                        <targetBotDialog>Guest_User_Flow</targetBotDialog>
-                    </botNavigationLinks>
-                    <type>Redirect</type>
-                </botNavigation>
-                <stepIdentifier>93ae1de6-70c3-4270-a559-59956b763ece</stepIdentifier>
-                <type>Navigation</type>
-            </botSteps>
-            <conditionLogicType>And</conditionLogicType>
-            <stepIdentifier>7412b043-55cb-44cd-aed1-81be721420a0</stepIdentifier>
-            <type>Group</type>
-        </botSteps>
-        <botSteps>
-            <stepIdentifier>38eadcd1-5ef8-4a5e-a428-1e1a37765eb5</stepIdentifier>
-            <type>Wait</type>
-        </botSteps>
-        <developerName>Login_Authentication</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Login Authentication</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
         <botDialogGroup>Account_Management_Login_Issues</botDialogGroup>
         <botSteps>
             <botVariableOperation>
@@ -7857,6 +7774,89 @@ Please ensure that your arms and shoulders are clearly visible in the photo and 
         <developerName>How_do_I_update_my_account_information_v1</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>New How do I update my account information?</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botDialogGroup>NEW_User_Status</botDialogGroup>
+        <botSteps>
+            <botVariableOperation>
+                <askCollectIfSet>false</askCollectIfSet>
+                <botMessages>
+                    <message>Are you able to login?</message>
+                    <messageIdentifier>685b3a16-dba3-5187-f8d1-b63b6d5e8d08</messageIdentifier>
+                </botMessages>
+                <botQuickReplyOptions>
+                    <literalValue>Yes</literalValue>
+                    <quickReplyOptionIdentifier>6e266f85-459f-a2ab-d4a8-8574cea6c8de</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botQuickReplyOptions>
+                    <literalValue>No</literalValue>
+                    <quickReplyOptionIdentifier>52c5d2e4-5898-d466-9735-c50accd3a648</quickReplyOptionIdentifier>
+                </botQuickReplyOptions>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>_Text</sourceName>
+                    <sourceType>StandardMlSlotClass</sourceType>
+                    <targetName>Able_To_Login</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <ignoreIntentRecognition>false</ignoreIntentRecognition>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyType>Static</quickReplyType>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+                <variableOperationIdentifier>7f036cd3-2187-d8f5-6d0b-e42baa34a39a</variableOperationIdentifier>
+            </botVariableOperation>
+            <stepIdentifier>e5238ba2-e6ad-4197-952f-9506a3486bf7</stepIdentifier>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botStepConditions>
+                <leftOperandName>Able_To_Login</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>Equals</operatorType>
+                <rightOperandValue>Yes</rightOperandValue>
+            </botStepConditions>
+            <botSteps>
+                <botMessages>
+                    <message>Please log in to your Ndax account to receive personalized service and continue the conversation securely. Use this link to login : https://portal.ndax.io/auth/login</message>
+                    <messageIdentifier>85fe68a1-af4f-4afb-87bb-a923c2568c5a</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>3f890f49-44d9-00c1-199c-da3619d5f6b0</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>7fb0a92d-b03d-424b-ace7-1dabaa7eca5d</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <botStepConditions>
+                <leftOperandName>Able_To_Login</leftOperandName>
+                <leftOperandType>ConversationVariable</leftOperandType>
+                <operatorType>Equals</operatorType>
+                <rightOperandValue>No</rightOperandValue>
+            </botStepConditions>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Guest_User_Flow</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>93ae1de6-70c3-4270-a559-59956b763ece</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <conditionLogicType>And</conditionLogicType>
+            <stepIdentifier>7412b043-55cb-44cd-aed1-81be721420a0</stepIdentifier>
+            <type>Group</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>38eadcd1-5ef8-4a5e-a428-1e1a37765eb5</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Login_Authentication</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Login Authentication</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -8295,44 +8295,6 @@ Which best matches your inquiry?</message>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
-        <botSteps>
-            <botVariableOperation>
-                <askCollectIfSet>false</askCollectIfSet>
-                <botMessages>
-                    <message>Please elaborate  or explain what the issue is that you are facing. What is the specific problem that you encounter?</message>
-                    <messageIdentifier>913ec202-314b-12de-76e6-b18e33e931ab</messageIdentifier>
-                </botMessages>
-                <botVariableOperands>
-                    <disableAutoFill>true</disableAutoFill>
-                    <sourceName>_Text</sourceName>
-                    <sourceType>StandardMlSlotClass</sourceType>
-                    <targetName>Case_Description</targetName>
-                    <targetType>ConversationVariable</targetType>
-                </botVariableOperands>
-                <optionalCollect>false</optionalCollect>
-                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                <type>Collect</type>
-                <variableOperationIdentifier>dbd0421e-b8ec-a618-e4dc-eb3ac30a0fdb</variableOperationIdentifier>
-            </botVariableOperation>
-            <stepIdentifier>5825ce8b-8def-4c51-97e7-8fbe90e711ed</stepIdentifier>
-            <type>VariableOperation</type>
-        </botSteps>
-        <botSteps>
-            <botNavigation>
-                <botNavigationLinks>
-                    <targetBotDialog>Business_hours_verification</targetBotDialog>
-                </botNavigationLinks>
-                <type>Redirect</type>
-            </botNavigation>
-            <stepIdentifier>8296df28-5818-42cf-a7b2-94f27c3549f2</stepIdentifier>
-            <type>Navigation</type>
-        </botSteps>
-        <developerName>Elaborate_on_Issue</developerName>
-        <isPlaceholderDialog>false</isPlaceholderDialog>
-        <label>Elaborate on Issue</label>
-        <showInFooterMenu>false</showInFooterMenu>
-    </botDialogs>
-    <botDialogs>
         <botDialogGroup>Deposits_Withdrawals_Gift_Transfers</botDialogGroup>
         <botSteps>
             <botMessages>
@@ -8408,6 +8370,44 @@ Which best matches your inquiry?</message>
         <developerName>Wire_Less_Than_1_Business_Day</developerName>
         <isPlaceholderDialog>false</isPlaceholderDialog>
         <label>Wire Less Than 1 Business Day</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botVariableOperation>
+                <askCollectIfSet>false</askCollectIfSet>
+                <botMessages>
+                    <message>Please elaborate  or explain what the issue is that you are facing. What is the specific problem that you encounter?</message>
+                    <messageIdentifier>913ec202-314b-12de-76e6-b18e33e931ab</messageIdentifier>
+                </botMessages>
+                <botVariableOperands>
+                    <disableAutoFill>true</disableAutoFill>
+                    <sourceName>_Text</sourceName>
+                    <sourceType>StandardMlSlotClass</sourceType>
+                    <targetName>Case_Description</targetName>
+                    <targetType>ConversationVariable</targetType>
+                </botVariableOperands>
+                <optionalCollect>false</optionalCollect>
+                <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                <type>Collect</type>
+                <variableOperationIdentifier>dbd0421e-b8ec-a618-e4dc-eb3ac30a0fdb</variableOperationIdentifier>
+            </botVariableOperation>
+            <stepIdentifier>5825ce8b-8def-4c51-97e7-8fbe90e711ed</stepIdentifier>
+            <type>VariableOperation</type>
+        </botSteps>
+        <botSteps>
+            <botNavigation>
+                <botNavigationLinks>
+                    <targetBotDialog>Business_hours_verification</targetBotDialog>
+                </botNavigationLinks>
+                <type>Redirect</type>
+            </botNavigation>
+            <stepIdentifier>8296df28-5818-42cf-a7b2-94f27c3549f2</stepIdentifier>
+            <type>Navigation</type>
+        </botSteps>
+        <developerName>Elaborate_on_Issue</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Elaborate on Issue</label>
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <botDialogs>
@@ -9820,6 +9820,8 @@ https://ndax.io/en/support/trading_and_investing/schedule-recurring-purchases</m
     </nlpProviders>
     <responseDelayMilliseconds>200</responseDelayMilliseconds>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
     <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

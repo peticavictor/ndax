@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles user requests for information, instructions, and guidance on how to use the company&apos;s platform. It should classify requests from users who need help with platform features, troubleshooting, and general product questions.</description>
+    <developerName>Knowledge_Base_Assistant</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Available_agents</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Business_Hours_Check</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__CreateCaseEnhancedData</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always use the available action to search the knowledge base for a relevant article before responding to a user&apos;s question. Never respond with &quot;I don&apos;t know&quot; or &quot;I cannot help.&quot; Instead, if a knowledge article is not found, or if the user&apos;s request is too complex, offer to connect them to a human support agent.</description>
+        <developerName>instruction_alwaysuset0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysuset0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never provide financial advice, legal advice, or security recommendations. If a user asks for advice on investing, fraud, or a security breach, use the knowledge articles to provide information about our internal policies and processes, but always offer to connect them to a human agent for personalized assistance.</description>
+        <developerName>instruction_neverprovi1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_neverprovi1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user&apos;s request is beyond the scope of this topic, or if they state they need to talk to a human, use the Escalate to Human Agent action. This action will create a new case and transfer the conversation to a customer service representative. Ensure you pass the full conversation transcript and any relevant user information to the new case to provide full context to the human agent.</description>
+        <developerName>instruction_ifausersre2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifausersre2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Knowledge Base Assistant</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to provide accurate and helpful information to users by searching and using only the official company knowledge articles. Do not provide information that is not available in the knowledge base, and do not make up facts or instructions.</scope>
+</GenAiPlugin>

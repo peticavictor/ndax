@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Apply_case_clarification</name>
+        <label>Apply case clarification</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>applyCaseClassificationRecommendations</actionName>
+        <actionType>applyCaseClassificationRecommendations</actionType>
+        <connector>
+            <targetReference>Update_case</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Update_fault_case</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>caseId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>applyCaseClassificationRecommendations</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Case after update case clasification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - after update case classification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_case</name>
+        <label>Update case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Apply_case_clarification.caseSObject</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_fault_case</name>
+        <label>Update fault case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Apply_case_clarification</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

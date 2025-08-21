@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Check whether the current date time is within business hours</description>
+    <invocationTarget>BusinessHoursController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Business Hours Check</masterLabel>
+    <progressIndicatorMessage>Checking Business Hours</progressIndicatorMessage>
+</GenAiFunction>

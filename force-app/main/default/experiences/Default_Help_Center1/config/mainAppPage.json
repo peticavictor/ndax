@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "6ca5d07f-aae3-47b9-b575-8b454cd4370e",
+  "headMarkup" : "<script type='text/javascript'>\n\tfunction initEmbeddedMessaging() {\n\t\ttry {\n\t\t\tembeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'\n\n\t\t\tembeddedservice_bootstrap.init(\n\t\t\t\t'00DDH000000B6gy',\n\t\t\t\t'Service_Messaging',\n\t\t\t\t'https://ndax--dev01.sandbox.my.site.com/ESWServiceMessaging1741792728210',\n\t\t\t\t{\n\t\t\t\t\tscrt2URL: 'https://ndax--dev01.sandbox.my.salesforce-scrt.com'\n\t\t\t\t}\n\t\t\t);\n\t\t} catch (err) {\n\t\t\tconsole.error('Error loading Embedded Messaging: ', err);\n\t\t}\n\t};\n</script>\n<script type='text/javascript' src='https://ndax--dev01.sandbox.my.site.com/ESWServiceMessaging1741792728210/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>",
+  "id" : "61e9510e-af45-419c-b338-468f44ee252e",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Setup Help Center Template",
+  "type" : "appPage"
+}

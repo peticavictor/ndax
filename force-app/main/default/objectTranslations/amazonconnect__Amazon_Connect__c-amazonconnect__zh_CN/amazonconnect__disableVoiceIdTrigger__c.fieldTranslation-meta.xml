@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Choose to enable or disable the AC_VoiceIdChannel trigger, which associates Cases and Contacts with a Voice Id Channel Record --></help>
+    <label><!-- Disable the Voice Id Channel Trigger --></label>
+    <name>amazonconnect__disableVoiceIdTrigger__c</name>
+</CustomFieldTranslation>

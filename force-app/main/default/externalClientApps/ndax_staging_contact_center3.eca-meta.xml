@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>alexey.chvarkov@ndax.io</contactEmail>
+    <distributionState>Local</distributionState>
+    <isProtected>false</isProtected>
+    <label>ndax_staging_contact_center3</label>
+    <orgScopedExternalApp>00DDH000000B6gy:ndax_staging_contact_center3</orgScopedExternalApp>
+</ExternalClientApplication>

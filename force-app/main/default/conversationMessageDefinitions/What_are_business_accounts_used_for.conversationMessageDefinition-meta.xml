@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>What are business accounts used for?</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>What are business accounts used for?</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;strong&gt;What is a Business Account on Ndax?&lt;/strong&gt;
+
+A Business Account on Ndax is designed for
+individuals and companies that want to buy, sell, and trade cryptocurrencies
+using business funds.
+
+&lt;strong&gt;Key features of a Business Account include:&lt;/strong&gt;
+
+The ability to buy, sell, and trade cryptocurrencies using funds from your
+business.
+
+Deposits and withdrawals can be made using a bank account registered in your business’s name.
+
+Multi-user access, allowing you to assign roles and permissions to different team
+members.
+
+Access to detailed transaction history, which can be viewed and downloaded for
+reporting or accounting purposes.
+
+&lt;strong&gt;In short:&lt;/strong&gt;
+
+Personal accounts are intended for individual use.
+
+Business accounts are tailored for companies and organizations.</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

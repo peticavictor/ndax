@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create a case for the customer that&apos;s transferred from the AI agent to a service rep. The case includes all information gathered from the customer, a summary of the progress made by the AI agent, a link to the conversation, and any attachments.</description>
+    <invocationTarget>Create_Case_With_Bot</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>true</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Create Case With Bot</masterLabel>
+    <progressIndicatorMessage>Processing...</progressIndicatorMessage>
+</GenAiFunction>

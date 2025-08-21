@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Taxes &amp; Report AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Taxes &amp; Report AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;How to Download Your Ndax Account Transaction History&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please note, your transaction history can only be downloaded using the website.&lt;/p&gt;
+
+&lt;p&gt;To download a transaction ledger for tax purposes (website):&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Click Reports in the left-side toolbar.&lt;/li&gt;
+  &lt;li&gt;Select Create Report.&lt;/li&gt;
+  &lt;li&gt;Choose your Report Format, Report Type, and Date Range.&lt;br&gt;
+      For tax filing, select January 1 to December 31 of the relevant year (e.g., January 1, 2022 – December 31, 2022).&lt;/li&gt;
+  &lt;li&gt;Click Create Report.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To download an Account Statement:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Click Reports in the left-side toolbar.&lt;/li&gt;
+  &lt;li&gt;Click the Statements tab at the top.&lt;/li&gt;
+  &lt;li&gt;Click the green CREATE REPORT button.&lt;/li&gt;
+  &lt;li&gt;Select the Report Type (Monthly or Quarterly).&lt;/li&gt;
+  &lt;li&gt;Choose your desired report and year.&lt;/li&gt;
+  &lt;li&gt;Click CREATE REPORT.&lt;/li&gt;
+  &lt;li&gt;Click the download icon next to your generated report.&lt;/li&gt;
+&lt;/ol&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

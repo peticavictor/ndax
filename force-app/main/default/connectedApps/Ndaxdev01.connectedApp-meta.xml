@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>afatnani@activeo.com</contactEmail>
+    <contactPhone>4379740733</contactPhone>
+    <label>Ndaxdev01</label>
+    <oauthConfig>
+        <callbackUrl>https://ndax--dev01.sandbox.my.salesforce.com</callbackUrl>
+        <consumerKey>3MVG9bmlmX4LX1ZvB3SE4PVn7D0fillZv91xVPjSCrPqMDx0FNzw4s3fW77EOJIy2SPfATnGSsM3Jy.lDlX5C</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>true</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Desktop Version Gift</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Desktop Version Gift</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;To send cryptocurrency to another Ndax user using the Ndax mobile app, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Log in at ndax.io and go to your Dashboard.&lt;/li&gt;
+  &lt;li&gt;Click Wallet in the left-hand sidebar.&lt;/li&gt;
+  &lt;li&gt;Select the cryptocurrency you want to send.&lt;/li&gt;
+  &lt;li&gt;Click Send at the bottom of the screen.&lt;/li&gt;
+  &lt;li&gt;Scroll down to the Send to a Friend section.&lt;/li&gt;
+  &lt;li&gt;Click Transfer Funds.&lt;/li&gt;
+  &lt;li&gt;Enter the recipient’s email address associated with their Ndax account.&lt;/li&gt;
+  &lt;li&gt;Enter the amount of crypto you want to send, or click Max to send your full available balance.&lt;/li&gt;
+  &lt;li&gt;Enter a message for the recipient (optional).&lt;/li&gt;
+  &lt;li&gt;Check Send as a Gift if this is intended as a gift.&lt;/li&gt;
+  &lt;li&gt;Select an event from the drop-down menu (required when sending as a gift).&lt;/li&gt;
+  &lt;li&gt;Click Send.&lt;/li&gt;
+  &lt;li&gt;Enter your six-digit 2FA code from your authenticator app.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;✅ If the email entered does not match an existing Ndax account, the recipient will receive an email invitation to sign up.&lt;br&gt;
+Once they register, the funds will appear in their account in a pending state. They will not be able to buy, sell, deposit, or withdraw the funds until they are fully verified.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

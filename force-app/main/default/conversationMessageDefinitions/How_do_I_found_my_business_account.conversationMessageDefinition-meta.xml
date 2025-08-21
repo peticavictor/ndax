@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>How do I fund my business account?</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>How do I fund my business account?</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;strong&gt;How do I fund my business account?&lt;/strong&gt;
+
+- Click on your username in the top right.
+
+- Once the panel has opened up, select your business account.
+
+- Once the business account has been selected, click on Deposit, then select either Interac E-transfer or wire-transfer.
+
+- A unique message code will be displayed in the big red box.
+
+- Copy the unique code and put it as a &apos;message&apos; on your E-Transfer to ensure your funds get deposited into the business account.
+
+- For wire-transfers, our operations team processes the wire to the business account if the wire was sent from a business bank account.</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

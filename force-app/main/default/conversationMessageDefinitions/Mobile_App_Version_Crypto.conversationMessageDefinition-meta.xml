@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile App Version Crypto</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile App Version Crypto</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To deposit cryptocurrency using the Ndax mobile app(web version), follow these steps:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+      &lt;li&gt;Log in at ndax.io — you’ll be redirected to your dashboard.&lt;/li&gt;
+      &lt;li&gt;Tap the Ndax logo in the top-left corner.&lt;/li&gt;
+      &lt;li&gt;From the dropdown menu, select Wallet.&lt;/li&gt;
+      &lt;li&gt;Choose the cryptocurrency you wish to deposit from the asset list.&lt;/li&gt;
+      &lt;li&gt;Tap Receive.&lt;/li&gt;
+      &lt;li&gt;Select the network that matches your sending wallet.&lt;/li&gt;
+      &lt;li&gt;Your Ndax wallet address and, if required, a destination tag or memo will be displayed.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;⚠️ &lt;strong&gt;Important:&lt;/strong&gt; If a destination tag or memo is shown, it must be included when sending your crypto.&lt;br&gt;
+    Omitting this information may prevent your deposit from reaching your account and can result in processing delays.&lt;/p&gt;
+    &lt;p&gt;8. Copy the wallet address and tag/memo (if applicable), then paste them into your external wallet to complete the transfer.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

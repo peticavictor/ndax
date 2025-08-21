@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>How do I reset my 2-Factor Authentication (2FA)</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>How do I reset my 2-Factor Authentication (2FA)</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;How to Reset Your Two-Factor Authentication (2FA)&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Go to the login page:&lt;/strong&gt; https://portal.ndax.io/auth/login&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Log in with your username and password.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Click the &quot;Reset 2FA&quot; button on the next screen.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enter your Ndax email address and click Continue.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Check your email for a 6-digit code and enter it on the website, then click Verify.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Complete the identity verification through our partner, Sumsub:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow the prompts.&lt;/li&gt;
+&lt;li&gt;Record a short video pronouncing the digits or phrase shown on screen.&lt;/li&gt;
+&lt;li&gt;Upload the video when you&apos;re done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Once submitted, you&apos;ll see a message that your data is being reviewed.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;You can now close the window.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;When your reset request is approved, you&apos;ll receive an email titled &quot;Two-Factor Authentication Reset.&quot;&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the &quot;Reset Two-Factor Authentication&quot; button in the email.&lt;/li&gt;
+&lt;li&gt;This link expires in 24 hours. If it expires, you&apos;ll need to start the process again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;On the page you&apos;re redirected to, enter your phone number and choose to receive a code via SMS or phone call.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enter the 6-digit code you receive and click Verify.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;You can now log in with just your username and password.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt;&lt;br&gt;
+After logging in, you must re-enable your 2FA within 20 minutes. If you don&apos;t, you&apos;ll be logged out and will need to restart the reset process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authenticator App Warning:&lt;/strong&gt;&lt;br&gt;
+Any old 2FA codes you may still have in your app will no longer work. You must set up 2FA again.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To re-enable 2FA, please follow the steps on this page:&lt;/strong&gt;&lt;br&gt;
+https://ndax.io/en/support/login_and_multi_factor_authentication/setup-google-authenticator-2fa&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

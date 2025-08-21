@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>NdaxBusinessAccountApplication</masterLabel>
+    <relationships>
+        <organization>
+            <access>VIEWER</access>
+        </organization>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>false</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Ndax_Business_Account_Application.pdf</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile Web Version AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile Web Version AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>{!$Constants.Title}:
+{!$Constants.Url}&lt;p&gt;&lt;strong&gt;To deposit CAD via Interac e-Transfer using the Ndax mobile app:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tap the Wallet icon on the bottom navigation bar.&lt;/li&gt;
+  &lt;li&gt;Go to the FIAT tab.&lt;/li&gt;
+  &lt;li&gt;Select CAD.&lt;/li&gt;
+  &lt;li&gt;Tap Deposit, then enter the amount you wish to deposit.&lt;/li&gt;
+  &lt;li&gt;Select Interac e-Transfer.&lt;/li&gt;
+  &lt;li&gt;Copy the deposit details provided.&lt;/li&gt;
+  &lt;li&gt;In your banking app or online banking (on another tab or app), send an Interac e-Transfer to &lt;strong&gt;payments@ndax.io&lt;/strong&gt; using the copied info.&lt;/li&gt;
+  &lt;li&gt;Return to Ndax and tap OK once complete.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;💡 Interac e-Transfers typically arrive within 0–30 minutes, depending on your bank.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contacts transferred in by agent --></label>
+    <name>amazonconnect__Contacts_transferred_in_by_agent__c</name>
+</CustomFieldTranslation>

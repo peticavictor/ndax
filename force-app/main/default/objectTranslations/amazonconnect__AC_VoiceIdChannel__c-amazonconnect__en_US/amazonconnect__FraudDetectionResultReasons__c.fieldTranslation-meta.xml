@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fraud Detection Result Reasons --></label>
+    <name>amazonconnect__FraudDetectionResultReasons__c</name>
+    <picklistValues>
+        <masterLabel>KNOWN_FRAUDSTER</masterLabel>
+        <translation><!-- KNOWN_FRAUDSTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPLAYED_SPEECH</masterLabel>
+        <translation><!-- REPLAYED_SPEECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SYNTHETIC_SPEECH</masterLabel>
+        <translation><!-- SYNTHETIC_SPEECH --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

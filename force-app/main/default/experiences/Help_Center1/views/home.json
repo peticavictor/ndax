@@ -1,0 +1,100 @@
+{
+  "appPageId" : "a3736554-1e6a-4e8b-a65c-def44555fd8f",
+  "componentName" : "siteforce:sldsThreeCol444Layout",
+  "dataProviders" : [ ],
+  "id" : "fc18f942-3679-4635-aec1-6793fc675ee9",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "showTitle" : false,
+        "title" : "Top Articles",
+        "topicList" : [ {
+          "isPublic" : true,
+          "name" : "0TODH000000Xnsp4AC"
+        } ]
+      },
+      "componentName" : "forceCommunity:topArticleList",
+      "id" : "24999d71-9f92-4c2e-a1a0-2d2fdbbf2cb1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "394d4d67-1bdb-4e43-9d39-27e68f240576",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "",
+        "bannerPosition" : "top",
+        "bannerSizePercent" : 35,
+        "borderRadius" : 20,
+        "boxShadow" : true,
+        "haveBanner" : false,
+        "iconBackgroundColor" : "rgb(255,255,255)",
+        "iconSize" : "medium",
+        "noImageColor" : "rgb(116,116,116)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "full",
+        "tileMenuEditor" : "Default_Navigation",
+        "titleColor" : "",
+        "titleFontSize" : "medium",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "7b1b6153-496e-4f48-b407-951e8b2a7901",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c891096f-968e-41fd-96aa-b847656ca394",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e36bf680-3215-4621-92a0-6cd3781483a4",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "eacff828-a5cc-4f05-be84-ed5f68b429b0",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "deploymentName" : "Service_Messaging_with_Bot",
+        "hideChatButtonOnLoad" : "Visible",
+        "isExpSiteAuthMode" : false,
+        "scrtUrl" : "https://ndax--dev01.sandbox.my.salesforce-scrt.com",
+        "siteEndpoint" : "https://ndax--dev01.sandbox.my.site.com/ESWServiceMessagingwith1744310392505"
+      },
+      "componentName" : "experience_messaging:embeddedMessaging",
+      "id" : "2954f77a-9756-4263-81a7-934c60381f8d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6608db9c-da2d-4471-bbbd-45feffe77354",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "97ac73cd-5298-4ebc-bc2a-31c402c1fccc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "29fe74cd-90f5-4af6-a692-5a372be08659",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AC 语音邮件投递</value>
+    </caseValues>
+    <layouts>
+        <layout>AC Voicemail Drop Layout</layout>
+        <sections>
+            <label><!-- Message --></label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>语音邮箱</nameFieldLabel>
+</CustomObjectTranslation>

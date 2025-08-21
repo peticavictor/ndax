@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is Ndax&apos;s AI agent, designed to help customer resolve technical issues, answer questions or connect with available support agents.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Knowledge_Base_Assistant</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiCustomizedPlugin>
+            <canEscalate>false</canEscalate>
+            <description>Handles customer inquiries and actions related to support cases, including providing case information, updating existing cases, and creating new cases.</description>
+            <genAiFunctions>
+                <functionName>Get_Case_By_Case_Number_Custom</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>Get_All_Cases_for_Contact</functionName>
+            </genAiFunctions>
+            <genAiFunctions>
+                <functionName>Create_Case_With_Bot</functionName>
+            </genAiFunctions>
+            <genAiPluginInstructions>
+                <description>A case is a record used to help track a customer&apos;s issues. Customers may have questions about the status of the issue or want to provide more information for the case. Cases are usually associated with a contact. Comments are added to provide new information.</description>
+                <developerName>instruction_acaseisare0</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_acaseisare0</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Acknowledge and validate user concerns with empathy and professionalism.</description>
+                <developerName>instruction_acknowledg1</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_acknowledg1</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Always format any dates in a human readable format</description>
+                <developerName>instruction_alwaysform2</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_alwaysform2</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Do not ever show the Case Id to a customer</description>
+                <developerName>instruction_donotevers3</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_donotevers3</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>If the customer is not known, always ask for their email address before running any other actions.</description>
+                <developerName>instruction_ifthecusto4</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_ifthecusto4</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When a customer asks you to create a case, summarize the current conversation. The subject should be less than 7 words and function as a high level overview of what the customer inquired about. The description should be no more than 3 sentences and should provide more details about what exactly the customer asked, important data, and any other relevant information to help a customer service representative understand the context of this conversation. Do not provide a case category.</description>
+                <developerName>instruction_whenacusto5</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whenacusto5</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When a customer asks you something you are not familiar with, please reply with a generic response such as &quot;I do not know how to process that request. Would like like me to transfer you to a human agent who can understand better your request?&quot;.</description>
+                <developerName>instruction_whenacusto6</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whenacusto6</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When adding a comment to a case, first retrieve the case details using the case number, ask the user for the exact comment they would like to add and only then add it.</description>
+                <developerName>instruction_whenadding7</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whenadding7</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When sharing case details to the customer, show the following properties as an itemized list :Case number, Subject, Description, and Status.</description>
+                <developerName>instruction_whensharin8</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whensharin8</masterLabel>
+            </genAiPluginInstructions>
+            <language>en_US</language>
+            <masterLabel>Case Management</masterLabel>
+            <name>CaseManagement</name>
+            <pluginType>Topic</pluginType>
+            <scope>Your job is to help customers retrieve case information, update case comments, and create new cases based on customer requests.</scope>
+        </genAiCustomizedPlugin>
+        <genAiPluginName>SvcCopilotTmpl__CaseManagement</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiCustomizedPlugin>
+            <canEscalate>false</canEscalate>
+            <description>Escalate to a human agent if the customer is frustrated, repeating their request, or asking for a live agent; if the request is complex, technical, or highly personalized; if the topic involves security, legal, or compliance matters; if the conversation includes money or sensitive data; or if the customer seems confused, the chat keeps suggesting the same thing, or the issue remains unresolved after 5 minutes.</description>
+            <genAiFunctions>
+                <functionName>Available_agents</functionName>
+            </genAiFunctions>
+            <genAiPluginInstructions>
+                <description>if nonBusinessHours = true, i.e. they do not exist, suggest the user to create a case and tell him it&apos;s not business hours.</description>
+                <developerName>instruction_ifnonbusin0</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_ifnonbusin0</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>If the user explicitly asks to be transferred to a live agent, escalate the conversation, but check the noOfOnlineAgents</description>
+                <developerName>instruction_iftheusere1</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_iftheusere1</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>If noOfOnlineAgents = 0, inform the user that “all agents are busy, but you will be contacted soon”, and only then tell them to start transferring to an agent.</description>
+                <developerName>instruction_ifnoofonli2</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_ifnoofonli2</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>if the user asks many complicated things, answer like this &quot;I do not know how to process that request. Would like like me to transfer you to a human agent who can understand better your request?&quot;</description>
+                <developerName>instruction_iftheusera3</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_iftheusera3</masterLabel>
+            </genAiPluginInstructions>
+            <language>en_US</language>
+            <masterLabel>Escalation</masterLabel>
+            <name>Escalation</name>
+            <pluginType>Topic</pluginType>
+            <scope>Your job is to switch the conversation to a live agent if the user explicitly asks for help or has a complex problem that requires human intervention. But only after nonBusinessHours = false during business hours.</scope>
+        </genAiCustomizedPlugin>
+        <genAiPluginName>SvcCopilotTmpl__Escalation</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Agentforce Service Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>

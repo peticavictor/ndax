@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>Routes each message to an enhanced bot. You can customize the flow with business and routing rules.</description>
+    <masterLabel>Route to NDAX</masterLabel>
+</FlowDefinition>

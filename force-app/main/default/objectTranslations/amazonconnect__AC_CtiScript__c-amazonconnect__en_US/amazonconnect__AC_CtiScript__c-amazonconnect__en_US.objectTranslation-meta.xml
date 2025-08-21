@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AC CTI Script</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AC CTI Scripts</value>
+    </caseValues>
+    <layouts>
+        <layout>AC CTI Flow Layout</layout>
+        <sections>
+            <label><!-- CTI Flow --></label>
+            <section>CTI Flow</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>AC CTI Flow Layout - April 2021</layout>
+        <sections>
+            <label><!-- CTI Flow --></label>
+            <section>CTI Flow</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>CTI Script Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

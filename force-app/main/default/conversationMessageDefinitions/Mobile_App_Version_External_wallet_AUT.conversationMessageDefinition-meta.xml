@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile App Version External wallet AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile App Version External wallet AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>{!$Constants.Title}:&lt;p&gt;&lt;strong&gt;To withdraw cryptocurrency  from your Ndax account using the mobile app, follow these steps: &lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;On the bottom navigation bar, tap the Ndax logo.&lt;/li&gt;
+  &lt;li&gt;Select Crypto.&lt;/li&gt;
+  &lt;li&gt;Choose the cryptocurrency you want to withdraw.&lt;/li&gt;
+  &lt;li&gt;Tap Withdraw on the bottom navigation bar.&lt;/li&gt;
+  &lt;li&gt;Select the network you want to use.&lt;/li&gt;
+  &lt;li&gt;Enter the amount you want to withdraw.&lt;/li&gt;
+  &lt;li&gt;Enter the destination wallet address where you want to send your cryptocurrency.&lt;/li&gt;
+  &lt;li&gt;If you are withdrawing XRP, XLM, EOS, LUNC, or Hedera, enter the required destination tag or memo ID.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;Important:&lt;/strong&gt;&lt;br&gt;
+If a destination tag or memo is required, you must include it.&lt;br&gt;
+Failing to do so may result in a loss of funds or delays in processing your withdrawal.&lt;br&gt;
+Only check the ‘No Memo’ box if you are withdrawing to a private wallet that does not require one.&lt;br&gt;
+Most exchanges do require a destination tag or memo.&lt;/p&gt;
+&lt;ol start=&quot;10&quot;&gt;
+  &lt;li&gt;Tap Confirm.&lt;/li&gt;
+  &lt;li&gt;Enter the six-digit 2FA code from your authentication app.&lt;/li&gt;
+  &lt;li&gt;Confirm the withdrawal by clicking the confirmation link sent to your email.&lt;/li&gt;
+&lt;/ol&gt;
+{!$Constants.Url}</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

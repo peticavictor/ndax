@@ -1,0 +1,13 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "listRecordIds" : {
+      "title" : "listRecordIds",
+      "description" : "Pass the MessagingSession.Id Context Variable",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

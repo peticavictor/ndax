@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "isWithinBusinessHours" : {
+      "title" : "isWithinBusinessHours",
+      "description" : "Stores whether the current data time is within business  hours or not",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "strMessage" : {
+      "title" : "strMessage",
+      "description" : "Messaging  if reaching out of assistance during non-business hours",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

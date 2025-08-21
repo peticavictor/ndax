@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mode --></label>
+    <name>amazonconnect__Mode__c</name>
+    <picklistValues>
+        <masterLabel>Default</masterLabel>
+        <translation><!-- Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post</masterLabel>
+        <translation><!-- Post --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real</masterLabel>
+        <translation><!-- Real --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

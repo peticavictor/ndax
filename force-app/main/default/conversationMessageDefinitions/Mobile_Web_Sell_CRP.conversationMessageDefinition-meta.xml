@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile Web Sell CRP</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile Web Sell CRP</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To place a market sell order using the Ndax website on your mobile device, follow these steps:&lt;/strong&gt;&lt;br&gt;
+1. Log in at ndax.io&lt;br&gt;
+2. Scroll to QUICK BUY/SELL&lt;br&gt;
+3. Select the crypto you are trying to sell&lt;br&gt;
+4. Enter the amount of CAD or the amount of that crypto you want to sell&lt;br&gt;
+5. Tap the red Sell button&lt;br&gt;
+6. Review the Order Confirmation screen&lt;br&gt;
+7. Tap Confirm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;✅ Your order will be executed instantly at the best available market price.&lt;/strong&gt;&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

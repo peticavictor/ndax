@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Speaker Status --></label>
+    <name>amazonconnect__Status__c</name>
+    <picklistValues>
+        <masterLabel>ENROLLED</masterLabel>
+        <translation><!-- ENROLLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPT_OUT</masterLabel>
+        <translation><!-- OPT_OUT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

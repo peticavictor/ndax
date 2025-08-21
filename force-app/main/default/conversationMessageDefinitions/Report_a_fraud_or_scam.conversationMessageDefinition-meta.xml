@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Report a fraud or scam</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Report a fraud or scam</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;Please provide information about the fraud/scam incident:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Details of the Incident&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;3rd-Party Scammer Information&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;In addition, we suggest you also file a report with:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Your local law enforcement and securities commissions.&lt;/li&gt;
+  &lt;li&gt;
+    The Canadian Anti-Fraud Centre: 
+    &lt;a href=&quot;https://antifraudcentre-centreantifraude.ca/report-signalez-eng.htm&quot; target=&quot;_blank&quot;&gt;
+      Submit a report online
+    &lt;/a&gt; or by phone: 1-888-495-8501 (toll-free).
+  &lt;/li&gt;
+  &lt;li&gt;
+    The credit bureau &lt;a href=&quot;https://www.consumer.equifax.ca/personal/&quot; target=&quot;_blank&quot;&gt;Equifax&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    The credit bureau 
+    &lt;a href=&quot;https://www.transunion.ca/&quot; target=&quot;_blank&quot;&gt;
+      TransUnion
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

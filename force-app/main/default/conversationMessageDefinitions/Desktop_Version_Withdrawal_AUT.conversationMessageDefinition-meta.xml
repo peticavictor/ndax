@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Desktop Version Withdrawal AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Desktop Version Withdrawal AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To withdrawal CAD into your Ndax account on the website using your desktop, follow these steps:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click WITHDRAW at the top of the screen, or click on WALLET from the left sidebar menu.&lt;/li&gt;
+  &lt;li&gt;Ensure Canadian Dollar is selected and click the SEND button.&lt;/li&gt;
+  &lt;li&gt;Choose your withdrawal method: EFT (Direct Bank Deposit) or INTERAC E-TRANSFER.&lt;/li&gt;
+  &lt;li&gt;If you chose EFT, select your BANK ACCOUNT, or click ADD NEW BANK ACCOUNT if this is your first withdrawal.&lt;/li&gt;
+  &lt;li&gt;Type in the amount you&apos;d like to withdraw.&lt;/li&gt;
+  &lt;li&gt;Read and check the box to accept the disclaimer.&lt;/li&gt;
+  &lt;li&gt;Click WITHDRAW.&lt;/li&gt;
+  &lt;li&gt;Enter the six-digit 2FA authentication code from your 2FA app.&lt;/li&gt;
+  &lt;li&gt;Confirm your withdrawal by clicking the link in the confirmation email.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Processing Times:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;EFT Withdrawals:&lt;/strong&gt; Processed twice daily on business days at 8:00 AM and 4:00 PM EST. Funds typically arrive within 1 business day, depending on your bank.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interac e-Transfers:&lt;/strong&gt; Usually received within a few minutes but may take up to 30–60 minutes.&lt;/li&gt;
+&lt;/ul&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

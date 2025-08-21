@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile Web Order</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile Web Order</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To cancel an open order on the Ndax mobile web version, follow these steps:&lt;/strong&gt;&lt;br&gt;
+1. Log in to your Ndax account.&lt;br&gt;
+2. Tap the ndax logo at the top left to open the menu.&lt;br&gt;
+3. Select &quot;Trade&quot; from the menu.&lt;br&gt;
+4. Tap the orders icon in the bottom right corner of the screen.&lt;br&gt;
+5. Locate the open order you want to cancel.&lt;br&gt;
+6. Tap the &quot;X&quot; icon next to that order.&lt;br&gt;
+7. A confirmation message will appear at the top of the screen confirming the cancellation.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

@@ -1,0 +1,14 @@
+{
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "mainAppPageId" : "61e9510e-af45-419c-b338-468f44ee252e",
+  "preferredDomain" : "none",
+  "trustedSitesForScript" : [ {
+    "id" : "83904fe3-859b-4928-9694-124d4bbac437",
+    "isActive" : true,
+    "trustedSiteName" : "Self",
+    "trustedSiteUrl" : "https://ndax--dev01.sandbox.my.site.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

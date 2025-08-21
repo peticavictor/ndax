@@ -1,0 +1,24 @@
+{
+  "required" : [ "caseNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseNumber" : {
+      "title" : "caseNumber",
+      "description" : "Stores the case number provided by the customer.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "contactRecord" : {
+      "title" : "contactRecord",
+      "description" : "Stores the contact record of the customer to be used with the case number to look up a case.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Contact"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

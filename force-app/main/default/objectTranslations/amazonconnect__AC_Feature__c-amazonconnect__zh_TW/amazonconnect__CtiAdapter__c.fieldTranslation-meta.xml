@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>CTI 轉接器</label>
+    <name>amazonconnect__CtiAdapter__c</name>
+    <relationshipLabel><!-- Features --></relationshipLabel>
+</CustomFieldTranslation>

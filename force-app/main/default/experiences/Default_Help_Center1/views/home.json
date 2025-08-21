@@ -1,0 +1,120 @@
+{
+  "appPageId" : "61e9510e-af45-419c-b338-468f44ee252e",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "dataProviders" : [ ],
+  "id" : "8c4bb26b-16f9-401c-b6ef-4156366e2830",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "showTitle" : true,
+        "title" : "Top Articles",
+        "topicList" : [ ]
+      },
+      "componentName" : "forceCommunity:topArticleList",
+      "id" : "91b95c65-2bfc-4ac9-997b-8b8edac3bfbe",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "47caf966-0d98-4acb-8244-e90b09de8695",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "callToAction" : false,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "GuestCommunityCase",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Customer Support",
+        "isMicrobatch" : false,
+        "quickActionName" : "NewCommunityCase",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "5ca2323a-bf44-4bd4-b7c1-587816cb2153",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b13252c3-21dd-4e10-b38a-86ca690e543c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : false,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "7bfabf69-ef2d-4121-9269-60a3d5ff2b2d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8672e2db-c366-4ef3-ab6f-8d185d8506a3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "deploymentName" : "Service_Messaging",
+        "hideChatButtonOnLoad" : "Default",
+        "scrtUrl" : "https://ndax--dev01.sandbox.my.salesforce-scrt.com",
+        "siteEndpoint" : "https://ndax--dev01.sandbox.my.site.com/ESWServiceMessaging1741792728210"
+      },
+      "componentName" : "experience_messaging:embeddedMessaging",
+      "id" : "9070767f-625c-404c-ae98-b14c0b0f7116",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b75fd7ed-b5d7-4464-b432-32ec6afd8822",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "35eb2e97-50f8-4996-8ff6-29b2b0500131",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6fe537f1-b98f-4f46-b7d7-999706402466",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

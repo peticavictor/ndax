@@ -2,11 +2,52 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>63.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_valid_subcategory</name>
+        <label>Assign valid subcategory</label>
+        <locationX>116</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>caseSubcategoryValidated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseSubCategory</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Email_for_Guest_or_Auth_User</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_subcategoryPicklist</name>
+        <label>Check subcategoryPicklist</label>
+        <locationX>248</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Email_for_Guest_or_Auth_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_the_picklist_value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetPicklistValuesInfo</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_valid_subcategory</targetReference>
+            </connector>
+            <label>Is the picklist value</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>Email_for_Guest_or_Auth_User</name>
         <label>Email for Guest or Auth User</label>
         <locationX>248</locationX>
-        <locationY>458</locationY>
+        <locationY>866</locationY>
         <defaultConnector>
             <targetReference>Get_Account</targetReference>
         </defaultConnector>
@@ -31,7 +72,7 @@
         <name>If_no_account_found</name>
         <label>If no account found</label>
         <locationX>446</locationX>
-        <locationY>674</locationY>
+        <locationY>1082</locationY>
         <defaultConnector>
             <targetReference>Guest_Create_Case</targetReference>
         </defaultConnector>
@@ -62,6 +103,11 @@
         <name>contactIdFormula</name>
         <dataType>String</dataType>
         <expression>BLANKVALUE({!Get_Account.PersonContactId},{!Get_Contact.Id})</expression>
+    </formulas>
+    <formulas>
+        <name>durableIdFormula</name>
+        <dataType>String</dataType>
+        <expression>&apos;Case.Sub_Category__c.&apos; + {!caseSubCategory}</expression>
     </formulas>
     <formulas>
         <name>firstNameFormula</name>
@@ -106,7 +152,7 @@
         <name>Create_Case</name>
         <label>Create Case</label>
         <locationX>50</locationX>
-        <locationY>566</locationY>
+        <locationY>974</locationY>
         <connector>
             <targetReference>Get_Case_Details</targetReference>
         </connector>
@@ -153,6 +199,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Sub_Category__c</field>
+            <value>
+                <elementReference>caseSubcategoryValidated</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Subject</field>
             <value>
                 <elementReference>caseSubject</elementReference>
@@ -171,7 +223,7 @@
         <name>Create_Person_Account</name>
         <label>Create Person Account</label>
         <locationX>314</locationX>
-        <locationY>890</locationY>
+        <locationY>1298</locationY>
         <connector>
             <targetReference>Get_Contact</targetReference>
         </connector>
@@ -206,7 +258,7 @@
         <name>Guest_Create_Case</name>
         <label>Guest Create Case</label>
         <locationX>446</locationX>
-        <locationY>1190</locationY>
+        <locationY>1598</locationY>
         <connector>
             <targetReference>Guest_Get_Case_Details</targetReference>
         </connector>
@@ -253,6 +305,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Sub_Category__c</field>
+            <value>
+                <elementReference>caseSubcategoryValidated</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Subject</field>
             <value>
                 <elementReference>caseSubject</elementReference>
@@ -271,7 +329,7 @@
         <name>Get_Account</name>
         <label>Get Account</label>
         <locationX>446</locationX>
-        <locationY>566</locationY>
+        <locationY>974</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>If_no_account_found</targetReference>
@@ -292,7 +350,7 @@
         <name>Get_Case_Details</name>
         <label>Get Case Details</label>
         <locationX>50</locationX>
-        <locationY>674</locationY>
+        <locationY>1082</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Messaging_Session</targetReference>
@@ -313,7 +371,7 @@
         <name>Get_Contact</name>
         <label>Get Contact</label>
         <locationX>314</locationX>
-        <locationY>998</locationY>
+        <locationY>1406</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Guest_Create_Case</targetReference>
@@ -381,7 +439,7 @@
         <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Email_for_Guest_or_Auth_User</targetReference>
+            <targetReference>GetPicklistValuesInfo</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -399,7 +457,7 @@
         <name>Get_Person_Account_Record_Type</name>
         <label>Get Person Account Record Type</label>
         <locationX>314</locationX>
-        <locationY>782</locationY>
+        <locationY>1190</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_Person_Account</targetReference>
@@ -417,10 +475,31 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>GetPicklistValuesInfo</name>
+        <label>GetPicklistValuesInfo</label>
+        <locationX>248</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_subcategoryPicklist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DurableId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>durableIdFormula</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PicklistValueInfo</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Guest_Get_Case_Details</name>
         <label>Guest Get Case Details</label>
         <locationX>446</locationX>
-        <locationY>1298</locationY>
+        <locationY>1706</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Messaging_Session</targetReference>
@@ -441,7 +520,7 @@
         <name>Update_Messaging_Session</name>
         <label>Update Messaging Session</label>
         <locationX>248</locationX>
-        <locationY>1490</locationY>
+        <locationY>1898</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -491,6 +570,20 @@
         <isInput>false</isInput>
         <isOutput>true</isOutput>
         <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>caseSubCategory</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>caseSubcategoryValidated</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>caseSubject</name>

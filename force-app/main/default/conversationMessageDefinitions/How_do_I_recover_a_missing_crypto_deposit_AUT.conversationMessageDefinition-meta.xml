@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>How do I recover a missing crypto deposit AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>How do I recover a missing crypto deposit? AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>Our Deposit Recovery Form BETA feature is intended for cryptocurrency deposits that require recovery.
+
+Please follow these steps to upload the details of your deposit for recovery:
+
+- Click the NDAX SYMBOL on the top left-hand corner
+
+- Click the WALLET from the dropdown menu
+
+- Select the Cryptocurrency you wish to recover
+
+- Click MISSING DEPOSIT at the bottom of the screen
+
+- You will now be prompted to enter the AMOUNT, TRANSACTION ID and UPLOAD IMAGE OR VIDEO ( Of your transaction record from your external wallet to validate the authenticity of your deposit)
+
+- Click SUBMIT
+
+Please note that if you deposited an unsupported asset, our team will review your request and let you know if we are able to retrieve the deposit (If eligible). 
+Once you submit the crypto deposit recovery form, please let us know.</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

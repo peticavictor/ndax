@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Desktop Version Wired</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Desktop Version Wired</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To deposit funds via wire transfer on Ndax (web):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Log in to your account at ndax.io.&lt;/li&gt;
+  &lt;li&gt;After logging in, you&apos;ll be redirected to your dashboard.&lt;/li&gt;
+  &lt;li&gt;Click Deposit at the top of the page.&lt;/li&gt;
+  &lt;li&gt;Select Wire Transfer.&lt;br&gt;
+      - If depositing USD, first choose United States Dollar, then click Receive.&lt;/li&gt;
+  &lt;li&gt;Copy the banking details provided.&lt;/li&gt;
+  &lt;li&gt;Use this information to send a wire transfer from your online banking or in-branch with your financial institution.&lt;/li&gt;
+  &lt;li&gt;After sending the wire, scroll down and click Upload a Receipt.&lt;/li&gt;
+  &lt;li&gt;Enter your full name and the amount exactly as shown on your wire receipt.&lt;/li&gt;
+  &lt;li&gt;Upload a copy of the wire transfer receipt.&lt;/li&gt;
+  &lt;li&gt;Click Submit to complete the process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;💡 Wire deposits typically arrive in your Ndax CAD wallet within 0–1 business day, provided all details match.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Mobile Web Portfolio AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Mobile Web Portfolio AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To view your portfolio performance on the mobile website, follow these steps:&lt;/strong&gt;&lt;br&gt;
+1. On your Dashboard, scroll down to the Portfolio Distribution section.&lt;br&gt;
+2. Here, you&apos;ll see a summary of your portfolio, including total value and asset distribution.&lt;br&gt;
+3. To view more details, tap SEE ALL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What you&apos;ll find on the detailed portfolio page (after clicking SEE ALL):&lt;/strong&gt;&lt;br&gt;
+Top-level portfolio metrics, including:&lt;br&gt;
+- Portfolio Value&lt;br&gt;
+- Staking Value&lt;br&gt;
+- Total Invested&lt;br&gt;
+- Total Withdrawals&lt;br&gt;
+- Total Profit&lt;br&gt;
+- Portfolio Growth %&lt;br&gt;
+    Graphical breakdowns, including:&lt;br&gt;
+- A distribution chart showing your total balance and allocation across assets.&lt;br&gt;
+- A balance or performance graph over selectable timeframes (7D, 1M, etc.).&lt;br&gt;
+- Option to toggle between Balances and Performance.&lt;br&gt;
+    Asset table, which displays:&lt;br&gt;
+- Your balance per crypto asset&lt;br&gt;
+- Purchase price and current market price&lt;br&gt;
+- Unrealized gains/losses&lt;br&gt;
+- Share of each asset in your total portfolio&lt;br&gt;
+- Quick access to Trade or enable Auto-Buy&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This dashboard makes it easy to monitor your investments, performance trends, and portfolio allocation—all from one place.&lt;/strong&gt;&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

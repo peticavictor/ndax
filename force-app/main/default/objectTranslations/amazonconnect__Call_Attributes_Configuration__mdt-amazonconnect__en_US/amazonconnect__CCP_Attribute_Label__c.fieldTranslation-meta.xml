@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please provide the label for this attribute as it will be shown in the display within CCP. Ideally, the shorter the name the better it is. --></help>
+    <label><!-- Attribute Label --></label>
+    <name>amazonconnect__CCP_Attribute_Label__c</name>
+</CustomFieldTranslation>

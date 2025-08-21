@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi, I&apos;m an AI service assistant. How can I help you?</message>
+                <messageIdentifier>deb32582-de11-494e-81d3-91bdb7feea28</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>f36b9174-d495-4e1d-a9ad-cb275afd393f</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>072eedff-6a7d-4e8f-91f3-dfcd5dba584e</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Sorry, it looks like something has gone wrong.</message>
+                <messageIdentifier>2403e956-e7ec-44b1-9733-d90b7bc52d61</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>04125d5a-5e18-4ffa-9238-a089ea5059ed</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>71ce415c-17f9-4de2-9867-69764139593a</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>One moment while I connect you to the next available service representative.</message>
+                <messageIdentifier>cb63ffc5-259f-4996-beae-b771faf36c10</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>80e8608e-134f-4562-86e0-9c2c5d8d3453</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <conversationSystemMessage>
+                <type>Transfer</type>
+            </conversationSystemMessage>
+            <stepIdentifier>948e5924-2b73-457c-88c1-6293d962bce3</stepIdentifier>
+            <type>SystemMessage</type>
+        </botSteps>
+        <developerName>Transfer_To_Agent</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Transfer To Agent</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>Ndax empowers our users to confidently navigate the intricate landscape of digital assets, providing a platform that bridges the gap between financial literacy and freedom.</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Agentforce_Service_Agent</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>An AI customer service agent whose job is to help customers with support questions or other issues.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
+    <surfacesEnabled>false</surfacesEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>

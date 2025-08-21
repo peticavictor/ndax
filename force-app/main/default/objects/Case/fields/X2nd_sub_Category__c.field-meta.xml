@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2nd_sub_Category__c</fullName>
+    <label>2nd sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wire deposit</fullName>
+                <default>false</default>
+                <label>Wire deposit</label>
+            </value>
+            <value>
+                <fullName>Interac e-Transfer</fullName>
+                <default>false</default>
+                <label>Interac e-Transfer</label>
+            </value>
+            <value>
+                <fullName>I have not received my deposit</fullName>
+                <default>false</default>
+                <label>I have not received my deposit</label>
+            </value>
+            <value>
+                <fullName>How do I deposit cryptocurrency?</fullName>
+                <default>false</default>
+                <label>How do I deposit cryptocurrency?</label>
+            </value>
+            <value>
+                <fullName>Fees, limits and timeframes</fullName>
+                <default>false</default>
+                <label>Fees, limits and timeframes</label>
+            </value>
+            <value>
+                <fullName>Where can I find my wallet address?</fullName>
+                <default>false</default>
+                <label>Where can I find my wallet address?</label>
+            </value>
+            <value>
+                <fullName>How to recover a missing crypto deposit?</fullName>
+                <default>false</default>
+                <label>How to recover a missing crypto deposit?</label>
+            </value>
+            <value>
+                <fullName>How do I withdraw CAD to my bank account?</fullName>
+                <default>false</default>
+                <label>How do I withdraw CAD to my bank account?</label>
+            </value>
+            <value>
+                <fullName>Withdrawal timeframes, fees and limits</fullName>
+                <default>false</default>
+                <label>Withdrawal timeframes, fees and limits</label>
+            </value>
+            <value>
+                <fullName>How do I cancel a withdrawal request?</fullName>
+                <default>false</default>
+                <label>How do I cancel a withdrawal request?</label>
+            </value>
+            <value>
+                <fullName>I have not received my Canadian dollar withdrawal</fullName>
+                <default>false</default>
+                <label>I have not received my Canadian dollar withdrawal</label>
+            </value>
+            <value>
+                <fullName>How to withdraw crypto to an external wallet?</fullName>
+                <default>false</default>
+                <label>How to withdraw crypto to an external wallet?</label>
+            </value>
+            <value>
+                <fullName>My withdrawal has not arrived at the destination address</fullName>
+                <default>false</default>
+                <label>My withdrawal has not arrived at the destination address</label>
+            </value>
+            <value>
+                <fullName>How to send an Internal transfer within NDAX?</fullName>
+                <default>false</default>
+                <label>How to send an Internal transfer within NDAX?</label>
+            </value>
+            <value>
+                <fullName>Advantages of internal transfers</fullName>
+                <default>false</default>
+                <label>Advantages of internal transfers</label>
+            </value>
+            <value>
+                <fullName>How do I track internal transfers?</fullName>
+                <default>false</default>
+                <label>How do I track internal transfers?</label>
+            </value>
+            <value>
+                <fullName>How do I send cryptocurrency as a gift on NDAX?</fullName>
+                <default>false</default>
+                <label>How do I send cryptocurrency as a gift on NDAX?</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>E-transfers</controllingFieldValue>
+            <controllingFieldValue>CAD Deposit</controllingFieldValue>
+            <controllingFieldValue>Canadian Dollar (CAD) Deposit</controllingFieldValue>
+            <valueName>Wire deposit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-transfers</controllingFieldValue>
+            <controllingFieldValue>CAD Deposit</controllingFieldValue>
+            <controllingFieldValue>Canadian Dollar (CAD) Deposit</controllingFieldValue>
+            <valueName>Interac e-Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>I have not received my deposit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>How do I deposit cryptocurrency?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>Fees, limits and timeframes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>Where can I find my wallet address?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>How to recover a missing crypto deposit?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Deposit</controllingFieldValue>
+            <controllingFieldValue>Internal transfers</controllingFieldValue>
+            <controllingFieldValue>CAD Withdrawals</controllingFieldValue>
+            <controllingFieldValue>Crypto Withdrawals</controllingFieldValue>
+            <controllingFieldValue>Cryptocurrency Deposit</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal transfers</controllingFieldValue>
+            <valueName>How to send an Internal transfer within NDAX?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal transfers</controllingFieldValue>
+            <valueName>Advantages of internal transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal transfers</controllingFieldValue>
+            <valueName>How do I track internal transfers?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal transfers</controllingFieldValue>
+            <valueName>How do I send cryptocurrency as a gift on NDAX?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAD Withdrawals</controllingFieldValue>
+            <valueName>How do I withdraw CAD to my bank account?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAD Withdrawals</controllingFieldValue>
+            <controllingFieldValue>Crypto Withdrawals</controllingFieldValue>
+            <valueName>Withdrawal timeframes, fees and limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAD Withdrawals</controllingFieldValue>
+            <controllingFieldValue>Crypto Withdrawals</controllingFieldValue>
+            <valueName>How do I cancel a withdrawal request?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAD Withdrawals</controllingFieldValue>
+            <valueName>I have not received my Canadian dollar withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Withdrawals</controllingFieldValue>
+            <valueName>How to withdraw crypto to an external wallet?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Withdrawals</controllingFieldValue>
+            <valueName>My withdrawal has not arrived at the destination address</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

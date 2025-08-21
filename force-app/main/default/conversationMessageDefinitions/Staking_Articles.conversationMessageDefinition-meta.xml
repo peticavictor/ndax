@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Staking Articles</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Staking Articles</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;Staking Articles&lt;/strong&gt;&lt;br /&gt;
+Introduction to Staking:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/cryptocurrencies-available-for-staking&quot;&gt;Which cryptocurrencies can be staked on Ndax?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/staking-fees&quot;&gt;What are the fees associated with staking on Ndax?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/opt-out-staking&quot;&gt;How can I opt out of staking an asset on Ndax?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/risks-of-staking&quot;&gt;What are the general risks of staking to consider?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/null&quot;&gt;How to Access the Staking Performance Tab on Mobile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/understanding-staking-terminology&quot;&gt;Understanding Staking Terminology&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt; &lt;br /&gt;
+Guide on staking cryptocurrency:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-ethereum-eth&quot;&gt;How do I stake Ethereum (ETH)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-cardano-ada&quot;&gt;How do I stake Cardano (ADA)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-polkadot-dot&quot;&gt;How do I stake Polkadot (DOT)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-polygon-pol&quot;&gt;How do I stake Polygon (POL)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-the-graph-grt&quot;&gt;How do I stake The Graph (GRT)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-cosmos-atom&quot;&gt;How do I stake Cosmos (ATOM)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-solana-sol&quot;&gt;How do I stake Solana (SOL)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/stake-near-protocol&quot;&gt;How do I stake Near (NEAR)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/Guides-on-staking&quot;&gt;Guide on staking cryptocurrency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/how-do-i-stake-injective-inj&quot;&gt;How Do I Stake Injective (INJ)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/how-do-i-stake-sei-sei&quot;&gt;How Do I Stake Sei (SEI)?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/how-do-i-stake-sui-sui&quot;&gt;How Do I Stake Sui (SUI)?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt; &lt;br /&gt;
+Staking Rewards:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/staking-rewards-earnings&quot;&gt;How much can you earn from staking rewards on Ndax?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ndax.io/en/support/staking/earning-staking-rewards&quot;&gt;When and how will I earn my staking rewards on Ndax?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

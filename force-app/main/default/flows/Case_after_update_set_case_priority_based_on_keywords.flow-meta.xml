@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_current_priority</name>
+        <label>Assign current priority</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>casePriorityNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_priority_based_on_category_and_subcategory</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_priority_low</name>
+        <label>Assign current priority low</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_all_keywords</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_priority_mid</name>
+        <label>Assign current priority mid</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>casePriorityNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_all_keywords</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_current_priority_very_high</name>
+        <label>Assign current priority very high</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_all_keywords</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_new_peiority</name>
+        <label>Assign new peiority</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loopKeywordPriority</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Keyword_loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign_current_priority</name>
+        <label>Assign current priority high</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>casePriority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_all_keywords</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_case_priority</name>
+        <label>Check case priority</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Keyword_loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_priority_Keyword_priority</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>casePriority</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>loopKeywordPriority</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Subject</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Keyword_loop.Key_word__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Description</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Keyword_loop.Key_word__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_new_peiority</targetReference>
+            </connector>
+            <label>Case priority &lt; Keyword priority</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Set_priority_based_on_category_and_subcategory</name>
+        <label>Set priority based on category and subcategory</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Get_all_keywords</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Case Priority Very Low</defaultConnectorLabel>
+        <rules>
+            <name>Case_Priority_Very_HIgh</name>
+            <conditionLogic>1 OR 2 OR 3 OR (4 AND (5 OR 6))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Deposits</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Withdrawals &amp; Internal Transfers</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Law Enforcement Requests</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>General feedback</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service complaints</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_current_priority_very_high</targetReference>
+            </connector>
+            <label>Case Priority Very HIgh</label>
+        </rules>
+        <rules>
+            <name>Case_Priority_HIgh</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Account Management</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Business Application</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Manual Verification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Assign_current_priority</targetReference>
+            </connector>
+            <label>Case Priority HIgh</label>
+        </rules>
+        <rules>
+            <name>Case_Priority_Medium</name>
+            <conditionLogic>1 OR (2 AND 3) OR 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Trading</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Other</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Appropriateness questionnaire</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Investment Limits</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_current_priority_mid</targetReference>
+            </connector>
+            <label>Case Priority Medium</label>
+        </rules>
+        <rules>
+            <name>Case_Priority_Low</name>
+            <conditionLogic>1 OR 2 OR 3 OR (4 OR (5 AND 6)) OR (7 OR (8 AND 9))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Staking</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Referral Program</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Social - no support required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Newsletters</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance &amp; Regulation - Other</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Trusted contact person</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Regulatory status</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_current_priority_low</targetReference>
+            </connector>
+            <label>Case Priority Low</label>
+        </rules>
+    </decisions>
+    <description>Add priority based on piclist category and subcategory</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>casePriorityNumber</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.Priority},&quot;5&quot;, 5,&quot;2&quot;, 2, &quot;3&quot;, 3,&quot;4&quot;,4,1)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>loopKeywordPriority</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!Keyword_loop.Priority__c},&quot;5&quot;, 5,&quot;2&quot;, 2, &quot;3&quot;, 3,&quot;4&quot;,4,1)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Case after update - set case priority based on keywords {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case after update - set case priority based on keywords</label>
+    <loops>
+        <name>Keyword_loop</name>
+        <label>Keyword loop</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_all_keywords</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_case_priority</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Records_1</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_all_keywords</name>
+        <label>Get all keywords</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Keyword_loop</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Key_word_for_case_priority__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Records_1</name>
+        <label>Update Records 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <elementReference>casePriority</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_current_priority</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>casePriority</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

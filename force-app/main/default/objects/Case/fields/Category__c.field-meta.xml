@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <inlineHelpText>Used to determine the agent high-level skills required to solve this case</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+                <label>Account Management</label>
+            </value>
+            <value>
+                <fullName>Deposits</fullName>
+                <default>false</default>
+                <label>Deposits</label>
+            </value>
+            <value>
+                <fullName>Withdrawals &amp; Internal Transfers</fullName>
+                <default>false</default>
+                <label>Withdrawals &amp; Internal Transfers</label>
+            </value>
+            <value>
+                <fullName>Trading</fullName>
+                <default>false</default>
+                <label>Trading</label>
+            </value>
+            <value>
+                <fullName>Staking</fullName>
+                <default>false</default>
+                <label>Staking</label>
+            </value>
+            <value>
+                <fullName>Referral Program</fullName>
+                <default>false</default>
+                <label>Referral Program</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation - Other</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Regulation - Other</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation - Business Application</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Regulation - Business Application</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation - Manual Verification</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Regulation - Manual Verification</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation - Law Enforcement Requests</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Regulation - Law Enforcement Requests</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation - Investment Limits</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Regulation - Investment Limits</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Account Management &amp; Login Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account Management &amp; Login Issues</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Regulation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compliance &amp; Regulation</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>Getting Started &amp; Verifications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Getting Started &amp; Verifications</label>
+            </value>
+            <value>
+                <fullName>How can we help you today?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>How can we help you today?</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Trading &amp; Advanced Orders</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trading &amp; Advanced Orders</label>
+            </value>
+            <value>
+                <fullName>Two Factor Authentications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Two Factor Authentications</label>
+            </value>
+            <value>
+                <fullName>Which currency are you depositing?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Which currency are you depositing?</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

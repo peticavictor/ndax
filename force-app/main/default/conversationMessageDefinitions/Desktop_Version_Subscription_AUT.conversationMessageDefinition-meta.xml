@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Desktop Version Subscription AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Desktop Version Subscription AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;ol&gt;
+    &lt;li&gt;Click on the &apos;Staking&apos; tab on the left hand side of the screen&lt;/li&gt;
+    &lt;li&gt;Scroll through the list of assets you have staked and click on the 3 dots button next to your &apos;Active Subscriptions&apos;&lt;/li&gt;
+    &lt;li&gt;Click &apos;Unstake&apos;&lt;/li&gt;
+    &lt;li&gt;Select either &apos;Full amount&apos; or &apos;Partial&apos; if you selected &apos;Partial&apos;, choose the amount or percentage you would like un-staked.&lt;/li&gt;
+    &lt;li&gt;Select &apos;Standard&apos; or &apos;Instant&apos; redemption (depending on your plan, instant redemption might not be available)&lt;/li&gt;
+    &lt;li&gt;If you selected &apos;Partial&apos;, choose the amount or percentage you would like un-staked&lt;/li&gt;
+    &lt;li&gt;Click the green &apos;Confirm&apos; button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Please note that there is an un-bonding period between 1-28 days, depending on the staking plan you have. Once the un-bonding period is complete, your crypto will return to your Ndax wallet.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

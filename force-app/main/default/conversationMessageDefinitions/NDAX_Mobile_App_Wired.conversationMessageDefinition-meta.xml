@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>NDAX Mobile App Wired</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>NDAX Mobile App Wired</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;To deposit funds via wire transfer using the Ndax mobile app:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Log in to the Ndax app.&lt;/li&gt;
+  &lt;li&gt;Tap the Wallet icon on the bottom navigation bar.&lt;/li&gt;
+  &lt;li&gt;Go to the FIAT tab.&lt;/li&gt;
+  &lt;li&gt;Select CAD or USD.&lt;/li&gt;
+  &lt;li&gt;Tap Deposit, then enter the amount you wish to deposit.&lt;/li&gt;
+  &lt;li&gt;Select Wire Transfer.&lt;/li&gt;
+  &lt;li&gt;Copy the banking details provided.&lt;/li&gt;
+  &lt;li&gt;Use this information to send a wire transfer from your online banking or by visiting your bank branch.&lt;/li&gt;
+  &lt;li&gt;Once the wire is sent, scroll to the bottom of the deposit screen and tap Upload Receipt.&lt;/li&gt;
+  &lt;li&gt;Upload a copy of your wire receipt.&lt;/li&gt;
+  &lt;li&gt;Tap Deposit to finish the process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;💡 Wire deposits usually appear in your NDAX CAD wallet within 0–1 business day, as long as all details are correct.&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

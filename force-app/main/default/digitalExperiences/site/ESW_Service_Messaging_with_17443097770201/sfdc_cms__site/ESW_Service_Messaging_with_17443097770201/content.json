@@ -1,0 +1,8 @@
+{
+  "type" : "sfdc_cms__site",
+  "title" : "ESW_Service_Messaging_with_1744309777020",
+  "contentBody" : {
+    "authenticationType" : "AUTHENTICATED_WITH_PUBLIC_ACCESS_ENABLED"
+  },
+  "urlName" : "esw-service-messaging-with-1744309777020"
+}

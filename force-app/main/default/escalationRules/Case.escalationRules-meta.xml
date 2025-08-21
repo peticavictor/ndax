@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Margarita</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Escalated</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Compliance &amp; Regulation - Business Application</value>
+            </criteriaItems>
+            <escalationAction>
+                <assignedTo>margarita.griguel@ndax.io</assignedTo>
+                <assignedToType>User</assignedToType>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

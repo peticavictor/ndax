@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>Have you uploaded your wire receipt? Desktop Wire AUT</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>Have you uploaded your wire receipt? Desktop Wire AUT</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;ul&gt;
+  &lt;li&gt;Once you log in, you will be redirected to your dashboard&lt;/li&gt;
+  &lt;li&gt;Click Deposit located at the top of the page&lt;/li&gt;
+  &lt;li&gt;Select &lt;strong&gt;WIRE TRANSFER&lt;/strong&gt;, if you&apos;re depositing USD, select United States Dollar first, then Receive,&lt;/li&gt;
+  &lt;li&gt;Copy the information provided and initiate a wire transfer from your online banking platform&apos;s website or in the branch with the information provided&lt;/li&gt;
+  &lt;li&gt;Once you send the wire transfer from your financial institution, click on Upload A Receipt located at the bottom of the page&lt;/li&gt;
+  &lt;li&gt;Enter your &lt;strong&gt;FULL NAME&lt;/strong&gt; and &lt;strong&gt;AMOUNT&lt;/strong&gt; as it shows on the wire receipt, then upload your copy of the wire transfer receipt&lt;/li&gt;
+  &lt;li&gt;Click on &lt;strong&gt;SUBMIT&lt;/strong&gt; once finished&lt;/li&gt;
+&lt;/ul&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

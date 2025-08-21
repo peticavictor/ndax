@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>When will I earn my staking rewards?</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>When will I earn my staking rewards?</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;Staking rewards are redeemed automatically and sent to your wallet at regular intervals.&lt;/p&gt;
+&lt;p&gt;Payout frequency depends on the asset:&lt;br&gt;
+Daily: DOT, ADA, SOL, ATOM, TIA, INJ, SEI, SUI, POL, S&lt;br&gt;
+Weekly: ETH, GRT&lt;/p&gt;
+&lt;p&gt;Once your staking plan is confirmed, there&apos;s a bonding period before rewards begin. This ranges from 1-3 days depending on the asset.&lt;/p&gt;
+&lt;p&gt;To learn more about payout frequencies, please visit https://ndax.io/en/support/staking/earning-staking-rewards&lt;/p&gt;
+&lt;p&gt;Let us know if you&apos;d like help checking the bonding and payout details for a specific asset!&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

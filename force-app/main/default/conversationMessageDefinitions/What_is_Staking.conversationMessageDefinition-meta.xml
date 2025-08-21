@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversationMessageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <constantType>Image</constantType>
+        <primitiveValues>
+            <contentAssetName>Ndax_Logo_12</contentAssetName>
+            <type>ImageAsset</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Title</constantType>
+        <primitiveValues>
+            <textValue>What is Staking?</textValue>
+            <type>Text</type>
+        </primitiveValues>
+    </constants>
+    <constants>
+        <constantType>Url</constantType>
+        <primitiveValues>
+            <type>Url</type>
+            <urlValue>https://example.com</urlValue>
+        </primitiveValues>
+    </constants>
+    <label>What is Staking?</label>
+    <language>en_US</language>
+    <messageLayouts>
+        <formatType>Text</formatType>
+        <layoutItems>
+            <collectionType>None</collectionType>
+            <name>text</name>
+            <primitiveValues>
+                <formulaTemplate>&lt;p&gt;&lt;strong&gt;Earn Rewards While You Hold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Crypto staking allows you to earn passive income by supporting blockchain networks that use a Proof-of-Stake (PoS) mechanism. When you stake your crypto with NDAX, you contribute to network security and receive staking rewards—up to 12% APY, depending on the asset.&lt;/p&gt;
+&lt;p&gt;NDAX currently supports staking for 13 assets, including:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Ethereum (ETH)&lt;/li&gt;
+    &lt;li&gt;Cardano (ADA)&lt;/li&gt;
+    &lt;li&gt;Polkadot (DOT)&lt;/li&gt;
+    &lt;li&gt;Polygon (MATIC)&lt;/li&gt;
+    &lt;li&gt;The Graph (GRT)&lt;/li&gt;
+    &lt;li&gt;Cosmos (ATOM)&lt;/li&gt;
+    &lt;li&gt;Tezos (XTZ)&lt;/li&gt;
+    &lt;li&gt;NEAR Protocol (NEAR)&lt;/li&gt;
+    &lt;li&gt;Solana (SOL)&lt;/li&gt;
+    &lt;li&gt;Avalanche (AVAX)&lt;/li&gt;
+    &lt;li&gt;Mina (MINA)&lt;/li&gt;
+    &lt;li&gt;Internet Computer (ICP)&lt;/li&gt;
+    &lt;li&gt;Flow (FLOW)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Want to learn more about staking? Visit our Help Article here:&lt;br&gt;
+https://ndax.io/en/support/staking&lt;/p&gt;</formulaTemplate>
+                <type>FormulaTemplate</type>
+            </primitiveValues>
+        </layoutItems>
+        <messageType>StaticContent</messageType>
+    </messageLayouts>
+    <type>Link</type>
+</ConversationMessageDefinition>

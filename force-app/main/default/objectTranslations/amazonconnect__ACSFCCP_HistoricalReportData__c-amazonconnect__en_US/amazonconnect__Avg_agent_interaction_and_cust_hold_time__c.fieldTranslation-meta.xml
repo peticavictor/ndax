@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Avg agent interaction and cust hold time --></label>
+    <name>amazonconnect__Avg_agent_interaction_and_cust_hold_time__c</name>
+</CustomFieldTranslation>

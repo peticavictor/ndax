@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Choose to enable or disable the AC_AssociateCCAContact trigger, which associates a Contact with a Contact Channel Analytics record. --></help>
+    <label>Desactive el desencadenador de contacto de CCA</label>
+    <name>amazonconnect__disableCCAContact__c</name>
+</CustomFieldTranslation>
