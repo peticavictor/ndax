@@ -88,6 +88,208 @@
         <value>Other</value>
     </workSkillRoutingAttributes>
     <workSkillRoutingAttributes>
+        <field>Case.Route_to_Business_Application_Middle_Sec__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Business_Application_Middle</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Route_to_Business_Application_Senior_Fir__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Business_Application_Senior</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Route_to_Investment_Limits_Senior_First__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Investment_Limits_Senior</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Route_to_Law_Enforcement_Requests_Senior__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Law_Enforcement_Requests_Senior</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Route_to_Manual_Verification_Senior_Firs__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Manual_Verification_Senior</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Route_to_Trading_Staking_Senior_First__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Trading_Staking_Senior</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>True</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Advanced_trading</skill>
+        <skillLevel>0</skillLevel>
+        <value>Advanced trading</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Recurring_purchases</skill>
+        <skillLevel>0</skillLevel>
+        <value>Recurring purchases</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Portfolio</skill>
+        <skillLevel>0</skillLevel>
+        <value>Portfolio</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Bonding</skill>
+        <skillLevel>0</skillLevel>
+        <value>Bonding</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Payouts</skill>
+        <skillLevel>0</skillLevel>
+        <value>Payouts</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Redemption_unbonding</skill>
+        <skillLevel>0</skillLevel>
+        <value>Redemption (unbonding)</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>General_feedback</skill>
+        <skillLevel>0</skillLevel>
+        <value>General feedback</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Service_complaints</skill>
+        <skillLevel>0</skillLevel>
+        <value>Service complaints</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Social_no_support_required</skill>
+        <skillLevel>0</skillLevel>
+        <value>Social - no support required</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Newsletters</skill>
+        <skillLevel>0</skillLevel>
+        <value>Newsletters</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Marketing</skill>
+        <skillLevel>0</skillLevel>
+        <value>Marketing</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Duplicate_accounts</skill>
+        <skillLevel>0</skillLevel>
+        <value>Duplicate accounts</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Hacked_compromised_account</skill>
+        <skillLevel>0</skillLevel>
+        <value>Hacked/compromised account</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Scam_fraud_detected</skill>
+        <skillLevel>0</skillLevel>
+        <value>Scam/fraud detected</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Appropriateness_questionnaire</skill>
+        <skillLevel>0</skillLevel>
+        <value>Appropriateness questionnaire</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Staking_questionnaire</skill>
+        <skillLevel>0</skillLevel>
+        <value>Staking questionnaire</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Regulatory_status</skill>
+        <skillLevel>0</skillLevel>
+        <value>Regulatory status</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Business_application</skill>
+        <skillLevel>0</skillLevel>
+        <value>Business application</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Manual_verification</skill>
+        <skillLevel>0</skillLevel>
+        <value>Manual verification</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Law_enforcement_requests</skill>
+        <skillLevel>0</skillLevel>
+        <value>Law enforcement requests</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Investment_limits</skill>
+        <skillLevel>0</skillLevel>
+        <value>Investment limits</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>Case.Sub_Category__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Trusted_contact_person</skill>
+        <skillLevel>0</skillLevel>
+        <value>Trusted contact person</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
         <field>Case.Support_Language__c</field>
         <isAdditionalSkill>false</isAdditionalSkill>
         <skill>English</skill>
