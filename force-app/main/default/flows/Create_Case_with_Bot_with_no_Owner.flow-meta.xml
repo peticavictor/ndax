@@ -5,7 +5,7 @@
     <assignments>
         <name>Assign_existing_subcategory</name>
         <label>Assign existing subcategory</label>
-        <locationX>116</locationX>
+        <locationX>193</locationX>
         <locationY>566</locationY>
         <assignmentItems>
             <assignToReference>caseSubCategoryValidated</assignToReference>
@@ -21,7 +21,7 @@
     <decisions>
         <name>Check_subcategory_existence</name>
         <label>Check subcategory existence</label>
-        <locationX>248</locationX>
+        <locationX>325</locationX>
         <locationY>458</locationY>
         <defaultConnector>
             <targetReference>Email_for_Guest_or_Auth_User</targetReference>
@@ -46,7 +46,7 @@
     <decisions>
         <name>Email_for_Guest_or_Auth_User</name>
         <label>Email for Guest or Auth User</label>
-        <locationX>248</locationX>
+        <locationX>325</locationX>
         <locationY>758</locationY>
         <defaultConnector>
             <targetReference>Get_Account</targetReference>
@@ -69,9 +69,34 @@
         </rules>
     </decisions>
     <decisions>
+        <name>if_last_name_is_not_blank</name>
+        <label>if last name is not blank</label>
+        <locationX>446</locationX>
+        <locationY>1082</locationY>
+        <defaultConnector>
+            <targetReference>Guest_Create_Case</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Last_name_is_not_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>lastNameFormula</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Person_Account_Record_Type</targetReference>
+            </connector>
+            <label>Last name is not blank</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>If_no_account_found</name>
         <label>If no account found</label>
-        <locationX>446</locationX>
+        <locationX>600</locationX>
         <locationY>974</locationY>
         <defaultConnector>
             <targetReference>Guest_Create_Case</targetReference>
@@ -88,7 +113,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Person_Account_Record_Type</targetReference>
+                <targetReference>if_last_name_is_not_blank</targetReference>
             </connector>
             <label>No account found</label>
         </rules>
@@ -217,7 +242,7 @@
         <name>Create_Person_Account</name>
         <label>Create Person Account</label>
         <locationX>314</locationX>
-        <locationY>1190</locationY>
+        <locationY>1298</locationY>
         <connector>
             <targetReference>Get_Contact</targetReference>
         </connector>
@@ -251,8 +276,8 @@
     <recordCreates>
         <name>Guest_Create_Case</name>
         <label>Guest Create Case</label>
-        <locationX>446</locationX>
-        <locationY>1490</locationY>
+        <locationX>600</locationX>
+        <locationY>1682</locationY>
         <connector>
             <targetReference>Guest_Get_Case_Details</targetReference>
         </connector>
@@ -316,7 +341,7 @@
     <recordLookups>
         <name>Get_Account</name>
         <label>Get Account</label>
-        <locationX>446</locationX>
+        <locationX>600</locationX>
         <locationY>866</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -359,7 +384,7 @@
         <name>Get_Contact</name>
         <label>Get Contact</label>
         <locationX>314</locationX>
-        <locationY>1298</locationY>
+        <locationY>1406</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Guest_Create_Case</targetReference>
@@ -379,7 +404,7 @@
     <recordLookups>
         <name>Get_Messaging_Session</name>
         <label>Get Messaging Session</label>
-        <locationX>248</locationX>
+        <locationX>325</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -402,7 +427,7 @@
     <recordLookups>
         <name>Get_Messaging_User</name>
         <label>Get Messaging User</label>
-        <locationX>248</locationX>
+        <locationX>325</locationX>
         <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -424,7 +449,7 @@
         <name>Get_Person_Account_Record_Type</name>
         <label>Get Person Account Record Type</label>
         <locationX>314</locationX>
-        <locationY>1082</locationY>
+        <locationY>1190</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_Person_Account</targetReference>
@@ -444,7 +469,7 @@
     <recordLookups>
         <name>Get_picklist_value_info</name>
         <label>Get picklist value info</label>
-        <locationX>248</locationX>
+        <locationX>325</locationX>
         <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -465,8 +490,8 @@
     <recordLookups>
         <name>Guest_Get_Case_Details</name>
         <label>Guest Get Case Details</label>
-        <locationX>446</locationX>
-        <locationY>1598</locationY>
+        <locationX>600</locationX>
+        <locationY>1790</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Messaging_Session</targetReference>
@@ -486,8 +511,8 @@
     <recordUpdates>
         <name>Update_Messaging_Session</name>
         <label>Update Messaging Session</label>
-        <locationX>248</locationX>
-        <locationY>1790</locationY>
+        <locationX>325</locationX>
+        <locationY>1982</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -506,7 +531,7 @@
     </recordUpdates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <start>
-        <locationX>122</locationX>
+        <locationX>199</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Messaging_Session</targetReference>
