@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__UtilityBar</target>
+    </targets>
+    <masterLabel>Case Router</masterLabel>
+    <targetConfigs>
+        <targetConfig targets="lightning__UtilityBar">
+            <property name="eventChannel" type="String" label="Platform Event Channel" description="e.g. /event/New_Phone_Case__e" default="/event/New_Phone_Case__e"/>
+            <property name="caseIdField" type="String" label="Case Id Field in Event Payload" default="Case_Id__c"/>
+            <property name="ownerIdField" type="String" label="Owner Id Field in Event Payload" default="Owner_Id__c"/>
+            <property name="replayId" type="Integer" label="Replay Id (-1 new, -2 all available)" default="-1"/>
+            <property name="autoFocus" type="Boolean" label="Auto Focus Tab" default="true"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
