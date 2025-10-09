@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <description>Routes all messages to your enhanced bot.</description>
-        <name>RoutingActionGuest</name>
-        <label>Route to NDAX Guest</label>
-        <locationX>176</locationX>
-        <locationY>134</locationY>
+        <name>Route_to_Service_Messaging_Queue</name>
+        <label>Route to Service Messaging Queue</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
         <actionName>routeWork</actionName>
         <actionType>routeWork</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -18,7 +17,103 @@
         <inputParameters>
             <name>serviceChannelId</name>
             <value>
-                <stringValue>0N9DH000000LFvc0AG</stringValue>
+                <stringValue>0N9Kd000000AKhqKAG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelLabel</name>
+            <value>
+                <stringValue>Messaging</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelDevName</name>
+            <value>
+                <stringValue>sfdc_livemessage</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>routingType</name>
+            <value>
+                <stringValue>QueueBased</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>routingConfigId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>routingConfigLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>queueId</name>
+            <value>
+                <stringValue>00GOI000001HIWG2A4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>agentId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>queueLabel</name>
+            <value>
+                <stringValue>Service Messaging</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skillOption</name>
+        </inputParameters>
+        <inputParameters>
+            <name>skillRequirementsResourceItem</name>
+        </inputParameters>
+        <inputParameters>
+            <name>botId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>botLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>externalConversationBotId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>externalConversationBotLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>copilotId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>copilotLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentforceEmployeeAgentId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentforceEmployeeAgentLabel</name>
+        </inputParameters>
+        <nameSegment>routeWork</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>Routes all messages to your enhanced bot.</description>
+        <name>RoutingActionGuest</name>
+        <label>Route to NDAX Guest</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <actionName>routeWork</actionName>
+        <actionType>routeWork</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>serviceChannelId</name>
+            <value>
+                <stringValue>0N9Kd000000AKhqKAG</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -48,7 +143,7 @@
         <inputParameters>
             <name>queueId</name>
             <value>
-                <stringValue>00GDH000006Dfxu2AC</stringValue>
+                <stringValue>00GOI000001HIWG2A4</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -72,7 +167,7 @@
         <inputParameters>
             <name>botId</name>
             <value>
-                <stringValue>0XxG10000001b3xKAA</stringValue>
+                <stringValue>0XxOI00000004210AA</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -82,10 +177,22 @@
             </value>
         </inputParameters>
         <inputParameters>
+            <name>externalConversationBotId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>externalConversationBotLabel</name>
+        </inputParameters>
+        <inputParameters>
             <name>copilotId</name>
         </inputParameters>
         <inputParameters>
             <name>copilotLabel</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentforceEmployeeAgentId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>agentforceEmployeeAgentLabel</name>
         </inputParameters>
         <inputParameters>
             <name>isQueueVariable</name>
@@ -98,6 +205,38 @@
     </actionCalls>
     <apiVersion>63.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>If_it_isn_t_a_new_Messaging_Session</name>
+        <label>If it isn’t a new Messaging Session</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>RoutingActionGuest</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Messaging_session_is_not_new</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Messaging_Session.AgentType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BotToAgent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Messaging_Session.AgentType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Agent</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Route_to_Service_Messaging_Queue</targetReference>
+            </connector>
+            <label>Messaging session is not new</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>Route to NDAX Guest {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Route to NDAX Guest</label>
@@ -120,11 +259,32 @@
         </value>
     </processMetadataValues>
     <processType>RoutingFlow</processType>
+    <recordLookups>
+        <name>Get_Messaging_Session</name>
+        <label>Get Messaging Session</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_it_isn_t_a_new_Messaging_Session</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MessagingSession</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
-        <locationX>50</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>RoutingActionGuest</targetReference>
+            <targetReference>Get_Messaging_Session</targetReference>
         </connector>
     </start>
     <status>Active</status>
