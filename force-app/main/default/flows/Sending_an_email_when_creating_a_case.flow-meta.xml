@@ -17,7 +17,7 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <stringValue>project.ndax@integrate2cloud.com</stringValue>
+                <stringValue>support@ndax.io</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -70,7 +70,7 @@
         <inputParameters>
             <name>senderAddress</name>
             <value>
-                <stringValue>project.ndax@integrate2cloud.com</stringValue>
+                <stringValue>noreply@ndax.io</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
