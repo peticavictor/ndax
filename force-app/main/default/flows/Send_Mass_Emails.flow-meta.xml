@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionCalls>
-        <name>Send_Mass_Emails</name>
-        <label>Send Mass Emails</label>
+        <name>Send_Email</name>
+        <label>Send Email</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
-            <targetReference>Close_Case</targetReference>
+            <targetReference>Copy_1_of_For_Each_Case_2</targetReference>
         </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailAddresses</name>
+            <value>
+                <elementReference>nonTemplateRecipientFormula</elementReference>
+            </value>
         </inputParameters>
         <inputParameters>
             <name>emailAddressesArray</name>
-            <value>
-                <elementReference>emails</elementReference>
-            </value>
         </inputParameters>
         <inputParameters>
             <name>senderType</name>
@@ -56,9 +56,81 @@
         <inputParameters>
             <name>attachmentIdCollection</name>
         </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>Copy_1_of_For_Each_Case_2.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
         <nameSegment>emailSimple</nameSegment>
         <offset>0</offset>
         <versionString>1.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Template_Email</name>
+        <label>Send Template Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>For_Each_Case_2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>project.ndax@integrate2cloud.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useEmailTemplate</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>Email_Template_Picklist</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>For_Each_Case_2.ContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>For_Each_Case_2.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
     </actionCalls>
     <apiVersion>64.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -101,6 +173,31 @@
         </value>
     </customProperties>
     <decisions>
+        <name>If_Contact_is_not_null</name>
+        <label>If Contact is not null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>For_Each_Case_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contact_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>For_Each_Case_2.ContactId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Template_Email</targetReference>
+            </connector>
+            <label>Contact is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>If_Email_Recipients_is_not_null</name>
         <label>If Email Recipients is not null</label>
         <locationX>0</locationX>
@@ -120,7 +217,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Send_Mass_Emails</targetReference>
+                <targetReference>If_template_is_not_null</targetReference>
             </connector>
             <label>Email Recipients is not null</label>
         </rules>
@@ -179,6 +276,80 @@
             <label>Outcome 1 of Decision 1</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>If_template_is_not_null</name>
+        <label>If template is not null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_For_Each_Case_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Template_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Email_Template_Picklist</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>For_Each_Case_2</targetReference>
+            </connector>
+            <label>Template is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Template_or_Subject_and_Body_are_not_null</name>
+        <label>If Template or Subject and Body are not null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Send_Emails</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Template_or_Subject_and_Body_are_not_null</name>
+            <conditionLogic>1 OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Email_Template_Picklist</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Email_Subject</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Email_body</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Email_Template</targetReference>
+            </connector>
+            <label>Template or Subject and Body are not null</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>emailTemplateOptions</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <object>EmailTemplate</object>
+        <sortField>Name</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>queueOptions</name>
         <collectionReference>Get_Case_Queues</collectionReference>
@@ -196,9 +367,38 @@
         <picklistObject>Case</picklistObject>
     </dynamicChoiceSets>
     <environments>Default</environments>
+    <formulas>
+        <name>displayBodyFormula</name>
+        <dataType>String</dataType>
+        <expression>If({!Email_Template_Picklist} != null, If({!Get_Email_Template.HtmlValue} != null, {!Get_Email_Template.HtmlValue}, {!Get_Email_Template.Body}), {!Email_body})</expression>
+    </formulas>
+    <formulas>
+        <name>displaySubjectFormula</name>
+        <dataType>String</dataType>
+        <expression>if({!Email_Template_Picklist} != null, {!Get_Email_Template.Subject}, {!Email_Subject})</expression>
+    </formulas>
+    <formulas>
+        <name>nonTemplateRecipientFormula</name>
+        <dataType>String</dataType>
+        <expression>If({!Copy_1_of_For_Each_Case_2.ContactEmail} != null, {!Copy_1_of_For_Each_Case_2.ContactEmail}, {!Copy_1_of_For_Each_Case_2.SuppliedEmail})</expression>
+    </formulas>
     <interviewLabel>Send Mass Emails {!$Flow.CurrentDateTime}</interviewLabel>
     <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
     <label>Send Mass Emails</label>
+    <loops>
+        <name>Copy_1_of_For_Each_Case_2</name>
+        <label>Copy 1 of For Each Case 2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Cases</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Send_Email</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Close_Case</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <loops>
         <name>For_each_case</name>
         <label>For each case</label>
@@ -211,6 +411,20 @@
         </nextValueConnector>
         <noMoreValuesConnector>
             <targetReference>If_Email_Recipients_is_not_null</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>For_Each_Case_2</name>
+        <label>For Each Case 2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Cases</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>If_Contact_is_not_null</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Close_Case</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
@@ -310,6 +524,27 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>Get_Email_Template</name>
+        <label>Get Email Template</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Email_details</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Email_Template_Picklist</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EmailTemplate</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_General_Support_Queue</name>
         <label>Get General Support Queue</label>
         <locationX>0</locationX>
@@ -365,8 +600,8 @@
         <object>Case</object>
     </recordUpdates>
     <screens>
-        <name>Send_Emails</name>
-        <label>Send Emails</label>
+        <name>Check_Email_details</name>
+        <label>Check Email details</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <allowBack>true</allowBack>
@@ -376,12 +611,9 @@
             <targetReference>Get_Cases</targetReference>
         </connector>
         <fields>
-            <name>Email_Subject</name>
-            <dataType>String</dataType>
-            <fieldText>Email Subject</fieldText>
-            <fieldType>InputField</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
+            <name>Subject_Label</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Subject&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
                     <stringValue>top</stringValue>
@@ -392,11 +624,9 @@
             </styleProperties>
         </fields>
         <fields>
-            <name>Email_body</name>
-            <fieldText>Email body</fieldText>
-            <fieldType>LargeTextArea</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
+            <name>Subject</name>
+            <fieldText>&lt;p&gt;{!displaySubjectFormula}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
                     <stringValue>top</stringValue>
@@ -407,10 +637,163 @@
             </styleProperties>
         </fields>
         <fields>
-            <name>Send_Emails_Section1</name>
+            <name>Body_Label</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Body&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>displayBody</name>
+            <fieldText>&lt;p&gt;{!displayEmailTemplateBody}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Send_Emails</name>
+        <label>Send Emails</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>If_Template_or_Subject_and_Body_are_not_null</targetReference>
+        </connector>
+        <fields>
+            <name>help_text</name>
+            <fieldText>&lt;blockquote&gt;&lt;p class=&quot;ql-quote-block&quot;&gt;Select an email template, or manually enter the subject and body.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Email_Template_Picklist_Section</name>
+            <fieldText>Email Template</fieldText>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>Send_Emails_Section1_Column1</name>
+                <name>Email_Template_Picklist_Section_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Email_Template_Picklist</name>
+                    <choiceReferences>emailTemplateOptions</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Email Template</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Email_subject_and_body</name>
+            <fieldText>Email subject and body</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Email_subject_and_body_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Email_Subject</name>
+                    <dataType>String</dataType>
+                    <fieldText>Email Subject</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <fields>
+                    <name>Email_body</name>
+                    <fieldText>Email body</fieldText>
+                    <fieldType>LargeTextArea</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                    <styleProperties>
+                        <verticalAlignment>
+                            <stringValue>top</stringValue>
+                        </verticalAlignment>
+                        <width>
+                            <stringValue>12</stringValue>
+                        </width>
+                    </styleProperties>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Send_Emails_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Send_Emails_Section3_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>Status</name>
@@ -441,7 +824,7 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>Send_Emails_Section1_Column2</name>
+                <name>Send_Emails_Section3_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>Owner</name>
@@ -493,6 +876,11 @@
         </connector>
     </start>
     <status>Active</status>
+    <textTemplates>
+        <name>displayEmailTemplateBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!displayBodyFormula}&lt;/p&gt;</text>
+    </textTemplates>
     <variables>
         <name>emails</name>
         <dataType>String</dataType>
