@@ -6,7 +6,7 @@
         <name>Check_Case_Status</name>
         <label>Check Case Status</label>
         <locationX>314</locationX>
-        <locationY>323</locationY>
+        <locationY>623</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Case_is_Closed</name>
@@ -53,7 +53,51 @@
             <label>Case waiting for customer</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Is_this_the_first_time_response</name>
+        <label>Is this the first time response?</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Check_Case_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>This_is_the_first_reponse</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Parent.First_Time_Response__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.LastName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_first_time_response</targetReference>
+            </connector>
+            <label>This is the first reponse</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>now</name>
+        <dataType>DateTime</dataType>
+        <expression>now()</expression>
+    </formulas>
     <interviewLabel>Case Reopen {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Case Reopen</label>
     <processMetadataValues>
@@ -79,7 +123,7 @@
         <name>Case_response_recieved</name>
         <label>Case response recieved</label>
         <locationX>314</locationX>
-        <locationY>431</locationY>
+        <locationY>731</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -100,7 +144,7 @@
         <name>Reopen_Case</name>
         <label>Reopen Case</label>
         <locationX>50</locationX>
-        <locationY>431</locationY>
+        <locationY>731</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -112,7 +156,31 @@
         <inputAssignments>
             <field>Status</field>
             <value>
-                <stringValue>In Progress</stringValue>
+                <stringValue>Response Received</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Case_first_time_response</name>
+        <label>Update Case first time response</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Check_Case_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>First_Time_Response__c</field>
+            <value>
+                <elementReference>now</elementReference>
             </value>
         </inputAssignments>
         <object>Case</object>
@@ -121,7 +189,7 @@
         <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Check_Case_Status</targetReference>
+            <targetReference>Is_this_the_first_time_response</targetReference>
         </connector>
         <object>EmailMessage</object>
         <recordTriggerType>Create</recordTriggerType>
